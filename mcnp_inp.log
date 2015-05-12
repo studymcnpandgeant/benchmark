@@ -1,0 +1,12 @@
+ mcnp     ver=5.mpi, ld=11172014  05/11/15 16:01:41                   
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+
+ bad trouble in subroutine pass1 of imcn                              
+
+ unexpected eof in file Mark1                                         
