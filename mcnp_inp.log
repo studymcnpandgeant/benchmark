@@ -64,3 +64,61 @@
  imcn   is done
 
  mk.r already exists.  ml.r is created instead.
+ mcnp     ver=5.mpi, ld=11172014  05/12/15 12:57:43                   
+ mk.o already exists.  ml.o is created instead.
+ ml.o already exists.  mm.o is created instead.
+ mm.o already exists.  mn.o is created instead.
+ mn.o already exists.  mo.o is created instead.
+ mo.o already exists.  mp.o is created instead.
+ mp.o already exists.  mq.o is created instead.
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                       
+ 11100 11100 7.09608e-02 -1 u=1111 imp:n=1 $ Kernel 11 pass:1         
+  fatal error.  no m card for material no.  11100                                          
+ 11101 11 -1.70386e+00   1 u=1111  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 11200 11200 7.19257e-02 -1 u=1121 imp:n=1 $ Kernel 11 pass:2         
+  fatal error.  no m card for material no.  11200                                          
+ 11201 11 -1.70386e+00   1 u=1121  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 11300 11300 7.27633e-02 -1 u=1131 imp:n=1 $ Kernel 11 pass:3         
+  fatal error.  no m card for material no.  11300                                          
+ 11301 11 -1.70386e+00   1 u=1131  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 11400 11400 7.34815e-02 -1 u=1141 imp:n=1 $ Kernel 11 pass:4         
+  fatal error.  no m card for material no.  11400                                          
+ 11401 11 -1.70386e+00   1 u=1141  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 11500 11500 7.41002e-02 -1 u=1151 imp:n=1 $ Kernel 11 pass:5         
+  fatal error.  no m card for material no.  11500                                          
+ 11501 11 -1.70386e+00   1 u=1151  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 11600 11600 7.42213e-02 -1 u=1161 imp:n=1 $ Kernel 11 pass:6         
+  fatal error.  no m card for material no.  11600                                          
+ 11601 11 -1.70386e+00   1 u=1161  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 11700 11700 7.43340e-02 -1 u=1171 imp:n=1 $ Kernel 11 pass:7         
+  fatal error.  no m card for material no.  11700                                          
+ 11701 11 -1.70386e+00   1 u=1171  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 11800 11800 7.44396e-02 -1 u=1181 imp:n=1 $ Kernel 11 pass:8         
+  fatal error.  no m card for material no.  11800                                          
+ 11801 11 -1.70386e+00   1 u=1181  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 21100 21100 7.09578e-02 -1 u=2111 imp:n=1 $ Kernel 21 pass:1         
+  fatal error.  no m card for material no.  21100                                          
+ 21101 11 -1.70386e+00   1 u=2111  imp:n=1 $ Coatings and Matrix      
+  fatal error.  no m card for material no.     11                                          
+ 21200 21200 7.19226e-02 -1 u=2121 imp:n=1 $ Kernel 21 pass:2         
+  fatal error.  no m card for material no.  21200                                          
+ additional error messages on file mq.o
+
+ bad trouble in subroutine latcon of imcn                             
+
+ wrong order of surfaces in lattice cell 11102                        
