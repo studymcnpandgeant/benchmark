@@ -2043,41 +2043,6 @@ c
 105 1 -1.74000E+00  -204 -106 -901     imp:n=1 $ solid graphite
 106 5 -1.81936E+00  -204 -106 -201 901 imp:n=1 $ porous graphite
 c ------------------------------------------------------------------------------
-c pebble entrance
-c
-200 1 -1.74000E+00  -300 204 -901     400 302  
-          8000 8010 8020 8030 8040 8050 8060 8070
-          imp:n=1 $ solid graphite
-201 5 -1.81936E+00  -300 204 -201 901 400 302
-          8000 8010 8020 8030 8040 8050 8060 8070
-          imp:n=1 $ porous graphite
-202 1 -1.74000E+00  -300 204 -901     400 -302 
-          imp:n=1 $ solid graphite
-203 5 -1.81936E+00  -300 204 -201 901 400 -302
-          imp:n=1 $ porous graphite
-204 11100 -10.5 -300 204 -203 201 imp:n=1 fill=11 $ depletion zone 11 
-205 21100 -10.5 -300 204 -205 203 imp:n=1 fill=21 $ depletion zone 21
-206 31100 -10.5 -300 204 -207 205 imp:n=1 fill=31 $ depletion zone 31
-207 41100 -10.5 -300 204 -209 207 imp:n=1 fill=41 $ depletion zone 41
-208     5 -1.74 -300 204 -211 209 imp:n=1 fill=50 $ pebble reflector
-209     2 -1.74000E+00 -300 204 -413 211 imp:n=1 $ solid graphite
-c ------------------------------------------------------------------------------
-c expansion region
-c
-300 1 -1.74000E+00  400  300 -901      
-          8000 8010 8020 8030 8040 8050 8060 8070
-          imp:n=1 $ solid graphite
-c  
-301 5 -1.81936E+00  400  300 -301 901  
-          8000 8010 8020 8030 8040 8050 8060 8070
-          imp:n=1 $ porous graphite
-302 12100 -10.5 400 300 -303  301 imp:n=1 fill=12 $ depletion zone 12  
-303 22100 -10.5 400 300 -305  303 imp:n=1 fill=22 $ depletion zone 22
-304 32100 -10.5 400 300 -307  305 imp:n=1 fill=32 $ depletion zone 32
-305 42100 -10.5 400 300 -309  307 imp:n=1 fill=42 $ depletion zone 42
-306     5 -1.74 400 300 -311  309 imp:n=1 fill=50 $ pebble reflector
-307     2 -1.74000E+00 400 300 -413 311 imp:n=1 $ solid graphite reflector
-c ------------------------------------------------------------------------------
 c active region
 c
 400 1 -1.74000E+00 -500  -400 -901      
@@ -2147,93 +2112,6 @@ c CB engaged           #9050
 c CB engaged           #9060
 c CB engaged           #9070 
                                  imp:n=1 fill=50 $ pebble reflector (wall)
-c ------------------------------------------------------------------------------
-c converging region
-c 
-500 1 -1.74000E+00 -600 500 -501      
-          8000 8010 8020 8030 8040 8050 8060 8070
-          #9000
-          #9010
-          #9020
-          #9030
-          #9040
-          #9050
-          #9060
-          #9070
-          imp:n=1 $ solid graphite
-502 14100 -10.5 -600 500 -503 501 
-c CB engaged           #9000
-c CB engaged           #9010
-c CB engaged           #9020
-c CB engaged           #9030
-c CB engaged           #9040
-c CB engaged           #9050
-c CB engaged           #9060
-c CB engaged           #9070 
-                                 imp:n=1 fill=14 $ depletion zone 14
-503 24100 -10.5 -600 500 -505 503 
-c CB engaged           #9000
-c CB engaged           #9010
-c CB engaged           #9020
-c CB engaged           #9030
-c CB engaged           #9040
-c CB engaged           #9050
-c CB engaged           #9060
-c CB engaged           #9070 
-                                 imp:n=1 fill=24 $ depletion zone 24
-504 34100 -10.5 -600 500 -507 505 
-c CB engaged           #9000
-c CB engaged           #9010
-c CB engaged           #9020
-c CB engaged           #9030
-c CB engaged           #9040
-c CB engaged           #9050
-c CB engaged           #9060
-c CB engaged           #9070 
-                                  imp:n=1 fill=34 $ depletion zone 34
-505 44100 -10.5 -600 500 -509 507 
-c CB engaged           #9000
-c CB engaged           #9010
-c CB engaged           #9020
-c CB engaged           #9030
-c CB engaged           #9040
-c CB engaged           #9050
-c CB engaged           #9060
-c CB engaged           #9070 
-                                  imp:n=1 fill=44 $ depletion zone 44
-506     5 -1.74 -600 500 -511 509 
-c CB engaged           #9000
-c CB engaged           #9010
-c CB engaged           #9020
-c CB engaged           #9030
-c CB engaged           #9040
-c CB engaged           #9050
-c CB engaged           #9060
-c CB engaged           #9070 
-                                  imp:n=1 fill=50 $ pebble reflector
-510 6  -1.81936E+00 -413  511 -600 500
-           imp:n=1
-c ------------------------------------------------------------------------------
-c defueling chute
-c
-600 1 -1.74000E+00 -602  600 -601  
-          8000 8010 8020 8030 8040 8050 8060 8070
-          #9000
-          #9010
-          #9020
-          #9030
-          #9040
-          #9050
-          #9060
-          #9070
-          imp:n=1  $ solid graphite
-602 15100 -10.5 -602 600 -603 601 imp:n=1 fill=15 $ depletion zone 15
-603 25100 -10.5 -602 600 -605 603 imp:n=1 fill=25 $ depletion zone 25
-604 35100 -10.5 -602 600 -607 605 imp:n=1 fill=35 $ depletion zone 35
-605 45100 -10.5 -602 600 -609 607 imp:n=1 fill=45 $ depletion zone 45
-606     5 -1.74 -602 600 -611 609 imp:n=1 fill=50 $ pebble reflector
-610 6  -1.81936E+00 -413  611 -602 600
-          imp:n=1
 c ------------------------------------------------------------------------------
 c boundary conditions
 c
