@@ -13,4 +13,6 @@
 #SBATCH -A co_nuclear
 ##SBATCH --account=ac_nuclear
 
-mcnp5_151.mpi i=Mark1 o=mk.o mc=mk.mc runtpe=mk.r srctp=source >> mcnp_inp.log
+mcnp5_151.mpi i=Mark1_orig o=mk.o mc=mk.mc runtpe=mk.r srctp=source >> mcnp_inp.log
+
+mcnp5_151.mpi i=Mark1_orig_fill o=mk_fill.o mc=mk_fill.mc runtpe=mk_fill.r srctp=source >> mcnp_fill.log
