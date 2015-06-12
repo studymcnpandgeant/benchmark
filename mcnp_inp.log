@@ -53,3 +53,60 @@
 
  xact   is done
 
+ mcnp     ver=5.mpi, ld=11172014  06/12/15 13:17:45                   
+ mk.o already exists.  ml.o is created instead.
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                       
+ 1040 s  2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1041 s  2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1042 s  2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1043 s -2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1044 s -2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1045 s -2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1050 s   0          2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1051 s   0          2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1052 s   0          2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1053 s   0         -2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1054 s   0         -2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1055 s   0         -2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1060 s   0           0          2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1061 s   0           0          2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1062 s   0           0          2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1063 s   0           0         -2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1064 s   0           0         -2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1065 s   0           0         -2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1140 s  2.26291e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ additional error messages on file ml.o
+ 
+  fatal error.  surface    -10 of cell  204 is not defined.                                
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mk.r already exists.  ml.r is created instead.
+ xact   is done
+

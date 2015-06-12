@@ -1,0 +1,18 @@
+#!/bin/sh
+#SBATCH --job-name=tcool
+#SBATCH --output=cool.log
+#SBATCH --error=cool.serr
+#SBATCH --partition=savio
+#SBATCH --time=999:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+# QoS:
+#SBATCH --qos=nuclear_normal
+#
+# Account:
+#SBATCH -A co_nuclear
+sss2_1_17 -omp 20 serp_cool_1	
+sss2_1_17 -omp 20 serp_cool_2
+sss2_1_17 -omp 20 serp_cool_3
+sss2_1_17 -omp 20 serp_cool_4
+sss2_1_17 -omp 20 serp_cool_0
