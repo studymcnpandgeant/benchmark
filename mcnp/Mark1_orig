@@ -2682,11 +2682,11 @@ c
 203 5 -1.81936E+00  -300 204 -201 901 400 -302
           tmp=7.52422E-08
           imp:n=1 $ porous graphite
-204 0 -10.5 -300 204 -203 201 imp:n=1 fill=11 $ depletion zone 11 
-205 0 -10.5 -300 204 -205 203 imp:n=1 fill=21 $ depletion zone 21
-206 0 -10.5 -300 204 -207 205 imp:n=1 fill=31 $ depletion zone 31
-207 0 -10.5 -300 204 -209 207 imp:n=1 fill=41 $ depletion zone 41
-208 0 -1.74 -300 204 -211 209 imp:n=1 fill=50 $ pebble reflector
+204 11100 -10.5 -300 204 -203 201 imp:n=1 fill=11 $ depletion zone 11 
+205 21100 -10.5 -300 204 -205 203 imp:n=1 fill=21 $ depletion zone 21
+206 31100 -10.5 -300 204 -207 205 imp:n=1 fill=31 $ depletion zone 31
+207 41100 -10.5 -300 204 -209 207 imp:n=1 fill=41 $ depletion zone 41
+208     5 -1.74 -300 204 -211 209 imp:n=1 fill=50 $ pebble reflector
 209     2 -1.74000E+00 -300 204 -413 211 imp:n=1 $ solid graphite
           tmp=8.38596E-08
 c ------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 #!/bin/sh
-#SBATCH --job-name=mk1
-#SBATCH --output=mk1.log
-#SBATCH --error=mk1.serr
+#SBATCH --job-name=fhr125mod
+#SBATCH --output=fhr125mod.log
+#SBATCH --error=fhr125mod.serr
 #SBATCH --partition=savio
 #SBATCH --time=999:00:00
 #SBATCH --nodes=1
@@ -13,6 +13,6 @@
 #SBATCH -A co_nuclear
 ##SBATCH --account=ac_nuclear
 
-mcnp5_151.mpi i=Mark1_orig o=mk.o mc=mk.mc runtpe=mk.r srctp=source >> mcnp_inp.log
+mcnp5_151.mpi i=fhr o=fhr125mod.o mc=mk.mc runtpe=mk.r srctp=source >> fhr125mod.log
 
-mcnp5_151.mpi i=Mark1_orig_fill o=mk_fill.o mc=mk_fill.mc runtpe=mk_fill.r srctp=source >> mcnp_fill.log
+#mcnp5_151.mpi i=Mark1_orig_fill o=mk_fill.o mc=mk_fill.mc runtpe=mk_fill.r srctp=source >> mcnp_fill.log
