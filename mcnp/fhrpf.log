@@ -181,3 +181,37 @@
    101   1.00482    156.85  6.32E+00        91    1.00026    0.00087       8986
    102   0.99163    158.47  6.33E+00        92    1.00016    0.00086       8977
    103   0.99430    160.09  6.31E+00        93    1.00010    0.00086       9026
+   104   0.99883    161.72  6.35E+00        94    1.00009    0.00085       9121
+   105   0.99297    163.34  6.34E+00        95    1.00001    0.00084       9145
+   106   0.98869    164.94  6.35E+00        96    0.99989    0.00084       9060
+   107   1.00009    166.56  6.34E+00        97    0.99990    0.00083       9156
+   108   1.00205    168.20  6.36E+00        98    0.99992    0.00082       9245
+   109   0.99759    169.82  6.35E+00        99    0.99990    0.00082       9332
+   110   1.01007    171.45  6.34E+00       100    1.00000    0.00081       9282
+
+ source distribution written to file source        cycle=   110
+ run terminated when     110 kcode cycles were done.
+ comment.
+ comment. Average fission-source entropy for the last half of cycles:
+ comment.      H=  6.34E+00  with population std.dev.=  1.12E-02
+ comment.
+ comment.
+ comment. Cycle    1 is the first cycle having fission-source
+ comment.   entropy within 1 std.dev. of the average
+ comment.   entropy for the last half of cycles.
+ comment.   At least this many cycles should be discarded.
+ comment.
+ comment. Source entropy convergence check passed. 
+ comment.
+
+ final k(col/abs/trk len) = 1.00033     std dev = 0.00070
+
+
+                              ctm =      171.45   nrn =        4690373392
+ dump    2 on file mn.r   nps =     1099357   coll =        206702537
+ mk.mc already exists.  ml.mc is created instead.
+ ml.mc already exists.  mm.mc is created instead.
+ mm.mc already exists.  mn.mc is created instead.
+ tally data written to file mn.mc
+ mcrun  is done
+
