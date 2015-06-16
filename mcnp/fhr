@@ -181,7 +181,6 @@ c
 41801 11 -1.70386E+00   1 u=4181 tmp=8.40196E-08 imp:n=1 $ Coatings and Matrix
 41802 0 -11 12 -13 14 -15 16 lat=1 imp:n=1 fill=4181 u=4180
 c
-c
 c Depletion Zones 12
 c
 12100 12100 7.09974E-02 -1 u=1211 tmp=8.66798E-08 imp:n=1 $ Kernel 12 pass:1
