@@ -188,10 +188,6 @@ cell 52 6 fill 5 139 -140
 %---Triso particle 
 particle 4
 fuel0 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 5 6 0. 0. 0.08860629 4
@@ -205,10 +201,6 @@ cell 55 9 fill 8 141 -142
 %---Triso particle 
 particle 7
 fuel1 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 8 6 0. 0. 0.08860629 7
@@ -222,10 +214,6 @@ cell 58 12 fill 11 143 -144
 %---Triso particle 
 particle 10
 fuel2 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 11 6 0. 0. 0.08860629 10
@@ -239,10 +227,6 @@ cell 61 15 fill 14 145 -146
 %---Triso particle 
 particle 13
 fuel3 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 14 6 0. 0. 0.08860629 13
@@ -256,10 +240,6 @@ cell 64 18 fill 17 147 -148
 %---Triso particle 
 particle 16
 fuel4 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 17 6 0. 0. 0.08860629 16
@@ -273,10 +253,6 @@ cell 67 21 fill 20 149 -150
 %---Triso particle 
 particle 19
 fuel5 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 20 6 0. 0. 0.08860629 19
@@ -290,10 +266,6 @@ cell 70 24 fill 23 151 -152
 %---Triso particle 
 particle 22
 fuel6 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 23 6 0. 0. 0.08860629 22
@@ -307,10 +279,6 @@ cell 73 27 fill 26 153 -154
 %---Triso particle 
 particle 25
 fuel7 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 26 6 0. 0. 0.08860629 25
@@ -324,10 +292,6 @@ cell 76 30 fill 29 155 -156
 %---Triso particle 
 particle 28
 fuel8 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 29 6 0. 0. 0.08860629 28
@@ -341,10 +305,6 @@ cell 79 33 fill 32 157 -158
 %---Triso particle 
 particle 31
 fuel9 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 32 6 0. 0. 0.08860629 31
@@ -358,10 +318,6 @@ cell 82 36 fill 35 159 -160
 %---Triso particle 
 particle 34
 fuel10 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 35 6 0. 0. 0.08860629 34
@@ -375,10 +331,6 @@ cell 85 39 fill 38 161 -162
 %---Triso particle 
 particle 37
 fuel11 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 38 6 0. 0. 0.08860629 37
@@ -392,10 +344,6 @@ cell 88 42 fill 41 163 -164
 %---Triso particle 
 particle 40
 fuel12 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 41 6 0. 0. 0.08860629 40
@@ -409,10 +357,6 @@ cell 91 45 fill 44 165 -166
 %---Triso particle 
 particle 43
 fuel13 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 44 6 0. 0. 0.08860629 43
@@ -444,10 +388,6 @@ cell 96 6 fill 5 169 -170
 %---Triso particle 
 particle 4
 fuel0 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 5 6 0. 0. 0.08860629 4
@@ -461,10 +401,6 @@ cell 99 9 fill 8 171 -172
 %---Triso particle 
 particle 7
 fuel1 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 8 6 0. 0. 0.08860629 7
@@ -478,10 +414,6 @@ cell 102 12 fill 11 173 -174
 %---Triso particle 
 particle 10
 fuel2 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 11 6 0. 0. 0.08860629 10
@@ -495,10 +427,6 @@ cell 105 15 fill 14 175 -176
 %---Triso particle 
 particle 13
 fuel3 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 14 6 0. 0. 0.08860629 13
@@ -512,10 +440,6 @@ cell 108 18 fill 17 177 -178
 %---Triso particle 
 particle 16
 fuel4 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 17 6 0. 0. 0.08860629 16
@@ -529,10 +453,6 @@ cell 111 21 fill 20 179 -180
 %---Triso particle 
 particle 19
 fuel5 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 20 6 0. 0. 0.08860629 19
@@ -546,10 +466,6 @@ cell 114 24 fill 23 181 -182
 %---Triso particle 
 particle 22
 fuel6 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 23 6 0. 0. 0.08860629 22
@@ -563,10 +479,6 @@ cell 117 27 fill 26 183 -184
 %---Triso particle 
 particle 25
 fuel7 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 26 6 0. 0. 0.08860629 25
@@ -580,10 +492,6 @@ cell 120 30 fill 29 185 -186
 %---Triso particle 
 particle 28
 fuel8 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 29 6 0. 0. 0.08860629 28
@@ -597,10 +505,6 @@ cell 123 33 fill 32 187 -188
 %---Triso particle 
 particle 31
 fuel9 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 32 6 0. 0. 0.08860629 31
@@ -614,10 +518,6 @@ cell 126 36 fill 35 189 -190
 %---Triso particle 
 particle 34
 fuel10 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 35 6 0. 0. 0.08860629 34
@@ -631,10 +531,6 @@ cell 129 39 fill 38 191 -192
 %---Triso particle 
 particle 37
 fuel11 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 38 6 0. 0. 0.08860629 37
@@ -648,10 +544,6 @@ cell 132 42 fill 41 193 -194
 %---Triso particle 
 particle 40
 fuel12 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 41 6 0. 0. 0.08860629 40
@@ -665,10 +557,6 @@ cell 135 45 fill 44 195 -196
 %---Triso particle 
 particle 43
 fuel13 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 44 6 0. 0. 0.08860629 43
@@ -700,10 +588,6 @@ cell 140 6 fill 5 199 -200
 %---Triso particle 
 particle 4
 fuel0 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 5 6 0. 0. 0.08860629 4
@@ -717,10 +601,6 @@ cell 143 9 fill 8 201 -202
 %---Triso particle 
 particle 7
 fuel1 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 8 6 0. 0. 0.08860629 7
@@ -734,10 +614,6 @@ cell 146 12 fill 11 203 -204
 %---Triso particle 
 particle 10
 fuel2 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 11 6 0. 0. 0.08860629 10
@@ -751,10 +627,6 @@ cell 149 15 fill 14 205 -206
 %---Triso particle 
 particle 13
 fuel3 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 14 6 0. 0. 0.08860629 13
@@ -768,10 +640,6 @@ cell 152 18 fill 17 207 -208
 %---Triso particle 
 particle 16
 fuel4 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 17 6 0. 0. 0.08860629 16
@@ -785,10 +653,6 @@ cell 155 21 fill 20 209 -210
 %---Triso particle 
 particle 19
 fuel5 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 20 6 0. 0. 0.08860629 19
@@ -802,10 +666,6 @@ cell 158 24 fill 23 211 -212
 %---Triso particle 
 particle 22
 fuel6 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 23 6 0. 0. 0.08860629 22
@@ -819,10 +679,6 @@ cell 161 27 fill 26 213 -214
 %---Triso particle 
 particle 25
 fuel7 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 26 6 0. 0. 0.08860629 25
@@ -836,10 +692,6 @@ cell 164 30 fill 29 215 -216
 %---Triso particle 
 particle 28
 fuel8 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 29 6 0. 0. 0.08860629 28
@@ -853,10 +705,6 @@ cell 167 33 fill 32 217 -218
 %---Triso particle 
 particle 31
 fuel9 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 32 6 0. 0. 0.08860629 31
@@ -870,10 +718,6 @@ cell 170 36 fill 35 219 -220
 %---Triso particle 
 particle 34
 fuel10 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 35 6 0. 0. 0.08860629 34
@@ -887,10 +731,6 @@ cell 173 39 fill 38 221 -222
 %---Triso particle 
 particle 37
 fuel11 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 38 6 0. 0. 0.08860629 37
@@ -904,10 +744,6 @@ cell 176 42 fill 41 223 -224
 %---Triso particle 
 particle 40
 fuel12 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 41 6 0. 0. 0.08860629 40
@@ -921,10 +757,6 @@ cell 179 45 fill 44 225 -226
 %---Triso particle 
 particle 43
 fuel13 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 44 6 0. 0. 0.08860629 43
@@ -956,10 +788,6 @@ cell 184 6 fill 5 229 -230
 %---Triso particle 
 particle 4
 fuel0 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 5 6 0. 0. 0.08860629 4
@@ -973,10 +801,6 @@ cell 187 9 fill 8 231 -232
 %---Triso particle 
 particle 7
 fuel1 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 8 6 0. 0. 0.08860629 7
@@ -990,10 +814,6 @@ cell 190 12 fill 11 233 -234
 %---Triso particle 
 particle 10
 fuel2 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 11 6 0. 0. 0.08860629 10
@@ -1007,10 +827,6 @@ cell 193 15 fill 14 235 -236
 %---Triso particle 
 particle 13
 fuel3 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 14 6 0. 0. 0.08860629 13
@@ -1024,10 +840,6 @@ cell 196 18 fill 17 237 -238
 %---Triso particle 
 particle 16
 fuel4 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 17 6 0. 0. 0.08860629 16
@@ -1041,10 +853,6 @@ cell 199 21 fill 20 239 -240
 %---Triso particle 
 particle 19
 fuel5 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 20 6 0. 0. 0.08860629 19
@@ -1058,10 +866,6 @@ cell 202 24 fill 23 241 -242
 %---Triso particle 
 particle 22
 fuel6 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 23 6 0. 0. 0.08860629 22
@@ -1075,10 +879,6 @@ cell 205 27 fill 26 243 -244
 %---Triso particle 
 particle 25
 fuel7 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 26 6 0. 0. 0.08860629 25
@@ -1092,10 +892,6 @@ cell 208 30 fill 29 245 -246
 %---Triso particle 
 particle 28
 fuel8 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 29 6 0. 0. 0.08860629 28
@@ -1109,10 +905,6 @@ cell 211 33 fill 32 247 -248
 %---Triso particle 
 particle 31
 fuel9 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 32 6 0. 0. 0.08860629 31
@@ -1126,10 +918,6 @@ cell 214 36 fill 35 249 -250
 %---Triso particle 
 particle 34
 fuel10 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 35 6 0. 0. 0.08860629 34
@@ -1143,10 +931,6 @@ cell 217 39 fill 38 251 -252
 %---Triso particle 
 particle 37
 fuel11 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 38 6 0. 0. 0.08860629 37
@@ -1160,10 +944,6 @@ cell 220 42 fill 41 253 -254
 %---Triso particle 
 particle 40
 fuel12 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 41 6 0. 0. 0.08860629 40
@@ -1177,10 +957,6 @@ cell 223 45 fill 44 255 -256
 %---Triso particle 
 particle 43
 fuel13 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 44 6 0. 0. 0.08860629 43
@@ -1212,10 +988,6 @@ cell 228 6 fill 5 259 -260
 %---Triso particle 
 particle 4
 fuel0 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 5 6 0. 0. 0.08860629 4
@@ -1229,10 +1001,6 @@ cell 231 9 fill 8 261 -262
 %---Triso particle 
 particle 7
 fuel1 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 8 6 0. 0. 0.08860629 7
@@ -1246,10 +1014,6 @@ cell 234 12 fill 11 263 -264
 %---Triso particle 
 particle 10
 fuel2 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 11 6 0. 0. 0.08860629 10
@@ -1263,10 +1027,6 @@ cell 237 15 fill 14 265 -266
 %---Triso particle 
 particle 13
 fuel3 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 14 6 0. 0. 0.08860629 13
@@ -1280,10 +1040,6 @@ cell 240 18 fill 17 267 -268
 %---Triso particle 
 particle 16
 fuel4 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 17 6 0. 0. 0.08860629 16
@@ -1297,10 +1053,6 @@ cell 243 21 fill 20 269 -270
 %---Triso particle 
 particle 19
 fuel5 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 20 6 0. 0. 0.08860629 19
@@ -1314,10 +1066,6 @@ cell 246 24 fill 23 271 -272
 %---Triso particle 
 particle 22
 fuel6 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 23 6 0. 0. 0.08860629 22
@@ -1331,10 +1079,6 @@ cell 249 27 fill 26 273 -274
 %---Triso particle 
 particle 25
 fuel7 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 26 6 0. 0. 0.08860629 25
@@ -1348,10 +1092,6 @@ cell 252 30 fill 29 275 -276
 %---Triso particle 
 particle 28
 fuel8 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 29 6 0. 0. 0.08860629 28
@@ -1365,10 +1105,6 @@ cell 255 33 fill 32 277 -278
 %---Triso particle 
 particle 31
 fuel9 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 32 6 0. 0. 0.08860629 31
@@ -1382,10 +1118,6 @@ cell 258 36 fill 35 279 -280
 %---Triso particle 
 particle 34
 fuel10 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 35 6 0. 0. 0.08860629 34
@@ -1399,10 +1131,6 @@ cell 261 39 fill 38 281 -282
 %---Triso particle 
 particle 37
 fuel11 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 38 6 0. 0. 0.08860629 37
@@ -1416,10 +1144,6 @@ cell 264 42 fill 41 283 -284
 %---Triso particle 
 particle 40
 fuel12 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 41 6 0. 0. 0.08860629 40
@@ -1433,10 +1157,6 @@ cell 267 45 fill 44 285 -286
 %---Triso particle 
 particle 43
 fuel13 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 44 6 0. 0. 0.08860629 43
@@ -1468,10 +1188,6 @@ cell 272 6 fill 5 289 -290
 %---Triso particle 
 particle 4
 fuel0 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 5 6 0. 0. 0.08860629 4
@@ -1485,10 +1201,6 @@ cell 275 9 fill 8 291 -292
 %---Triso particle 
 particle 7
 fuel1 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 8 6 0. 0. 0.08860629 7
@@ -1502,10 +1214,6 @@ cell 278 12 fill 11 293 -294
 %---Triso particle 
 particle 10
 fuel2 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 11 6 0. 0. 0.08860629 10
@@ -1519,10 +1227,6 @@ cell 281 15 fill 14 295 -296
 %---Triso particle 
 particle 13
 fuel3 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 14 6 0. 0. 0.08860629 13
@@ -1536,10 +1240,6 @@ cell 284 18 fill 17 297 -298
 %---Triso particle 
 particle 16
 fuel4 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 17 6 0. 0. 0.08860629 16
@@ -1553,10 +1253,6 @@ cell 287 21 fill 20 299 -300
 %---Triso particle 
 particle 19
 fuel5 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 20 6 0. 0. 0.08860629 19
@@ -1570,10 +1266,6 @@ cell 290 24 fill 23 301 -302
 %---Triso particle 
 particle 22
 fuel6 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 23 6 0. 0. 0.08860629 22
@@ -1587,10 +1279,6 @@ cell 293 27 fill 26 303 -304
 %---Triso particle 
 particle 25
 fuel7 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 26 6 0. 0. 0.08860629 25
@@ -1604,10 +1292,6 @@ cell 296 30 fill 29 305 -306
 %---Triso particle 
 particle 28
 fuel8 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 29 6 0. 0. 0.08860629 28
@@ -1621,10 +1305,6 @@ cell 299 33 fill 32 307 -308
 %---Triso particle 
 particle 31
 fuel9 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 32 6 0. 0. 0.08860629 31
@@ -1638,10 +1318,6 @@ cell 302 36 fill 35 309 -310
 %---Triso particle 
 particle 34
 fuel10 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 35 6 0. 0. 0.08860629 34
@@ -1655,10 +1331,6 @@ cell 305 39 fill 38 311 -312
 %---Triso particle 
 particle 37
 fuel11 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 38 6 0. 0. 0.08860629 37
@@ -1672,10 +1344,6 @@ cell 308 42 fill 41 313 -314
 %---Triso particle 
 particle 40
 fuel12 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 41 6 0. 0. 0.08860629 40
@@ -1689,10 +1357,6 @@ cell 311 45 fill 44 315 -316
 %---Triso particle 
 particle 43
 fuel13 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 44 6 0. 0. 0.08860629 43
@@ -1724,10 +1388,6 @@ cell 316 6 fill 5 319 -320
 %---Triso particle 
 particle 4
 fuel0 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 5 6 0. 0. 0.08860629 4
@@ -1741,10 +1401,6 @@ cell 319 9 fill 8 321 -322
 %---Triso particle 
 particle 7
 fuel1 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 8 6 0. 0. 0.08860629 7
@@ -1758,10 +1414,6 @@ cell 322 12 fill 11 323 -324
 %---Triso particle 
 particle 10
 fuel2 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 11 6 0. 0. 0.08860629 10
@@ -1775,10 +1427,6 @@ cell 325 15 fill 14 325 -326
 %---Triso particle 
 particle 13
 fuel3 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 14 6 0. 0. 0.08860629 13
@@ -1792,10 +1440,6 @@ cell 328 18 fill 17 327 -328
 %---Triso particle 
 particle 16
 fuel4 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 17 6 0. 0. 0.08860629 16
@@ -1809,10 +1453,6 @@ cell 331 21 fill 20 329 -330
 %---Triso particle 
 particle 19
 fuel5 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 20 6 0. 0. 0.08860629 19
@@ -1826,10 +1466,6 @@ cell 334 24 fill 23 331 -332
 %---Triso particle 
 particle 22
 fuel6 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 23 6 0. 0. 0.08860629 22
@@ -1843,10 +1479,6 @@ cell 337 27 fill 26 333 -334
 %---Triso particle 
 particle 25
 fuel7 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 26 6 0. 0. 0.08860629 25
@@ -1860,10 +1492,6 @@ cell 340 30 fill 29 335 -336
 %---Triso particle 
 particle 28
 fuel8 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 29 6 0. 0. 0.08860629 28
@@ -1877,10 +1505,6 @@ cell 343 33 fill 32 337 -338
 %---Triso particle 
 particle 31
 fuel9 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 32 6 0. 0. 0.08860629 31
@@ -1894,10 +1518,6 @@ cell 346 36 fill 35 339 -340
 %---Triso particle 
 particle 34
 fuel10 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 35 6 0. 0. 0.08860629 34
@@ -1911,10 +1531,6 @@ cell 349 39 fill 38 341 -342
 %---Triso particle 
 particle 37
 fuel11 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 38 6 0. 0. 0.08860629 37
@@ -1928,10 +1544,6 @@ cell 352 42 fill 41 343 -344
 %---Triso particle 
 particle 40
 fuel12 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 41 6 0. 0. 0.08860629 40
@@ -1945,10 +1557,6 @@ cell 355 45 fill 44 345 -346
 %---Triso particle 
 particle 43
 fuel13 0.0200
-Buffer 0.0300
-iPyC 0.0335
-SiC 0.0370
-oPyC 0.0405
 Matrix
 %%---Triso  lattice
 lat 44 6 0. 0. 0.08860629 43

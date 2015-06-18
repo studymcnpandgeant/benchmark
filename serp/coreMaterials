@@ -22,7 +22,7 @@ mat CentralGraphite -1.740000E+00 moder grph_CentralGraphite 6000 tmp 1073.15000
  6000.09c 1.0
 therm grph_CentralGraphite gre7.22t
 
-mat Shell -1.750000E+00 moder grph_Shell 6000 tmp 1073.150000
+mat Shell -1.738410000E+00 moder grph_Shell 6000 tmp 1073.150000
  6000.09c 1.0
 therm grph_Shell gre7.22t
 
@@ -50,11 +50,15 @@ mat oPyC -1.900000E+00 moder grph_oPyC 6000 tmp 1073.150000
  6000.09c 9.52621E-02
 therm grph_oPyC gre7.22t
 
-mat Matrix -1.750000E+00 moder grph_Matrix 6000 tmp 1073.150000
- 6000.09c 8.77414E-02
-5010.09c 9.64977E-09
-5011.09c 3.90864E-08
-therm grph_Matrix gre7.22t
+%mat Matrix -1.750000E+00 moder grph_Matrix 6000 tmp 1073.150000
+% 6000.09c 8.77414E-02
+%5010.09c 9.64977E-09
+%5011.09c 3.90864E-08
+%therm grph_Matrix gre7.22t
+
+mat Matrix -1.70386
+14028.12c 6.61E-03
+6000.12c 1.27E-01
 
 mat fuel1 -1.000000E+01 tmp 1073.150000
  92235.09c 19.9

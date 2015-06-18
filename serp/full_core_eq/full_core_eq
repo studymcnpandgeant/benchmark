@@ -20,7 +20,7 @@ cell 86 0 outside 124
 %%---Neutron source and BC
 set pop 200000 200 500
 set bc 1
-set ures 1
+
 %%---Plot the geometry
 plot 1 700 700 0 %% yz cross plane at x=0
 plot 2 700 700 0 %% xz cross plane at y=0

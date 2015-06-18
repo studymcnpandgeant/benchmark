@@ -1,0 +1,3 @@
+job eq: is the serpent full core model with equilibrium fuel composition taken from Tommy's mcnp full core model
+
+job ures: is based on job eq, but added 'set ures=1' in the input file
