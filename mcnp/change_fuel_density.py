@@ -2,7 +2,7 @@ import fileinput
 import sys
 import string
 
-with open('fhr', 'r+') as f:
+with open('fhrfueldens', 'r+') as f:
     lines = f.readlines()
     print len(lines)
     lnb = 17
@@ -22,5 +22,5 @@ with open('fhr', 'r+') as f:
             lnb = lnb+ 2
         # lnb = lnb + 1
         print ncg
-with open('fhr_fuel_density', 'w+') as of:
+with open('fhrfueldenseq', 'w+') as of:
     of.write(''.join(lines))

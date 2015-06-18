@@ -1,7 +1,7 @@
 #!/bin/sh
-#SBATCH --job-name=fhrfresh_fuel
-#SBATCH --output=fhrfresh_fuel.log
-#SBATCH --error=fhrfresh_fuel.serr
+#SBATCH --job-name=v1
+#SBATCH --output=v1.log
+#SBATCH --error=v1.serr
 #SBATCH --partition=savio
 #SBATCH --time=999:00:00
 #SBATCH --nodes=1
@@ -13,6 +13,6 @@
 #SBATCH -A co_nuclear
 ##SBATCH --account=ac_nuclear
 
-mcnp5_151.mpi i=fhr o=fhrfresh_fuel.o mc=mk.mc runtpe=mk.r srctp=source >> fhrfresh_fuel.log
+mcnp5_151.mpi i=fhr_v1 o=fhr_v1.o runtpe=mk.r mc=mk_fill.mc srctp=source #>> v1.log
 
 #mcnp5_151.mpi i=Mark1_orig_fill o=mk_fill.o mc=mk_fill.mc runtpe=mk_fill.r srctp=source >> mcnp_fill.log

@@ -1956,7 +1956,7 @@ c
 c
 c Full Core
 c
-c control rod cells
+c control rod cells (changed mat to carbon)
 c
 8000 23 -1.98720E+00 -8000 -600 302 imp:n=1
 8001 50 -2.40000E+00
@@ -1999,7 +1999,7 @@ c
           imp:n=1
 8072 23 -1.98720E+00 -8070 #8071 -602 600 imp:n=1
 c
-c control blade cells 
+c control blade cells  changed material to carbon
 c
 9000 25 -1.93840E+00 
          (9001 9002 -9003 -9004 -602 -501):(9005 9006 -9007 -9008 -602 -501)
