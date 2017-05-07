@@ -1,0 +1,107 @@
+ mcnp     ver=5.mpi, ld=11172014  06/17/15 17:06:06                   
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                       
+ 1040 s  2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1041 s  2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1042 s  2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1043 s -2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1044 s -2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1045 s -2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1050 s   0          2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1051 s   0          2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1052 s   0          2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1053 s   0         -2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1054 s   0         -2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1055 s   0         -2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1060 s   0           0          2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1061 s   0           0          2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1062 s   0           0          2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1063 s   0           0         -2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1064 s   0           0         -2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1065 s   0           0         -2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1140 s  2.26291e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ additional error messages on file fhr_v1.o
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+
+                              ctm =        0.00   nrn =                 0
+ dump    1 on file mk.r   nps =           0   coll =                0
+
+ source distribution written to file source        cycle=     0
+ xact   is done
+
+ cp0 =   0.76
+
+ comment.
+ comment. entropy of the fission source distribution will be computed
+ comment.
+ comment. the mesh for source entropy is based on the site coordinates
+ comment.   using  7 x  7 x  7 =   343  mesh cells
+ comment.
+ comment.     Xmin= -1.4588E+02     Xmax=  1.4667E+02
+ comment.     Ymin= -1.4642E+02     Ymax=  1.4676E+02
+ comment.     Zmin= -5.4103E+01     Zmax=  6.3747E+02
+ comment.
+ comment. the mesh will be automatically expanded if necessary to
+ comment.   encompass the entire fission source distribution
+ comment.
+
+
+ cycle    k(col)       ctm   entropy    active     k(col)    std dev        fom
+     1   1.01222      0.88  6.16E+00
+     2   1.01893      1.76  6.24E+00
+     3   1.00258      2.64  6.28E+00
+     4   1.01134      3.50  6.35E+00
+     5   1.00151      4.37  6.37E+00
+     6   1.00159      5.23  6.37E+00
+     7   0.99223      6.10  6.38E+00
+     8   1.01219      6.96  6.37E+00
+     9   1.00705      7.85  6.39E+00
+    10   1.00344      8.71  6.40E+00
+ ********************  begin active keff cycles  *********************
+    11   1.00611     10.33  6.41E+00
+    12   1.00605     11.96  6.42E+00         2    1.00608    0.00003    4.3E+08
+    13   0.99602     13.59  6.42E+00         3    1.00273    0.00335      18319
+    14   0.99699     15.23  6.43E+00         4    1.00129    0.00277      20008
+    15   1.01517     16.87  6.41E+00         5    1.00407    0.00351      10023
+    16   0.99879     18.56  6.40E+00         6    1.00319    0.00300      11371
+    17   1.00096     20.16  6.41E+00         7    1.00287    0.00255      13466
+    18   0.98631     21.81  6.43E+00         8    1.00080    0.00303       8331
+    19   0.99740     23.43  6.41E+00         9    1.00042    0.00270       9337
+    20   0.99390     25.09  6.39E+00        10    0.99977    0.00250       9759
+    21   0.98860     26.72  6.40E+00        11    0.99875    0.00248       9012
+    22   1.01812     28.36  6.40E+00        12    1.00037    0.00278       6592
+    23   0.99596     30.06  6.41E+00        13    1.00003    0.00258       7041
+    24   0.99098     31.67  6.41E+00        14    0.99938    0.00247       7108
+    25   0.99578     33.32  6.42E+00        15    0.99914    0.00232       7565
+    26   1.00168     34.96  6.41E+00        16    0.99930    0.00217       8067
+    27   0.99933     36.64  6.41E+00        17    0.99930    0.00204       8593
+    28   1.00620     38.29  6.42E+00        18    0.99969    0.00196       8784
+    29   0.98388     39.93  6.42E+00        19    0.99885    0.00203       7731
+    30   0.98477     41.54  6.44E+00        20    0.99815    0.00205       7197
