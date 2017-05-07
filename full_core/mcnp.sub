@@ -18,4 +18,4 @@
 # Mail user:
 #SBATCH --mail-user=imwangxin@gmail.com
 
-mcnp5_151.mpi i=Mark1_serp_fuel.txt o=mcnp_serp_op.o runtpe=mk.r mc=mk_fill.mc srctp=source #>> fueldens.log
+mcnp5_151.mpi i=Mark1_serp_fuel_density.txt o=mcnp_serp_den_op.o runtpe=mk.r mc=mk_fill.mc srctp=source #>> fueldens.log
