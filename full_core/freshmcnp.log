@@ -1,0 +1,213 @@
+ mcnp     ver=5.mpi, ld=11172014  05/07/17 11:13:49                   
+ mcnp_op.o already exists.  mcnp_oq.o is created instead.
+          Thread Name & Version = MCNP5_RSICC, 1.51
+          Copyright LANS/LANL/DOE - see output file
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  
+  warning.  universe map (print table 128) disabled.                                       
+ 1040 s  2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1041 s  2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1042 s  2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1043 s -2.31465e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1044 s -2.31465e+00  0           0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1045 s -2.31465e+00  0           0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ 1050 s   0          2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1051 s   0          2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1052 s   0          2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1053 s   0         -2.31465e+00  0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1054 s   0         -2.31465e+00  0          1.40000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1055 s   0         -2.31465e+00  0          1.50000e+00              
+  warning.  this surface has been replaced by a surface of type sy                         
+ 1060 s   0           0          2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1061 s   0           0          2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1062 s   0           0          2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1063 s   0           0         -2.31465e+00  1.25114e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1064 s   0           0         -2.31465e+00  1.40000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1065 s   0           0         -2.31465e+00  1.50000e+00             
+  warning.  this surface has been replaced by a surface of type sz                         
+ 1140 s  2.26291e+00  0           0          1.25114e+00              
+  warning.  this surface has been replaced by a surface of type sx                         
+ additional error messages on file mcnp_oq.o
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mk.r already exists.  ml.r is created instead.
+
+                              ctm =        0.00   nrn =                 0
+ dump    1 on file ml.r   nps =           0   coll =                0
+
+ source distribution written to file source        cycle=     0
+ xact   is done
+
+ cp0 =   0.68
+
+ comment.
+ comment. entropy of the fission source distribution will be computed
+ comment.
+ comment. the mesh for source entropy is based on the site coordinates
+ comment.   using  7 x  7 x  7 =   343  mesh cells
+ comment.
+ comment.     Xmin= -1.4685E+02     Xmax=  1.4695E+02
+ comment.     Ymin= -1.4636E+02     Ymax=  1.4635E+02
+ comment.     Zmin= -6.3595E+01     Zmax=  6.7386E+02
+ comment.
+ comment. the mesh will be automatically expanded if necessary to
+ comment.   encompass the entire fission source distribution
+ comment.
+
+
+ cycle    k(col)       ctm   entropy    active     k(col)    std dev        fom
+     1   0.99931      0.86  6.34E+00
+     2   1.00877      1.72  6.35E+00
+     3   0.99143      2.58  6.34E+00
+     4   0.99113      3.43  6.33E+00
+     5   1.00237      4.29  6.34E+00
+     6   0.99048      5.17  6.34E+00
+     7   0.98544      6.02  6.35E+00
+     8   0.98383      6.87  6.33E+00
+     9   0.99625      7.72  6.33E+00
+    10   0.99706      8.58  6.32E+00
+ ********************  begin active keff cycles  *********************
+    11   0.99361     10.18  6.30E+00
+    12   0.99153     11.81  6.31E+00         2    0.99257    0.00104     280201
+    13   1.01410     13.45  6.32E+00         3    0.99975    0.00720       3962
+    14   0.99706     15.10  6.33E+00         4    0.99907    0.00514       5802
+    15   1.00522     16.68  6.34E+00         5    1.00030    0.00416       7123
+    16   1.00140     18.33  6.35E+00         6    1.00049    0.00341       8855
+    17   0.99144     19.95  6.35E+00         7    0.99920    0.00315       8828
+    18   1.00154     21.56  6.33E+00         8    0.99949    0.00275      10195
+    19   0.99744     23.19  6.33E+00         9    0.99926    0.00243      11538
+    20   1.00670     24.82  6.35E+00        10    1.00001    0.00230      11638
+    21   1.01950     26.46  6.33E+00        11    1.00178    0.00273       7514
+    22   1.01348     28.11  6.32E+00        12    1.00275    0.00268       7176
+    23   1.00950     29.73  6.33E+00        13    1.00327    0.00252       7506
+    24   1.00058     31.36  6.32E+00        14    1.00308    0.00234       8072
+    25   1.00793     32.96  6.33E+00        15    1.00340    0.00220       8522
+    26   1.00663     34.59  6.33E+00        16    1.00360    0.00207       9044
+    27   0.99158     36.21  6.33E+00        17    1.00290    0.00207       8508
+    28   0.99353     37.80  6.34E+00        18    1.00238    0.00202       8440
+    29   0.98681     39.41  6.34E+00        19    1.00156    0.00208       7538
+    30   0.98213     41.02  6.31E+00        20    1.00059    0.00220       6392
+    31   1.00219     42.63  6.31E+00        21    1.00066    0.00209       6722
+    32   0.99874     44.31  6.33E+00        22    1.00057    0.00200       7032
+    33   1.00768     45.93  6.33E+00        23    1.00088    0.00193       7185
+    34   1.00174     47.56  6.32E+00        24    1.00092    0.00185       7508
+    35   1.00047     49.17  6.31E+00        25    1.00090    0.00177       7836
+    36   0.99788     50.78  6.33E+00        26    1.00078    0.00171       8125
+    37   1.00085     52.41  6.32E+00        27    1.00079    0.00164       8449
+    38   1.00516     54.05  6.34E+00        28    1.00094    0.00159       8689
+    39   0.99118     55.68  6.31E+00        29    1.00061    0.00157       8591
+    40   1.00559     57.29  6.32E+00        30    1.00077    0.00153       8799
+    41   1.00969     58.97  6.32E+00        31    1.00106    0.00151       8765
+    42   0.98586     60.60  6.33E+00        32    1.00059    0.00153       8180
+    43   0.99642     62.18  6.32E+00        33    1.00046    0.00149       8388
+    44   1.00190     63.84  6.34E+00        34    1.00050    0.00145       8638
+    45   0.98723     65.47  6.33E+00        35    1.00012    0.00146       8289
+    46   0.99712     67.07  6.35E+00        36    1.00004    0.00142       8505
+    47   1.00669     68.72  6.35E+00        37    1.00022    0.00139       8603
+    48   0.99668     70.37  6.35E+00        38    1.00013    0.00136       8795
+    49   1.00990     72.00  6.33E+00        39    1.00038    0.00135       8722
+    50   1.01839     73.65  6.34E+00        40    1.00083    0.00139       8011
+    51   0.98155     75.29  6.34E+00        41    1.00036    0.00143       7323
+    52   0.99755     76.87  6.32E+00        42    1.00029    0.00140       7493
+    53   0.99710     78.51  6.32E+00        43    1.00022    0.00137       7650
+    54   0.98992     80.13  6.32E+00        44    0.99998    0.00136       7596
+    55   0.98950     81.75  6.35E+00        45    0.99975    0.00135       7537
+    56   0.99894     83.40  6.34E+00        46    0.99973    0.00132       7705
+    57   0.99491     85.03  6.34E+00        47    0.99963    0.00129       7824
+    58   0.99672     86.66  6.33E+00        48    0.99957    0.00127       7975
+    59   1.01671     88.31  6.32E+00        49    0.99992    0.00129       7547
+    60   0.99627     89.97  6.34E+00        50    0.99984    0.00127       7675
+    61   0.99029     91.56  6.34E+00        51    0.99966    0.00125       7657
+    62   0.98698     93.17  6.35E+00        52    0.99941    0.00125       7513
+    63   1.00217     94.80  6.34E+00        53    0.99947    0.00123       7647
+    64   0.99955     96.46  6.33E+00        54    0.99947    0.00121       7791
+    65   0.99962     98.08  6.31E+00        55    0.99947    0.00119       7938
+    66   0.99988     99.70  6.29E+00        56    0.99948    0.00116       8086
+    67   1.00332    101.36  6.30E+00        57    0.99954    0.00115       8203
+    68   1.00452    103.01  6.31E+00        58    0.99963    0.00113       8301
+    69   1.00513    104.63  6.33E+00        59    0.99972    0.00111       8389
+    70   1.00221    106.25  6.33E+00        60    0.99977    0.00110       8523
+    71   1.00009    107.88  6.32E+00        61    0.99977    0.00108       8667
+    72   0.99897    109.52  6.31E+00        62    0.99976    0.00106       8810
+    73   1.00642    111.14  6.31E+00        63    0.99986    0.00105       8865
+    74   1.00355    112.78  6.32E+00        64    0.99992    0.00103       8980
+    75   1.00078    114.40  6.32E+00        65    0.99993    0.00102       9122
+    76   0.99281    116.00  6.33E+00        66    0.99983    0.00101       9158
+    77   0.99257    117.61  6.33E+00        67    0.99972    0.00100       9189
+    78   1.01883    119.23  6.33E+00        68    1.00000    0.00102       8630
+    79   1.00802    120.89  6.32E+00        69    1.00012    0.00102       8644
+    80   0.97415    122.49  6.33E+00        70    0.99974    0.00107       7707
+    81   1.00548    124.08  6.33E+00        71    0.99983    0.00106       7776
+    82   1.00441    125.76  6.35E+00        72    0.99989    0.00104       7855
+    83   0.98493    127.37  6.33E+00        73    0.99968    0.00105       7659
+    84   0.98069    128.97  6.34E+00        74    0.99943    0.00107       7313
+    85   0.99026    130.57  6.33E+00        75    0.99931    0.00106       7314
+    86   0.98066    132.20  6.35E+00        76    0.99906    0.00107       7021
+    87   0.99627    133.82  6.34E+00        77    0.99902    0.00106       7106
+    88   0.97780    135.48  6.34E+00        78    0.99875    0.00108       6737
+    89   1.00060    137.09  6.34E+00        79    0.99877    0.00107       6823
+    90   1.00390    138.77  6.32E+00        80    0.99884    0.00106       6883
+    91   1.00005    140.42  6.34E+00        81    0.99885    0.00104       6967
+    92   0.99942    142.03  6.34E+00        82    0.99886    0.00103       7055
+    93   1.00078    143.68  6.34E+00        83    0.99888    0.00102       7138
+    94   0.99950    145.28  6.35E+00        84    0.99889    0.00101       7226
+    95   1.01203    146.90  6.34E+00        85    0.99905    0.00101       7142
+    96   1.00215    148.56  6.33E+00        86    0.99908    0.00099       7217
+    97   1.00287    150.17  6.35E+00        87    0.99913    0.00098       7289
+    98   0.99128    151.79  6.33E+00        88    0.99904    0.00098       7311
+    99   0.98644    153.38  6.34E+00        89    0.99889    0.00098       7239
+   100   0.99416    155.00  6.33E+00        90    0.99884    0.00097       7299
+   101   1.00410    156.64  6.34E+00        91    0.99890    0.00096       7355
+   102   1.00192    158.27  6.33E+00        92    0.99893    0.00095       7428
+   103   0.98417    159.88  6.33E+00        93    0.99877    0.00095       7299
+   104   0.99866    161.47  6.34E+00        94    0.99877    0.00094       7380
+   105   0.99425    163.11  6.35E+00        95    0.99872    0.00093       7438
+   106   1.00909    164.73  6.34E+00        96    0.99883    0.00093       7418
+   107   0.99957    166.38  6.36E+00        97    0.99884    0.00092       7494
+   108   0.99860    167.99  6.33E+00        98    0.99884    0.00091       7573
+   109   0.99307    169.58  6.33E+00        99    0.99878    0.00090       7620
+   110   0.99602    171.21  6.34E+00       100    0.99875    0.00089       7690
+
+ source distribution written to file source        cycle=   110
+ run terminated when     110 kcode cycles were done.
+ comment.
+ comment. Average fission-source entropy for the last half of cycles:
+ comment.      H=  6.33E+00  with population std.dev.=  1.31E-02
+ comment.
+ comment.
+ comment. Cycle    1 is the first cycle having fission-source
+ comment.   entropy within 1 std.dev. of the average
+ comment.   entropy for the last half of cycles.
+ comment.   At least this many cycles should be discarded.
+ comment.
+ comment. Source entropy convergence check passed. 
+ comment.
+
+ final k(col/abs/trk len) = 0.99873     std dev = 0.00079
+
+
+                              ctm =      171.21   nrn =        4677663428
+ dump    2 on file ml.r   nps =     1099882   coll =        205949181
+ tally data written to file mk_fill.mc
+ mcrun  is done
+

@@ -1,0 +1,34 @@
+%%---Cross section data library path
+set title "FHR core"
+set acelib "/global/home/groups/ac_nuclear/serpent/xsdata/endfb7/sss_endfb7u.xsdata"
+include "CRCC"
+include "Vessel"
+include "Downcomer"
+include "Fuel"
+include "CR"
+include "Blanket"
+include "Corebarrel"
+include "OR"
+include "ORCC"
+
+%%---Core as a whole, universe 0
+surf 156 cylz 0.000000 0.000000 176.800000 41.600000 572.850000
+surf 158 pz 41.600000
+surf 157 pz 572.850000
+cell 52 0 fill 96  -156 158 -157 
+
+%---Outside
+cell 83 0 outside 156
+include "coreMaterials"
+%%---Neutron source and BC
+
+%%---set pop neutron-per-cycle cycles skip-cycles
+set pop 200000 500 200
+set bc 1
+set ures 1
+set gcu 3 6 9 12 15 18 21 24
+
+%%---Plot the geometry
+plot 1 700 700 0 %% yz cross plane at x=0
+plot 2 700 700 0 %% xz cross plane at y=0
+plot 3 700 700 100 %% xy cross plane at z=100

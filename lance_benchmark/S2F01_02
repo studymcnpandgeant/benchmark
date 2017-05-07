@@ -1,0 +1,52 @@
+
+plot 3 500 500
+set pop 64000 1600 20
+
+set acelib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.xsdata"
+set declib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.dec"
+set nfylib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.nfy"
+
+set bc 2
+
+therm grph gre7.20t
+
+surf 1 cuboid -4.62875 4.62875 -4.62875 4.62875 -4.62875 4.62875 
+surf 2 inf
+
+
+particle 1002
+hmix	2.5
+shell	3
+salt
+
+pbed 2 1 "FCC_pebble_1.inp"
+
+cell 1 1 salt -2
+cell 2 0 fill 2 -1
+cell 3 0 outside 1
+
+mat hmix	-1.842 moder grph 6000
+8016.09c	-7.81961E-03
+92235.09c	-9.93958E-03
+92238.09c	-4.81225E-02
+6000.09c	-9.19269E-01
+14000.09c	-1.48491E-02
+5010.09c	-8.01063E-08
+5011.09c	-3.56758E-07
+	
+mat shell	-1.73 moder grph 6000
+6000.09c	-9.99999E-01
+5010.09c	-9.16842E-08
+5011.09c	-4.08321E-07
+	
+mat salt	-1.974
+3006.09c	-6.07357E-06
+3007.09c	-1.41676E-01
+4009.09c	-9.09975E-02
+9019.09c	-7.67320E-01
+
+% --- energy grid
+ene 1 4 scale238
+% --- neutron spectrum
+det 1 de 1 dt -2
+

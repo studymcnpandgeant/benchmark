@@ -1,0 +1,143 @@
+%plot 2 500 537
+%plot 3 500 500
+
+set pop 64000 4800 20
+
+% set dt 0
+
+% set minxs 1
+
+% set ures 1
+
+set acelib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.xsdata"
+set declib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.dec"
+set nfylib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.nfy"
+
+set bc 1
+
+therm grph gre7.20t
+
+
+particle 1001
+fuel	0.025
+buffer	0.034
+PyC	0.038
+SiC	0.0415
+PyC	0.0455
+matrix
+
+pbed 3 2 "FCC_particle_1.inp"
+
+surf 100 inf
+cell 100 2 matrix -100
+cell 200 5 salt -100
+
+lat 4 6 0 0 0.2828 3
+
+particle 1002
+fill 4	2.5
+shell	3
+salt
+
+pbed 6 5 "pebble3.inp"
+
+lat 7 6 0 0 9.25 6
+
+trans 7 0 0 	53.18885
+
+surf	1	cyl	0	0	67.5	-153.2	-102.85
+surf	2	cyl	0	0	67.5	-102.85	3.5277
+surf	3	cyl	0	0	67.5	3.5277	102.85
+surf	4	cyl	0	0	67.5	102.85	153.2
+surf	5	cyl	0	0	142.5	-153.2	153.2
+
+cell    1       0       bref    -1
+cell    2       0       salt    -2
+cell    3       0       fill 7  -3
+cell    4       0       tref    -4
+cell    5       0       sref    -5      1       2       3       4
+cell    6       0       outside 5
+
+
+
+mat fuel	-10.5
+8016.09c	-1.18692E-01
+92235.09c	-1.50870E-01
+92238.09c	-7.30438E-01
+	
+mat buffer	-1.05 moder grph 6000
+6000.09c	-1
+	
+mat PyC	-1.9 moder grph 6000
+6000.09c	-1
+	
+mat SiC	-3.18 moder grph 6000
+6000.09c	-2.99556E-01
+14000.09c	-7.00444E-01
+	
+mat matrix	-1.73 moder grph 6000
+6000.09c	-9.99999445E-01
+5010.09c	-9.16842E-08
+5011.09c	-4.08321E-07
+	
+mat shell	-1.73 moder grph 6000
+6000.09c	-9.99999445E-01
+5010.09c	-9.16842E-08
+5011.09c	-4.08321E-07
+	
+mat salt	-1.974
+3006.09c	-1.21471E-05
+3007.09c	-1.41669E-01
+4009.09c	-9.09976E-02
+9019.09c	-7.67321E-01
+
+mat sref        -1.75 moder grph 6000
+6000.09c	-9.99999445E-01
+5010.09c	-9.16842E-08
+5011.09c	-4.08321E-07
+
+mat tref	-1.7976	moder grph 6000
+6000.09c	-7.663676E-01
+5010.09c	-7.026384E-08
+5011.09c	-3.129241E-07
+3006.09c	-2.837952E-06
+3007.09c	-3.309842E-02
+4009.09c	-2.125996E-02
+9019.09c	-1.792708E-01
+	
+mat bref	-1.8049	moder grph 6000
+6000.09c	-7.319444E-01
+5010.09c	-6.710777E-08
+5011.09c	-2.988684E-07
+3006.09c	-3.256095E-06
+3007.09c	-3.797513E-02
+4009.09c	-2.439239E-02
+9019.09c	-2.056845E-01
+
+% --- Normalisation
+
+set power 1E7
+
+% --- Energy Grids
+
+ene 1 4 scale238
+ene 2 1 1E-11 1E-6
+ene 3 1 1E-11 1E+3
+
+surf 501 pz  153.2
+surf 502 pz  153.2
+surf 503 cyl 0 0 142.5
+
+% --- Neutron Spectrum
+
+det Flux_Spectrum_Fuel de 1 dm fuel dt -2
+
+det Neutron_Leakage_Top     de 2 ds 501 0 dt -2
+det Neutron_Leakage_Bottom  de 2 ds 502 0 dt -2
+det Neutron_Leakage_Radial  de 2 ds 503 0 dt -2
+
+det Radial_Power_Density de 2 dx  0   143   143 dy  0   143   143 dz 52.68885  53.68885  1 dr -6 void
+det Axial_Power_Density  de 2 dx -0.5   0.5   1 dy -0.5   0.5   1 dz  3.85    102.85    99 dr -6 void
+det Radial_Thermal_Flux  de 2 dx  0   143   143 dy  0   143   143 dz 52.68885  53.68885  1 dt -2
+det Axial_Thermal_Flux   de 2 dx -0.5   0.5   1 dy -0.5   0.5   1 dz  3.85    102.85    99 dt -2
+

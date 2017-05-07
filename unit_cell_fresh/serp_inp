@@ -1,0 +1,96 @@
+set title "FHR unit cell model"
+% --- Cross section data library file path:
+set acelib "/global/home/groups/ac_nuclear/serpent/xsdata/endfb7/sss_endfb7u.xsdata"
+
+%----------------- TRISO particle
+particle 1
+fuel       0.0200
+matrix
+
+
+%----------------- TRISO particle lattice
+% infinit 3D lattice : lat <u0> <type> <x0> <y0> <p>
+lat 10 6 0. 0. 0.0886062 1 
+%pitch slightly larger than particle diameter to match packing fraction 40%
+
+%----------------- Fuel pebbles
+%Pebble
+surf 100 sph  0. 0. 0. 1.25000 % inner graphite core 
+surf 110 sph  0. 0. 0. 1.40000 % triso particle layer outer diam 
+surf 120 sph  0. 0. 0. 1.50000 % pebble diameter 
+
+cell 100 100 moderator        -100
+cell 110 100 fill 10           100 -110
+cell 120 100 shell             110
+
+%Coolant
+surf 200 inf
+cell 200 200 flibe -200
+
+%----------------- Bed(Unit cell) of pebbles-- positions are given in file pebbles_position.inp
+    %pbed <u0> <uf> "<inputfile>" [<options>]
+    %<u0> is the universe number of the dispersed medium
+    %<uf> is the universe filling the space between the particles / pebbles
+    %<inputfile> is the input file containing the particle / pebble coordinates
+    %<options> are the options
+
+pbed 1000 200 "pebbles_position_i.inp"
+
+
+%---------------- Put the pebed(unit cell) in a cube of 4.55082 cm size
+surf 300 cube 0. 0. 0. 2.275414
+cell 300 0 fill 1000  -300
+cell 400 0 outside    300
+
+
+%----------------- Reflecting boundary conditions
+set bc 2
+
+% ---------------- Materials --- [ mat <name> <dens - g/cm3> [<options>]; <iso 1> <frac 1>; <iso 2> <frac 2>]
+
+% Fuel Mix 
+mat fuel -10
+92235.09c 19.9 
+92238.09c 80.1 
+6000.09c 150.0 
+8016.09c 50.0
+
+% matrix and triso layers
+mat matrix -1.70386
+6000.09c  0.1265644
+14028.09c 0.00661035 
+
+%   Graphite in the pebble moderator core 
+mat moderator -1.59368 moder grph 6000
+6000.09c  1.0
+%
+%   Graphite in the pebble shell 
+mat shell -1.73841         moder grph 6000  
+6000.09c   1.0
+
+%
+%   Salt in the Core - 2LiF-BeF2 - (655 C)
+mat flibe -1.9628
+3006.09c  0.0001
+3007.09c  1.9999
+4009.09c  1
+9019.09c  4
+
+therm grph gre7.20t
+
+%-------------------- Neutron population and criticality cycles:
+
+set pop 100000 300 200
+
+%-------------------- Geometry plot
+plot 3 500 500 [0 -2.27541 2.27541 -2.27541 2.27541]
+plot 3 500 500 [2.27541 -2.27541 2.27541 -2.27541 2.27541]
+plot 1 500 500
+%
+%-------------------- Detectors
+ene 1 4 cas23
+det 1 de 1
+
+det 2 dm fuel % total flux in material fuel
+det 3 dr -6 fuel dt 3 2 % [dr 18 fuel : fission in fuel] [dt 3(devide) 2(result of det 2)]
+

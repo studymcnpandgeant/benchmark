@@ -1,0 +1,17 @@
+slurmstepd: *** JOB 404914 CANCELLED AT 2015-06-17T22:41:52 *** on n0047.savio0
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+
+Stack trace terminated abnormally.
+forrtl: Stale file handle
+forrtl: severe (38): error during write, unit 32, file /global/home/users/xwa9860/benchmark/mcnp/fhr_tmt.o
+Image              PC                Routine            Line        Source             
+mcnp5_151.mpi      0000000000616A54  Unknown               Unknown  Unknown
+mcnp5_151.mpi      0000000000613F6F  Unknown               Unknown  Unknown
+mcnp5_151.mpi      0000000000454DB1  Unknown               Unknown  Unknown
+mcnp5_151.mpi      00000000004FABFA  Unknown               Unknown  Unknown
+mcnp5_151.mpi      00000000004D10CF  Unknown               Unknown  Unknown
+mcnp5_151.mpi      00000000004B25F0  Unknown               Unknown  Unknown
+mcnp5_151.mpi      000000000041D7C6  Unknown               Unknown  Unknown
+libc.so.6          00002BA2963CCD5D  Unknown               Unknown  Unknown
+mcnp5_151.mpi      000000000041D6B9  Unknown               Unknown  Unknown

@@ -1,0 +1,24 @@
+#!/bin/sh
+#SBATCH --job-name=notrmcnp
+#SBATCH --output=notriso.log
+#SBATCH --error=notriso.serr
+#SBATCH --partition=savio
+#SBATCH --time=60:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+# QoS:
+#SBATCH --qos=nuclear_savio_normal
+# Account:
+#SBATCH -A co_nuclear
+##SBATCH --account=ac_nuclear
+
+# Mail type:
+#SBATCH --mail-type=all
+#
+# Mail user:
+#SBATCH --mail-user=imwangxin@gmail.com
+
+mcnp5_151.mpi i=mcnp_inp o=mcnp_op.o runtpe=mk.r mc=mk_fill.mc srctp=source #>> fueldens.log
+# mcnp5_151.mpi i=unit_cell_eq o=unit_cell.o runtpe=mk.r mc=mk_fill.mc srctp=source #>> fueldens.log
+#mcnp5_151.mpi i=Mark1_serp_fuel.txt o=serp_fuel.o runtpe=mk.r mc=mk_fill.mc srctp=source #>> fueldens.log
+#mcnp5_151.mpi i=Mark1.txt o=mk_fill.o mc=mk_fill.mc runtpe=mk_fill.r srctp=source >> mcnp_fill.log

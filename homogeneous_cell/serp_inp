@@ -1,0 +1,34 @@
+%plot 3 500 500
+set pop 64000 1600 20
+
+%set acelib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.xsdata"
+%set declib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.dec"
+%set nfylib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.nfy"
+
+set acelib "/global/home/groups/ac_nuclear/serpent/xsdata/endfb7/sss_endfb7u.xsdata"
+set bc 2
+
+therm grph gre7.20t
+
+surf 1 cuboid -4.62875 4.62875 -4.62875 4.62875 -4.62875 4.62875 
+
+cell 1 0 hmix -1
+cell 2 0 outside 1
+
+mat hmix	-1.872 moder grph 6000
+8016.09c  -2.53927E-3	
+92235.09c	-3.22769E-3
+92238.09c -1.56268E-02	
+6000.09c  -5.20535E-1	
+14028.09c	-4.82195E-03
+5010.09c       -4.63687E-08	
+5011.09c    	-2.06506E-7
+3006.09c        -5.50568E-6	
+3007.09c        -6.42115E-02	
+4009.09c        -4.12446E-02	
+9019.09c        -3.47787E-01	
+
+% --- energy grid
+ene 1 4 scale238
+% --- neutron spectrum
+det 1 de 1 dt -2

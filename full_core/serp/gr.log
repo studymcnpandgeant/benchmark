@@ -1,0 +1,1176 @@
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.21 (June 11, 2014) -- Contact: Jaakko.Leppanen@vtt.fi
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path not set
+
+Begin calculation on Sun May  7 14:58:46 2017
+
+Reading input file "serp_full_core"...
+Reading input file "CRCC"...
+Reading input file "Vessel"...
+Reading input file "Downcomer"...
+Reading input file "Fuel"...
+Reading input file "CR"...
+Reading input file "Blanket"...
+Reading input file "Corebarrel"...
+Reading input file "OR"...
+Reading input file "ORCC"...
+Reading input file "coreMaterials"...
+
+Checking duplicate input definitions...
+OK.
+
+Reading pebble bed type geometry:
+
+Reading data from file "fpb_pos_60"...
+Reading data from file "gpb_pos_60"...
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+The geometry consists of 8 levels:
+
+Level 0 size: max 2 zones
+Level 1 size: max 42 zones
+Level 2 size: max 1 zones
+Level 3 size: max 1 zones
+Level 4 size: max 15 zones
+Level 5 size: max 3 zones
+Level 6 size: max 1 zones
+Level 7 size: max 6 zones
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+Counting cells...
+OK.
+
+Processing data for group constant generation:
+
+ - 70 energy groups in micro-group structure
+ - 2 energy groups in macro-group structure
+ - B1 fundamental mode calculation is not run
+ - Group constants generated in 8 universes
+ - Discontinuity factors are not calculated
+ - Pin-power distributions are not calculated
+ - Poison cross sections are not calculated
+
+Plotting geometry:
+
+   0% complete
+  33% complete
+  67% complete
+ 100% complete
+
+Reading ACE directory files...
+OK.
+
+Adding nuclides in material Flibe900...
+
+Nuclide   3006.09c -- lithium 6 at 900K (Li-6)
+Nuclide   3007.09c -- lithium 7 at 900K (Li-7)
+Nuclide   4009.09c -- beryllium 9 at 900K (Be-9)
+Nuclide   9019.09c -- fluorine 19 at 900K (F-19)
+
+Adding nuclides in material SS316900...
+
+Nuclide   6000.09c -- natural carbon at 900K (C-nat)
+Nuclide  28000.09c -- natural nickel at 900K (Ni-nat)
+Nuclide  24000.09c -- natural chromium at 900K (Cr-nat)
+Nuclide  42000.09c -- natural molybdenum at 900K (Mo-nat)
+Nuclide  26000.09c -- natural iron at 900K (Fe-nat)
+Nuclide  14000.09c -- natural silicon at 900K (Si-nat)
+Nuclide  25055.09c -- manganese 55 at 900K (Mn-55)
+Nuclide  15031.09c -- phosphorus 31 at 900K (P-31)
+Nuclide  16000.09c -- natural sulfur at 900K (S-nat)
+
+Adding nuclides in material CentralGraphite900...
+
+Adding nuclides in material Shell900...
+
+Adding nuclides in material fuel1...
+
+Nuclide  64157.09c -- gadolinium 157 at 900K (Gd-157)
+Nuclide  93237.09c -- neptunium 237 at 900K (Np-237)
+Nuclide  44103.09c -- ruthenium 103 at 900K (Ru-103)
+Nuclide  48111.09c -- cadmium 111 at 900K (Cd-111)
+Nuclide  64156.09c -- gadolinium 156 at 900K (Gd-156)
+Nuclide  38090.09c -- strontium 90 at 900K (Sr-90)
+Nuclide  55135.09c -- cesium 135 at 900K (Cs-135)
+Nuclide  37085.09c -- rubidium 85 at 900K (Rb-85)
+Nuclide  60150.09c -- neodymium 150 at 900K (Nd-150)
+Nuclide  62149.09c -- samarium 149 at 900K (Sm-149)
+Nuclide  45105.09c -- rhodium 105 at 900K (Rh-105)
+Nuclide  58141.09c -- cerium 141 at 900K (Ce-141)
+Nuclide  46105.09c -- palladium 105 at 900K (Pd-105)
+Nuclide  42095.09c -- molybdenum 95 at 900K (Mo-95)
+Nuclide  44104.09c -- ruthenium 104 at 900K (Ru-104)
+Nuclide  94237.09c -- plutonium 237 at 900K (Pu-237)
+Nuclide  58142.09c -- cerium 142 at 900K (Ce-142)
+Nuclide  94236.09c -- plutonium 236 at 900K (Pu-236)
+Nuclide  61147.09c -- promethium 147 at 900K (Pm-147)
+Nuclide  46104.09c -- palladium 104 at 900K (Pd-104)
+Nuclide  98249.09c -- californium 249 at 900K (Cf-249)
+Nuclide  92233.09c -- uranium 233 at 900K (U-233)
+Nuclide  60148.09c -- neodymium 148 at 900K (Nd-148)
+Nuclide  38089.09c -- strontium 89 at 900K (Sr-89)
+Nuclide  48110.09c -- cadmium 110 at 900K (Cd-110)
+Nuclide  56140.09c -- barium 140 at 900K (Ba-140)
+Nuclide  98250.09c -- californium 250 at 900K (Cf-250)
+Nuclide  53129.09c -- iodine 129 at 900K (I-129)
+Nuclide  93239.09c -- neptunium 239 at 900K (Np-239)
+Nuclide  92236.09c -- uranium 236 at 900K (U-236)
+Nuclide  36086.09c -- krypton 86 at 900K (Kr-86)
+Nuclide  60143.09c -- neodymium 143 at 900K (Nd-143)
+Nuclide  36084.09c -- krypton 84 at 900K (Kr-84)
+Nuclide  92235.09c -- uranium 235 at 900K (U-235)
+Nuclide  40092.09c -- zirconium 92 at 900K (Zr-92)
+Nuclide  36083.09c -- krypton 83 at 900K (Kr-83)
+Nuclide  96242.09c -- curium 242 at 900K (Cm-242)
+Nuclide  62147.09c -- samarium 147 at 900K (Sm-147)
+Nuclide  63153.09c -- europium 153 at 900K (Eu-153)
+Nuclide  60144.09c -- neodymium 144 at 900K (Nd-144)
+Nuclide  49115.09c -- indium 115 at 900K (In-115)
+Nuclide  92238.09c -- uranium 238 at 900K (U-238)
+Nuclide  62153.09c -- samarium 153 at 900K (Sm-153)
+Nuclide  64158.09c -- gadolinium 158 at 900K (Gd-158)
+Nuclide  55137.09c -- cesium 137 at 900K (Cs-137)
+Nuclide  42098.09c -- molybdenum 98 at 900K (Mo-98)
+Nuclide  44105.09c -- ruthenium 105 at 900K (Ru-105)
+Nuclide  55134.09c -- cesium 134 at 900K (Cs-134)
+Nuclide  46107.09c -- palladium 107 at 900K (Pd-107)
+Nuclide  44102.09c -- ruthenium 102 at 900K (Ru-102)
+Nuclide  96243.09c -- curium 243 at 900K (Cm-243)
+Nuclide  64155.09c -- gadolinium 155 at 900K (Gd-155)
+Nuclide  62150.09c -- samarium 150 at 900K (Sm-150)
+Nuclide  94240.09c -- plutonium 240 at 900K (Pu-240)
+Nuclide  55133.09c -- cesium 133 at 900K (Cs-133)
+Nuclide  96247.09c -- curium 247 at 900K (Cm-247)
+Nuclide  63154.09c -- europium 154 at 900K (Eu-154)
+Nuclide  59141.09c -- praseodymium 141 at 900K (Pr-141)
+Nuclide  61149.09c -- promethium 149 at 900K (Pm-149)
+Nuclide  60146.09c -- neodymium 146 at 900K (Nd-146)
+Nuclide  96244.09c -- curium 244 at 900K (Cm-244)
+Nuclide  91233.09c -- protactinium 233 at 900K (Pa-233)
+Nuclide  96246.09c -- curium 246 at 900K (Cm-246)
+Nuclide  94244.09c -- plutonium 244 at 900K (Pu-244)
+Nuclide  58143.09c -- cerium 143 at 900K (Ce-143)
+Nuclide  44101.09c -- ruthenium 101 at 900K (Ru-101)
+Nuclide  95243.09c -- americium 243 at 900K (Am-243)
+Nuclide  62151.09c -- samarium 151 at 900K (Sm-151)
+Nuclide  96248.09c -- curium 248 at 900K (Cm-248)
+Nuclide  95244.09c -- americium 244 at 900K (Am-244)
+Nuclide  46110.09c -- palladium 110 at 900K (Pd-110)
+Nuclide  90233.09c -- thorium 233 at 900K (Th-233)
+Nuclide  95241.09c -- americium 241 at 900K (Am-241)
+Nuclide  60147.09c -- neodymium 147 at 900K (Nd-147)
+Nuclide  63156.09c -- europium 156 at 900K (Eu-156)
+Nuclide  57139.09c -- lanthanum 139 at 900K (La-139)
+Nuclide  60145.09c -- neodymium 145 at 900K (Nd-145)
+Nuclide  54134.09c -- xenon 134 at 900K (Xe-134)
+Nuclide  40093.09c -- zirconium 93 at 900K (Zr-93)
+Nuclide  48113.09c -- cadmium 113 at 900K (Cd-113)
+Nuclide  54131.09c -- xenon 131 at 900K (Xe-131)
+Nuclide  63155.09c -- europium 155 at 900K (Eu-155)
+Nuclide  59143.09c -- praseodymium 143 at 900K (Pr-143)
+Nuclide  42100.09c -- molybdenum 100 at 900K (Mo-100)
+Nuclide  46108.09c -- palladium 108 at 900K (Pd-108)
+Nuclide  94242.09c -- plutonium 242 at 900K (Pu-242)
+Nuclide  42097.09c -- molybdenum 97 at 900K (Mo-97)
+Nuclide  47109.09c -- silver 109 at 900K (Ag-109)
+Nuclide  40094.09c -- zirconium 94 at 900K (Zr-94)
+Nuclide  48114.09c -- cadmium 114 at 900K (Cd-114)
+Nuclide  94241.09c -- plutonium 241 at 900K (Pu-241)
+Nuclide  97249.09c -- berkelium 249 at 900K (Bk-249)
+Nuclide  53127.09c -- iodine 127 at 900K (I-127)
+Nuclide  90232.09c -- thorium 232 at 900K (Th-232)
+Nuclide  45103.09c -- rhodium 103 at 900K (Rh-103)
+Nuclide  94243.09c -- plutonium 243 at 900K (Pu-243)
+Nuclide  38088.09c -- strontium 88 at 900K (Sr-88)
+Nuclide  54135.09c -- xenon 135 at 900K (Xe-135)
+Nuclide  46106.09c -- palladium 106 at 900K (Pd-106)
+Nuclide  40096.09c -- zirconium 96 at 900K (Zr-96)
+Nuclide  94238.09c -- plutonium 238 at 900K (Pu-238)
+Nuclide  62154.09c -- samarium 154 at 900K (Sm-154)
+Nuclide  56138.09c -- barium 138 at 900K (Ba-138)
+Nuclide  62152.09c -- samarium 152 at 900K (Sm-152)
+Nuclide  96245.09c -- curium 245 at 900K (Cm-245)
+Nuclide  40091.09c -- zirconium 91 at 900K (Zr-91)
+Nuclide  43099.09c -- technetium 99 at 900K (Tc-99)
+Nuclide  61148.09c -- promethium 148 at 900K (Pm-148)
+Nuclide  54136.09c -- xenon 136 at 900K (Xe-136)
+Nuclide   8016.09c -- oxygen 16 at 900K (O-16)
+Nuclide  35081.09c -- bromine 81 at 900K (Br-81)
+Nuclide  94239.09c -- plutonium 239 at 900K (Pu-239)
+Nuclide  93238.09c -- neptunium 238 at 900K (Np-238)
+Nuclide  37087.09c -- rubidium 87 at 900K (Rb-87)
+Nuclide  44106.09c -- ruthenium 106 at 900K (Ru-106)
+Nuclide  92237.09c -- uranium 237 at 900K (U-237)
+Nuclide  54132.09c -- xenon 132 at 900K (Xe-132)
+Nuclide  40095.09c -- zirconium 95 at 900K (Zr-95)
+Nuclide  93236.09c -- neptunium 236 at 900K (Np-236)
+Nuclide  92239.09c -- uranium 239 at 900K (U-239)
+Nuclide  39089.09c -- yttrium 89 at 900K (Y-89)
+Nuclide  95242.09c -- americium 242 at 900K (Am-242)
+Nuclide  39091.09c -- yttrium 91 at 900K (Y-91)
+Nuclide  92234.09c -- uranium 234 at 900K (U-234)
+Nuclide  42099.09c -- molybdenum 99 at 900K (Mo-99)
+
+Adding nuclides in material Buffer900...
+
+Adding nuclides in material iPyC900...
+
+Adding nuclides in material SiC900...
+
+Nuclide  14028.09c -- silicon 28 at 900K (Si-28)
+
+Adding nuclides in material oPyC900...
+
+Adding nuclides in material Matrix900...
+
+Nuclide   5010.09c -- boron 10 at 900K (B-10)
+Nuclide   5011.09c -- boron 11 at 900K (B-11)
+
+Adding nuclides in material fuel2...
+
+Adding nuclides in material fuel3...
+
+Adding nuclides in material fuel4...
+
+Adding nuclides in material fuel5...
+
+Adding nuclides in material fuel6...
+
+Adding nuclides in material fuel7...
+
+Adding nuclides in material fuel8...
+
+Adding nuclides in material Graphite900...
+
+Adding nuclides in material Graphite900CoolantMix900...
+
+Running Doppler-broadening preprocessor:
+
+***** Sun May  7 14:59:16 2017 (seed = 1494194326)
+Warning message from function Mem:
+
+Null pointer (free)
+
+
+Adding thermal scattering data...
+
+Nuclide   gre7.20t -- natural carbon at 1000K (C-nat)
+
+Checking data and printing output...
+OK.
+
+Generating unionize energy grids...
+
+Adding points:
+
+  3006.09c -- Points added in neutron grid: 520
+  3007.09c -- Points added in neutron grid: 86
+  4009.09c -- Points added in neutron grid: 101
+  5010.09c -- Points added in neutron grid: 219
+  5011.09c -- Points added in neutron grid: 2610
+  6000.09c -- Points added in neutron grid: 582
+  6000.09s -- Points added in neutron grid: 1205
+  6000.09s -- Points added in neutron grid: 0
+  6000.09s -- Points added in neutron grid: 0
+  6000.09s -- Points added in neutron grid: 0
+  6000.09s -- Points added in neutron grid: 0
+  6000.09s -- Points added in neutron grid: 0
+  6000.09s -- Points added in neutron grid: 0
+  6000.09s -- Points added in neutron grid: 0
+  8016.09c -- Points added in neutron grid: 1526
+  9019.09c -- Points added in neutron grid: 1049
+ 14000.09c -- Points added in neutron grid: 2599
+ 14028.09c -- Points added in neutron grid: 4122
+ 15031.09c -- Points added in neutron grid: 150
+ 16000.09c -- Points added in neutron grid: 6035
+ 24000.09c -- Points added in neutron grid: 5412
+ 25055.09c -- Points added in neutron grid: 4453
+ 26000.09c -- Points added in neutron grid: 10863
+ 28000.09c -- Points added in neutron grid: 19140
+ 35081.09c -- Points added in neutron grid: 9709
+ 36083.09c -- Points added in neutron grid: 332
+ 36084.09c -- Points added in neutron grid: 3653
+ 36086.09c -- Points added in neutron grid: 4534
+ 37085.09c -- Points added in neutron grid: 7125
+ 37087.09c -- Points added in neutron grid: 1374
+ 38088.09c -- Points added in neutron grid: 3030
+ 38089.09c -- Points added in neutron grid: 49
+ 38090.09c -- Points added in neutron grid: 581
+ 39089.09c -- Points added in neutron grid: 4469
+ 39091.09c -- Points added in neutron grid: 520
+ 40091.09c -- Points added in neutron grid: 5192
+ 40092.09c -- Points added in neutron grid: 4430
+ 40093.09c -- Points added in neutron grid: 3777
+ 40094.09c -- Points added in neutron grid: 3890
+ 40095.09c -- Points added in neutron grid: 370
+ 40096.09c -- Points added in neutron grid: 2183
+ 42000.09c -- Points added in neutron grid: 2541
+ 42095.09c -- Points added in neutron grid: 4101
+ 42097.09c -- Points added in neutron grid: 5138
+ 42098.09c -- Points added in neutron grid: 6872
+ 42099.09c -- Points added in neutron grid: 387
+ 42100.09c -- Points added in neutron grid: 6699
+ 43099.09c -- Points added in neutron grid: 16790
+ 44101.09c -- Points added in neutron grid: 3224
+ 44102.09c -- Points added in neutron grid: 7241
+ 44103.09c -- Points added in neutron grid: 814
+ 44104.09c -- Points added in neutron grid: 6378
+ 44105.09c -- Points added in neutron grid: 57
+ 44106.09c -- Points added in neutron grid: 306
+ 45103.09c -- Points added in neutron grid: 10934
+ 45105.09c -- Points added in neutron grid: 109
+ 46104.09c -- Points added in neutron grid: 6139
+ 46105.09c -- Points added in neutron grid: 8948
+ 46106.09c -- Points added in neutron grid: 4900
+ 46107.09c -- Points added in neutron grid: 4301
+ 46108.09c -- Points added in neutron grid: 4892
+ 46110.09c -- Points added in neutron grid: 4487
+ 47109.09c -- Points added in neutron grid: 12805
+ 48110.09c -- Points added in neutron grid: 5279
+ 48111.09c -- Points added in neutron grid: 8027
+ 48113.09c -- Points added in neutron grid: 16415
+ 48114.09c -- Points added in neutron grid: 5071
+ 49115.09c -- Points added in neutron grid: 9571
+ 53127.09c -- Points added in neutron grid: 19489
+ 53129.09c -- Points added in neutron grid: 6795
+ 54131.09c -- Points added in neutron grid: 3995
+ 54132.09c -- Points added in neutron grid: 738
+ 54134.09c -- Points added in neutron grid: 534
+ 54135.09c -- Points added in neutron grid: 461
+ 54136.09c -- Points added in neutron grid: 1317
+ 55133.09c -- Points added in neutron grid: 9409
+ 55134.09c -- Points added in neutron grid: 1019
+ 55135.09c -- Points added in neutron grid: 835
+ 55137.09c -- Points added in neutron grid: 307
+ 56138.09c -- Points added in neutron grid: 1920
+ 56140.09c -- Points added in neutron grid: 969
+ 57139.09c -- Points added in neutron grid: 6877
+ 58141.09c -- Points added in neutron grid: 678
+ 58142.09c -- Points added in neutron grid: 2152
+ 58143.09c -- Points added in neutron grid: 1512
+ 59141.09c -- Points added in neutron grid: 8358
+ 59143.09c -- Points added in neutron grid: 581
+ 60143.09c -- Points added in neutron grid: 8188
+ 60144.09c -- Points added in neutron grid: 3214
+ 60145.09c -- Points added in neutron grid: 10701
+ 60146.09c -- Points added in neutron grid: 3421
+ 60147.09c -- Points added in neutron grid: 1032
+ 60148.09c -- Points added in neutron grid: 6372
+ 60150.09c -- Points added in neutron grid: 5831
+ 61147.09c -- Points added in neutron grid: 1691
+ 61148.09c -- Points added in neutron grid: 300
+ 61149.09c -- Points added in neutron grid: 317
+ 62147.09c -- Points added in neutron grid: 10676
+ 62149.09c -- Points added in neutron grid: 6894
+ 62150.09c -- Points added in neutron grid: 2531
+ 62151.09c -- Points added in neutron grid: 4467
+ 62152.09c -- Points added in neutron grid: 7017
+ 62153.09c -- Points added in neutron grid: 803
+ 62154.09c -- Points added in neutron grid: 3466
+ 63153.09c -- Points added in neutron grid: 2993
+ 63154.09c -- Points added in neutron grid: 806
+ 63155.09c -- Points added in neutron grid: 482
+ 63156.09c -- Points added in neutron grid: 335
+ 64155.09c -- Points added in neutron grid: 3249
+ 64156.09c -- Points added in neutron grid: 5772
+ 64157.09c -- Points added in neutron grid: 3345
+ 64158.09c -- Points added in neutron grid: 7078
+ 90232.09c -- Points added in neutron grid: 18982
+ 90233.09c -- Points added in neutron grid: 40
+ 91233.09c -- Points added in neutron grid: 3290
+ 92233.09c -- Points added in neutron grid: 6405
+ 92234.09c -- Points added in neutron grid: 8098
+ 92235.09c -- Points added in neutron grid: 24193
+ 92236.09c -- Points added in neutron grid: 7593
+ 92237.09c -- Points added in neutron grid: 2356
+ 92238.09c -- Points added in neutron grid: 52882
+ 92239.09c -- Points added in neutron grid: 178
+ 93236.09c -- Points added in neutron grid: 326
+ 93237.09c -- Points added in neutron grid: 9778
+ 93238.09c -- Points added in neutron grid: 74
+ 93239.09c -- Points added in neutron grid: 66
+ 94236.09c -- Points added in neutron grid: 219
+ 94237.09c -- Points added in neutron grid: 92
+ 94238.09c -- Points added in neutron grid: 1477
+ 94239.09c -- Points added in neutron grid: 19555
+ 94240.09c -- Points added in neutron grid: 15299
+ 94241.09c -- Points added in neutron grid: 4452
+ 94242.09c -- Points added in neutron grid: 5289
+ 94243.09c -- Points added in neutron grid: 2483
+ 94244.09c -- Points added in neutron grid: 2254
+ 95241.09c -- Points added in neutron grid: 4500
+ 95242.09c -- Points added in neutron grid: 1566
+ 95243.09c -- Points added in neutron grid: 6109
+ 95244.09c -- Points added in neutron grid: 96
+ 96242.09c -- Points added in neutron grid: 1422
+ 96243.09c -- Points added in neutron grid: 1624
+ 96244.09c -- Points added in neutron grid: 5636
+ 96245.09c -- Points added in neutron grid: 1188
+ 96246.09c -- Points added in neutron grid: 1902
+ 96247.09c -- Points added in neutron grid: 1395
+ 96248.09c -- Points added in neutron grid: 4570
+ 97249.09c -- Points added in neutron grid: 2184
+ 98249.09c -- Points added in neutron grid: 1469
+ 98250.09c -- Points added in neutron grid: 2203
+
+Generating unionized energy grid:
+
+ - Unionization performed without grid thinning
+   between 1.00E-11 and 20.0 MeV.
+
+ - Final neutron grid size: 668173 points.
+
+ - 34.16 Mb of memory allocated for grid data
+
+OK.
+
+Processing cross sections and ENDF reaction laws...
+
+Nuclide   3006.09c -- lithium 6 at 900K (Li-6)
+Nuclide   3007.09c -- lithium 7 at 900K (Li-7)
+Nuclide   4009.09c -- beryllium 9 at 900K (Be-9)
+Nuclide   5010.09c -- boron 10 at 900K (B-10)
+Nuclide   5011.09c -- boron 11 at 900K (B-11)
+Nuclide   6000.09c -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   8016.09c -- oxygen 16 at 900K (O-16)
+Nuclide   9019.09c -- fluorine 19 at 900K (F-19)
+Nuclide  14000.09c -- natural silicon at 900K (Si-nat)
+Nuclide  14028.09c -- silicon 28 at 900K (Si-28)
+Nuclide  15031.09c -- phosphorus 31 at 900K (P-31)
+Nuclide  16000.09c -- natural sulfur at 900K (S-nat)
+Nuclide  24000.09c -- natural chromium at 900K (Cr-nat)
+Nuclide  25055.09c -- manganese 55 at 900K (Mn-55)
+Nuclide  26000.09c -- natural iron at 900K (Fe-nat)
+Nuclide  28000.09c -- natural nickel at 900K (Ni-nat)
+Nuclide  35081.09c -- bromine 81 at 900K (Br-81)
+Nuclide  36083.09c -- krypton 83 at 900K (Kr-83)
+Nuclide  36084.09c -- krypton 84 at 900K (Kr-84)
+Nuclide  36086.09c -- krypton 86 at 900K (Kr-86)
+Nuclide  37085.09c -- rubidium 85 at 900K (Rb-85)
+Nuclide  37087.09c -- rubidium 87 at 900K (Rb-87)
+Nuclide  38088.09c -- strontium 88 at 900K (Sr-88)
+Nuclide  38089.09c -- strontium 89 at 900K (Sr-89)
+Nuclide  38090.09c -- strontium 90 at 900K (Sr-90)
+Nuclide  39089.09c -- yttrium 89 at 900K (Y-89)
+Nuclide  39091.09c -- yttrium 91 at 900K (Y-91)
+Nuclide  40091.09c -- zirconium 91 at 900K (Zr-91)
+Nuclide  40092.09c -- zirconium 92 at 900K (Zr-92)
+Nuclide  40093.09c -- zirconium 93 at 900K (Zr-93)
+Nuclide  40094.09c -- zirconium 94 at 900K (Zr-94)
+Nuclide  40095.09c -- zirconium 95 at 900K (Zr-95)
+Nuclide  40096.09c -- zirconium 96 at 900K (Zr-96)
+Nuclide  42000.09c -- natural molybdenum at 900K (Mo-nat)
+Nuclide  42095.09c -- molybdenum 95 at 900K (Mo-95)
+Nuclide  42097.09c -- molybdenum 97 at 900K (Mo-97)
+Nuclide  42098.09c -- molybdenum 98 at 900K (Mo-98)
+Nuclide  42099.09c -- molybdenum 99 at 900K (Mo-99)
+Nuclide  42100.09c -- molybdenum 100 at 900K (Mo-100)
+Nuclide  43099.09c -- technetium 99 at 900K (Tc-99)
+Nuclide  44101.09c -- ruthenium 101 at 900K (Ru-101)
+Nuclide  44102.09c -- ruthenium 102 at 900K (Ru-102)
+Nuclide  44103.09c -- ruthenium 103 at 900K (Ru-103)
+Nuclide  44104.09c -- ruthenium 104 at 900K (Ru-104)
+Nuclide  44105.09c -- ruthenium 105 at 900K (Ru-105)
+Nuclide  44106.09c -- ruthenium 106 at 900K (Ru-106)
+Nuclide  45103.09c -- rhodium 103 at 900K (Rh-103)
+Nuclide  45105.09c -- rhodium 105 at 900K (Rh-105)
+Nuclide  46104.09c -- palladium 104 at 900K (Pd-104)
+Nuclide  46105.09c -- palladium 105 at 900K (Pd-105)
+Nuclide  46106.09c -- palladium 106 at 900K (Pd-106)
+Nuclide  46107.09c -- palladium 107 at 900K (Pd-107)
+Nuclide  46108.09c -- palladium 108 at 900K (Pd-108)
+Nuclide  46110.09c -- palladium 110 at 900K (Pd-110)
+Nuclide  47109.09c -- silver 109 at 900K (Ag-109)
+Nuclide  48110.09c -- cadmium 110 at 900K (Cd-110)
+Nuclide  48111.09c -- cadmium 111 at 900K (Cd-111)
+Nuclide  48113.09c -- cadmium 113 at 900K (Cd-113)
+Nuclide  48114.09c -- cadmium 114 at 900K (Cd-114)
+Nuclide  49115.09c -- indium 115 at 900K (In-115)
+Nuclide  53127.09c -- iodine 127 at 900K (I-127)
+Nuclide  53129.09c -- iodine 129 at 900K (I-129)
+Nuclide  54131.09c -- xenon 131 at 900K (Xe-131)
+Nuclide  54132.09c -- xenon 132 at 900K (Xe-132)
+Nuclide  54134.09c -- xenon 134 at 900K (Xe-134)
+Nuclide  54135.09c -- xenon 135 at 900K (Xe-135)
+Nuclide  54136.09c -- xenon 136 at 900K (Xe-136)
+Nuclide  55133.09c -- cesium 133 at 900K (Cs-133)
+Nuclide  55134.09c -- cesium 134 at 900K (Cs-134)
+Nuclide  55135.09c -- cesium 135 at 900K (Cs-135)
+Nuclide  55137.09c -- cesium 137 at 900K (Cs-137)
+Nuclide  56138.09c -- barium 138 at 900K (Ba-138)
+Nuclide  56140.09c -- barium 140 at 900K (Ba-140)
+Nuclide  57139.09c -- lanthanum 139 at 900K (La-139)
+Nuclide  58141.09c -- cerium 141 at 900K (Ce-141)
+Nuclide  58142.09c -- cerium 142 at 900K (Ce-142)
+Nuclide  58143.09c -- cerium 143 at 900K (Ce-143)
+Nuclide  59141.09c -- praseodymium 141 at 900K (Pr-141)
+Nuclide  59143.09c -- praseodymium 143 at 900K (Pr-143)
+Nuclide  60143.09c -- neodymium 143 at 900K (Nd-143)
+Nuclide  60144.09c -- neodymium 144 at 900K (Nd-144)
+Nuclide  60145.09c -- neodymium 145 at 900K (Nd-145)
+Nuclide  60146.09c -- neodymium 146 at 900K (Nd-146)
+Nuclide  60147.09c -- neodymium 147 at 900K (Nd-147)
+Nuclide  60148.09c -- neodymium 148 at 900K (Nd-148)
+Nuclide  60150.09c -- neodymium 150 at 900K (Nd-150)
+Nuclide  61147.09c -- promethium 147 at 900K (Pm-147)
+Nuclide  61148.09c -- promethium 148 at 900K (Pm-148)
+Nuclide  61149.09c -- promethium 149 at 900K (Pm-149)
+Nuclide  62147.09c -- samarium 147 at 900K (Sm-147)
+Nuclide  62149.09c -- samarium 149 at 900K (Sm-149)
+Nuclide  62150.09c -- samarium 150 at 900K (Sm-150)
+Nuclide  62151.09c -- samarium 151 at 900K (Sm-151)
+Nuclide  62152.09c -- samarium 152 at 900K (Sm-152)
+Nuclide  62153.09c -- samarium 153 at 900K (Sm-153)
+Nuclide  62154.09c -- samarium 154 at 900K (Sm-154)
+Nuclide  63153.09c -- europium 153 at 900K (Eu-153)
+Nuclide  63154.09c -- europium 154 at 900K (Eu-154)
+Nuclide  63155.09c -- europium 155 at 900K (Eu-155)
+Nuclide  63156.09c -- europium 156 at 900K (Eu-156)
+Nuclide  64155.09c -- gadolinium 155 at 900K (Gd-155)
+Nuclide  64156.09c -- gadolinium 156 at 900K (Gd-156)
+Nuclide  64157.09c -- gadolinium 157 at 900K (Gd-157)
+Nuclide  64158.09c -- gadolinium 158 at 900K (Gd-158)
+Nuclide  90232.09c -- thorium 232 at 900K (Th-232)
+Nuclide  90233.09c -- thorium 233 at 900K (Th-233)
+Nuclide  91233.09c -- protactinium 233 at 900K (Pa-233)
+Nuclide  92233.09c -- uranium 233 at 900K (U-233)
+Nuclide  92234.09c -- uranium 234 at 900K (U-234)
+Nuclide  92235.09c -- uranium 235 at 900K (U-235)
+Nuclide  92236.09c -- uranium 236 at 900K (U-236)
+Nuclide  92237.09c -- uranium 237 at 900K (U-237)
+Nuclide  92238.09c -- uranium 238 at 900K (U-238)
+Nuclide  92239.09c -- uranium 239 at 900K (U-239)
+Nuclide  93236.09c -- neptunium 236 at 900K (Np-236)
+Nuclide  93237.09c -- neptunium 237 at 900K (Np-237)
+Nuclide  93238.09c -- neptunium 238 at 900K (Np-238)
+Nuclide  93239.09c -- neptunium 239 at 900K (Np-239)
+Nuclide  94236.09c -- plutonium 236 at 900K (Pu-236)
+Nuclide  94237.09c -- plutonium 237 at 900K (Pu-237)
+Nuclide  94238.09c -- plutonium 238 at 900K (Pu-238)
+Nuclide  94239.09c -- plutonium 239 at 900K (Pu-239)
+Nuclide  94240.09c -- plutonium 240 at 900K (Pu-240)
+Nuclide  94241.09c -- plutonium 241 at 900K (Pu-241)
+Nuclide  94242.09c -- plutonium 242 at 900K (Pu-242)
+Nuclide  94243.09c -- plutonium 243 at 900K (Pu-243)
+Nuclide  94244.09c -- plutonium 244 at 900K (Pu-244)
+Nuclide  95241.09c -- americium 241 at 900K (Am-241)
+Nuclide  95242.09c -- americium 242 at 900K (Am-242)
+Nuclide  95243.09c -- americium 243 at 900K (Am-243)
+Nuclide  95244.09c -- americium 244 at 900K (Am-244)
+Nuclide  96242.09c -- curium 242 at 900K (Cm-242)
+Nuclide  96243.09c -- curium 243 at 900K (Cm-243)
+Nuclide  96244.09c -- curium 244 at 900K (Cm-244)
+Nuclide  96245.09c -- curium 245 at 900K (Cm-245)
+Nuclide  96246.09c -- curium 246 at 900K (Cm-246)
+Nuclide  96247.09c -- curium 247 at 900K (Cm-247)
+Nuclide  96248.09c -- curium 248 at 900K (Cm-248)
+Nuclide  97249.09c -- berkelium 249 at 900K (Bk-249)
+Nuclide  98249.09c -- californium 249 at 900K (Cf-249)
+Nuclide  98250.09c -- californium 250 at 900K (Cf-250)
+
+SUMMARY -- 149 nuclides included in calculation:
+
+ - 149 transport nuclides
+ - Neutron energy cut-offs at 1.00E-11 and 20.0 MeV
+ - 4238 transport reactions
+ - 1487 special reactions
+ - 5.91 Gb of memory allocated for data
+ - 106 nuclides with ures ptable table data:
+
+   35081.09c (from 1.60E-02 to 1.00E-01 MeV)
+   36083.09c (from 2.72E-04 to 1.00E-01 MeV)
+   37085.09c (from 8.47E-03 to 1.00E-01 MeV)
+   37087.09c (from 1.25E-02 to 1.00E-01 MeV)
+   38089.09c (from 1.40E-03 to 1.00E-01 MeV)
+   38090.09c (from 6.00E-03 to 1.00E-01 MeV)
+   39091.09c (from 3.80E-04 to 1.00E-01 MeV)
+   40091.09c (from 2.00E-02 to 1.00E-01 MeV)
+   40092.09c (from 7.10E-02 to 1.00E-01 MeV)
+   40093.09c (from 6.80E-03 to 1.00E-01 MeV)
+   40094.09c (from 9.00E-02 to 1.00E-01 MeV)
+   40095.09c (from 1.25E-04 to 1.00E-01 MeV)
+   42000.09c (from 1.00E-03 to 1.00E-01 MeV)
+   42095.09c (from 2.14E-03 to 2.06E-01 MeV)
+   42097.09c (from 2.00E-03 to 1.00E-01 MeV)
+   42098.09c (from 3.20E-02 to 1.00E-01 MeV)
+   42099.09c (from 2.40E-05 to 1.00E-01 MeV)
+   42100.09c (from 2.60E-02 to 1.00E-01 MeV)
+   43099.09c (from 6.37E-03 to 1.42E-01 MeV)
+   44101.09c (from 1.04E-03 to 1.28E-01 MeV)
+   44102.09c (from 1.34E-02 to 1.00E-01 MeV)
+   44103.09c (from 3.50E-04 to 1.00E-01 MeV)
+   44104.09c (from 1.11E-02 to 1.00E-01 MeV)
+   44106.09c (from 5.00E-04 to 1.00E-01 MeV)
+   45103.09c (from 4.12E-03 to 4.01E-02 MeV)
+   45105.09c (from 7.50E-06 to 1.00E-01 MeV)
+   46105.09c (from 2.05E-03 to 2.83E-01 MeV)
+   46107.09c (from 1.00E-03 to 1.00E-01 MeV)
+   47109.09c (from 5.00E-03 to 8.88E-02 MeV)
+   48110.09c (from 7.00E-03 to 1.00E-01 MeV)
+   48111.09c (from 2.30E-03 to 1.00E-01 MeV)
+   48113.09c (from 1.10E-02 to 1.00E-01 MeV)
+   48114.09c (from 8.00E-03 to 1.00E-01 MeV)
+   49115.09c (from 2.00E-03 to 1.00E-01 MeV)
+   53129.09c (from 3.40E-03 to 1.00E-01 MeV)
+   54131.09c (from 3.95E-03 to 8.08E-02 MeV)
+   54132.09c (from 4.00E-03 to 1.00E-01 MeV)
+   54134.09c (from 1.00E-02 to 1.00E-01 MeV)
+   54135.09c (from 1.90E-04 to 1.00E-01 MeV)
+   55133.09c (from 3.99E-03 to 8.16E-02 MeV)
+   55134.09c (from 1.80E-04 to 1.00E-01 MeV)
+   55135.09c (from 2.20E-04 to 1.00E-01 MeV)
+   55137.09c (from 1.70E-03 to 1.00E-01 MeV)
+   56140.09c (from 2.30E-02 to 1.00E-01 MeV)
+   57139.09c (from 2.00E-02 to 1.00E-01 MeV)
+   58141.09c (from 3.50E-04 to 1.00E-01 MeV)
+   58142.09c (from 1.30E-02 to 1.00E-01 MeV)
+   58143.09c (from 4.60E-04 to 1.90E-02 MeV)
+   59141.09c (from 1.01E-02 to 1.46E-01 MeV)
+   59143.09c (from 3.75E-04 to 1.00E-01 MeV)
+   60143.09c (from 5.50E-03 to 2.25E-01 MeV)
+   60144.09c (from 9.98E-03 to 2.50E-01 MeV)
+   60145.09c (from 3.98E-03 to 6.77E-02 MeV)
+   60146.09c (from 7.60E-03 to 4.57E-01 MeV)
+   60147.09c (from 1.80E-04 to 5.03E-02 MeV)
+   60148.09c (from 9.99E-03 to 3.00E-01 MeV)
+   60150.09c (from 1.39E-02 to 1.31E-01 MeV)
+   61147.09c (from 1.02E-04 to 1.00E-01 MeV)
+   61148.09c (from 1.10E-06 to 1.00E-01 MeV)
+   61149.09c (from 2.60E-06 to 1.00E-01 MeV)
+   62147.09c (from 1.99E-03 to 1.22E-01 MeV)
+   62149.09c (from 5.20E-04 to 2.27E-02 MeV)
+   62150.09c (from 1.57E-03 to 3.36E-01 MeV)
+   62151.09c (from 2.96E-04 to 6.63E-02 MeV)
+   62152.09c (from 5.15E-03 to 1.23E-01 MeV)
+   62153.09c (from 2.50E-05 to 6.50E-03 MeV)
+   62154.09c (from 5.20E-03 to 8.25E-02 MeV)
+   63153.09c (from 9.78E-05 to 8.39E-02 MeV)
+   63154.09c (from 2.75E-05 to 1.00E-01 MeV)
+   63155.09c (from 2.97E-05 to 1.00E-01 MeV)
+   63156.09c (from 1.00E-06 to 1.00E-01 MeV)
+   64155.09c (from 1.83E-04 to 6.04E-02 MeV)
+   64156.09c (from 2.23E-03 to 9.00E-02 MeV)
+   64157.09c (from 3.07E-04 to 5.49E-02 MeV)
+   64158.09c (from 9.98E-03 to 8.00E-02 MeV)
+   90232.09c (from 4.00E-03 to 1.00E-01 MeV)
+   91233.09c (from 1.07E-04 to 7.09E-02 MeV)
+   92233.09c (from 6.00E-04 to 4.00E-02 MeV)
+   92234.09c (from 1.50E-03 to 1.00E-01 MeV)
+   92235.09c (from 2.25E-03 to 2.50E-02 MeV)
+   92236.09c (from 1.50E-03 to 1.00E-01 MeV)
+   92237.09c (from 1.03E-04 to 1.00E-02 MeV)
+   92238.09c (from 2.00E-02 to 1.49E-01 MeV)
+   92239.09c (from 1.03E-04 to 1.00E-02 MeV)
+   93237.09c (from 5.00E-04 to 3.50E-02 MeV)
+   94236.09c (from 1.00E-05 to 3.00E-02 MeV)
+   94238.09c (from 2.00E-04 to 1.00E-02 MeV)
+   94239.09c (from 2.50E-03 to 3.00E-02 MeV)
+   94240.09c (from 5.70E-03 to 4.00E-02 MeV)
+   94241.09c (from 3.00E-04 to 4.02E-02 MeV)
+   94242.09c (from 9.86E-04 to 1.00E-02 MeV)
+   94243.09c (from 1.02E-04 to 1.00E-02 MeV)
+   94244.09c (from 2.49E-04 to 1.00E-02 MeV)
+   95241.09c (from 1.50E-04 to 3.00E-02 MeV)
+   95242.09c (from 1.00E-04 to 4.43E-02 MeV)
+   95243.09c (from 2.50E-04 to 4.24E-02 MeV)
+   96242.09c (from 2.76E-04 to 1.00E-02 MeV)
+   96243.09c (from 1.00E-04 to 4.22E-02 MeV)
+   96244.09c (from 1.00E-03 to 4.00E-02 MeV)
+   96245.09c (from 1.00E-04 to 5.50E-02 MeV)
+   96246.09c (from 4.00E-04 to 4.30E-02 MeV)
+   96247.09c (from 6.00E-05 to 3.00E-02 MeV)
+   96248.09c (from 2.40E-03 to 1.00E-02 MeV)
+   97249.09c (from 6.00E-05 to 3.00E-02 MeV)
+   98249.09c (from 7.00E-05 to 3.00E-02 MeV)
+   98250.09c (from 2.86E-04 to 1.00E-02 MeV)
+
+Normalizing compositions and processing mixtures...
+OK.
+
+Allocating memory for macroscopic cross section data...
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+***** Sun May  7 14:59:36 2017 (seed = 1494194326)
+Warning message from function AllocMacroXS:
+
+Eikö tässä voisi käyttää samaa listaa fissioreaktioille?
+
+OK.
+
+Allocating memory for particle structures...
+OK.
+
+Calculating maximum densities...
+OK.
+
+Performing density cut-off...
+OK.
+
+Performing ures dilution cut-off with 1.0E-09 threshold...
+
+ - Ures ptable data used with 98 nuclides:
+
+   35081.09c (from 1.60E-02 to 1.00E-01 MeV)
+   36083.09c (from 2.72E-04 to 1.00E-01 MeV)
+   37085.09c (from 8.47E-03 to 1.00E-01 MeV)
+   37087.09c (from 1.25E-02 to 1.00E-01 MeV)
+   38089.09c (from 1.40E-03 to 1.00E-01 MeV)
+   38090.09c (from 6.00E-03 to 1.00E-01 MeV)
+   39091.09c (from 3.80E-04 to 1.00E-01 MeV)
+   40091.09c (from 2.00E-02 to 1.00E-01 MeV)
+   40092.09c (from 7.10E-02 to 1.00E-01 MeV)
+   40093.09c (from 6.80E-03 to 1.00E-01 MeV)
+   40094.09c (from 9.00E-02 to 1.00E-01 MeV)
+   40095.09c (from 1.25E-04 to 1.00E-01 MeV)
+   42000.09c (from 1.00E-03 to 1.00E-01 MeV)
+   42095.09c (from 2.14E-03 to 2.06E-01 MeV)
+   42097.09c (from 2.00E-03 to 1.00E-01 MeV)
+   42098.09c (from 3.20E-02 to 1.00E-01 MeV)
+   42099.09c (from 2.40E-05 to 1.00E-01 MeV)
+   42100.09c (from 2.60E-02 to 1.00E-01 MeV)
+   43099.09c (from 6.37E-03 to 1.42E-01 MeV)
+   44101.09c (from 1.04E-03 to 1.28E-01 MeV)
+   44102.09c (from 1.34E-02 to 1.00E-01 MeV)
+   44103.09c (from 3.50E-04 to 1.00E-01 MeV)
+   44104.09c (from 1.11E-02 to 1.00E-01 MeV)
+   44106.09c (from 5.00E-04 to 1.00E-01 MeV)
+   45103.09c (from 4.12E-03 to 4.01E-02 MeV)
+   45105.09c (from 7.50E-06 to 1.00E-01 MeV)
+   46105.09c (from 2.05E-03 to 2.83E-01 MeV)
+   46107.09c (from 1.00E-03 to 1.00E-01 MeV)
+   47109.09c (from 5.00E-03 to 8.88E-02 MeV)
+   48110.09c (from 7.00E-03 to 1.00E-01 MeV)
+   48111.09c (from 2.30E-03 to 1.00E-01 MeV)
+   48113.09c (from 1.10E-02 to 1.00E-01 MeV)
+   48114.09c (from 8.00E-03 to 1.00E-01 MeV)
+   49115.09c (from 2.00E-03 to 1.00E-01 MeV)
+   53129.09c (from 3.40E-03 to 1.00E-01 MeV)
+   54131.09c (from 3.95E-03 to 8.08E-02 MeV)
+   54132.09c (from 4.00E-03 to 1.00E-01 MeV)
+   54134.09c (from 1.00E-02 to 1.00E-01 MeV)
+   54135.09c (from 1.90E-04 to 1.00E-01 MeV)
+   55133.09c (from 3.99E-03 to 8.16E-02 MeV)
+   55134.09c (from 1.80E-04 to 1.00E-01 MeV)
+   55135.09c (from 2.20E-04 to 1.00E-01 MeV)
+   55137.09c (from 1.70E-03 to 1.00E-01 MeV)
+   56140.09c (from 2.30E-02 to 1.00E-01 MeV)
+   57139.09c (from 2.00E-02 to 1.00E-01 MeV)
+   58141.09c (from 3.50E-04 to 1.00E-01 MeV)
+   58142.09c (from 1.30E-02 to 1.00E-01 MeV)
+   58143.09c (from 4.60E-04 to 1.90E-02 MeV)
+   59141.09c (from 1.01E-02 to 1.46E-01 MeV)
+   59143.09c (from 3.75E-04 to 1.00E-01 MeV)
+   60143.09c (from 5.50E-03 to 2.25E-01 MeV)
+   60144.09c (from 9.98E-03 to 2.50E-01 MeV)
+   60145.09c (from 3.98E-03 to 6.77E-02 MeV)
+   60146.09c (from 7.60E-03 to 4.57E-01 MeV)
+   60147.09c (from 1.80E-04 to 5.03E-02 MeV)
+   60148.09c (from 9.99E-03 to 3.00E-01 MeV)
+   60150.09c (from 1.39E-02 to 1.31E-01 MeV)
+   61147.09c (from 1.02E-04 to 1.00E-01 MeV)
+   61148.09c (from 1.10E-06 to 1.00E-01 MeV)
+   61149.09c (from 2.60E-06 to 1.00E-01 MeV)
+   62147.09c (from 1.99E-03 to 1.22E-01 MeV)
+   62149.09c (from 5.20E-04 to 2.27E-02 MeV)
+   62150.09c (from 1.57E-03 to 3.36E-01 MeV)
+   62151.09c (from 2.96E-04 to 6.63E-02 MeV)
+   62152.09c (from 5.15E-03 to 1.23E-01 MeV)
+   62153.09c (from 2.50E-05 to 6.50E-03 MeV)
+   62154.09c (from 5.20E-03 to 8.25E-02 MeV)
+   63153.09c (from 9.78E-05 to 8.39E-02 MeV)
+   63154.09c (from 2.75E-05 to 1.00E-01 MeV)
+   63155.09c (from 2.97E-05 to 1.00E-01 MeV)
+   63156.09c (from 1.00E-06 to 1.00E-01 MeV)
+   64155.09c (from 1.83E-04 to 6.04E-02 MeV)
+   64156.09c (from 2.23E-03 to 9.00E-02 MeV)
+   64157.09c (from 3.07E-04 to 5.49E-02 MeV)
+   64158.09c (from 9.98E-03 to 8.00E-02 MeV)
+   92234.09c (from 1.50E-03 to 1.00E-01 MeV)
+   92235.09c (from 2.25E-03 to 2.50E-02 MeV)
+   92236.09c (from 1.50E-03 to 1.00E-01 MeV)
+   92237.09c (from 1.03E-04 to 1.00E-02 MeV)
+   92238.09c (from 2.00E-02 to 1.49E-01 MeV)
+   92239.09c (from 1.03E-04 to 1.00E-02 MeV)
+   93237.09c (from 5.00E-04 to 3.50E-02 MeV)
+   94238.09c (from 2.00E-04 to 1.00E-02 MeV)
+   94239.09c (from 2.50E-03 to 3.00E-02 MeV)
+   94240.09c (from 5.70E-03 to 4.00E-02 MeV)
+   94241.09c (from 3.00E-04 to 4.02E-02 MeV)
+   94242.09c (from 9.86E-04 to 1.00E-02 MeV)
+   94243.09c (from 1.02E-04 to 1.00E-02 MeV)
+   94244.09c (from 2.49E-04 to 1.00E-02 MeV)
+   95241.09c (from 1.50E-04 to 3.00E-02 MeV)
+   95242.09c (from 1.00E-04 to 4.43E-02 MeV)
+   95243.09c (from 2.50E-04 to 4.24E-02 MeV)
+   96242.09c (from 2.76E-04 to 1.00E-02 MeV)
+   96243.09c (from 1.00E-04 to 4.22E-02 MeV)
+   96244.09c (from 1.00E-03 to 4.00E-02 MeV)
+   96245.09c (from 1.00E-04 to 5.50E-02 MeV)
+   96246.09c (from 4.00E-04 to 4.30E-02 MeV)
+   96247.09c (from 6.00E-05 to 3.00E-02 MeV)
+
+ - Ures ptable data excluded in 8 nuclides.
+ - Sampling used from 1.00E-06 to 4.57E-01 MeV
+
+OK.
+
+Sorting material-wise reaction lists:
+
+   0% complete
+   5% complete
+  16% complete
+  26% complete
+ 100% complete
+
+Calculating macroscopic cross sections:
+
+   0% complete
+   5% complete
+  11% complete
+  16% complete
+  21% complete
+  26% complete
+  32% complete
+  37% complete
+  42% complete
+  47% complete
+  53% complete
+  58% complete
+  63% complete
+  68% complete
+  74% complete
+  79% complete
+  84% complete
+  89% complete
+  95% complete
+ 100% complete
+
+Calculating DT neutron majorant cross section:
+
+   0% complete
+ 100% complete
+
+Clearing results and statistics...
+OK.
+
+Sampling initial source...
+OK.
+
+Inactive cycle   1 / 200: k-eff = 1.00000
+Inactive cycle   2 / 200: k-eff = 0.90475
+Inactive cycle   3 / 200: k-eff = 0.92776
+Inactive cycle   4 / 200: k-eff = 0.93339
+Inactive cycle   5 / 200: k-eff = 0.93191
+Inactive cycle   6 / 200: k-eff = 0.93535
+Inactive cycle   7 / 200: k-eff = 0.93779
+Inactive cycle   8 / 200: k-eff = 0.93981
+Inactive cycle   9 / 200: k-eff = 0.93531
+Inactive cycle  10 / 200: k-eff = 0.93815
+Inactive cycle  11 / 200: k-eff = 0.93666
+Inactive cycle  12 / 200: k-eff = 0.94129
+Inactive cycle  13 / 200: k-eff = 0.93745
+Inactive cycle  14 / 200: k-eff = 0.94106
+Inactive cycle  15 / 200: k-eff = 0.94424
+Inactive cycle  16 / 200: k-eff = 0.93726
+Inactive cycle  17 / 200: k-eff = 0.94179
+Inactive cycle  18 / 200: k-eff = 0.94133
+Inactive cycle  19 / 200: k-eff = 0.94093
+Inactive cycle  20 / 200: k-eff = 0.94384
+Inactive cycle  21 / 200: k-eff = 0.94065
+Inactive cycle  22 / 200: k-eff = 0.93697
+Inactive cycle  23 / 200: k-eff = 0.94106
+Inactive cycle  24 / 200: k-eff = 0.94114
+Inactive cycle  25 / 200: k-eff = 0.93989
+Inactive cycle  26 / 200: k-eff = 0.93898
+Inactive cycle  27 / 200: k-eff = 0.94151
+Inactive cycle  28 / 200: k-eff = 0.94298
+Inactive cycle  29 / 200: k-eff = 0.94156
+Inactive cycle  30 / 200: k-eff = 0.93987
+Inactive cycle  31 / 200: k-eff = 0.94366
+Inactive cycle  32 / 200: k-eff = 0.93990
+Inactive cycle  33 / 200: k-eff = 0.93998
+Inactive cycle  34 / 200: k-eff = 0.94157
+Inactive cycle  35 / 200: k-eff = 0.94266

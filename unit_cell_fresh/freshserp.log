@@ -1,0 +1,6102 @@
+
+  _                   .-=-.           .-=-.          .-==-.       
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<   
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`       
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /            
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /             
+   `-.-`     '.____.'       `._____.'       `.____.'              
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.21 (June 11, 2014) -- Contact: Jaakko.Leppanen@vtt.fi
+
+ - MPI Parallel calculation mode available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path not set
+
+Begin calculation on Thu May  4 22:13:00 2017
+
+Reading input file "serp_inp"...
+
+Checking duplicate input definitions...
+OK.
+
+Reading pebble bed type geometry:
+
+Reading data from file "pebbles_position_i.inp"...
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+The geometry consists of 5 levels:
+
+Level 0 size: max 2 zones
+Level 1 size: max 15 zones
+Level 2 size: max 3 zones
+Level 3 size: max 1 zones
+Level 4 size: max 2 zones
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+Counting cells...
+OK.
+
+Processing data for group constant generation:
+
+ - 70 energy groups in micro-group structure
+ - 2 energy groups in macro-group structure
+ - B1 fundamental mode calculation is not run
+ - Group constants generated in 1 universes
+ - Discontinuity factors are not calculated
+ - Pin-power distributions are not calculated
+ - Poison cross sections are not calculated
+
+Plotting geometry:
+
+   0% complete
+  33% complete
+  67% complete
+ 100% complete
+
+Reading ACE directory files...
+OK.
+
+Adding nuclides in material fuel...
+
+Nuclide  92235.09c -- uranium 235 at 900K (U-235)
+Nuclide  92238.09c -- uranium 238 at 900K (U-238)
+Nuclide   6000.09c -- natural carbon at 900K (C-nat)
+Nuclide   8016.09c -- oxygen 16 at 900K (O-16)
+
+Adding nuclides in material matrix...
+
+Nuclide  14028.09c -- silicon 28 at 900K (Si-28)
+
+Adding nuclides in material moderator...
+
+Adding nuclides in material shell...
+
+Adding nuclides in material flibe...
+
+Nuclide   3006.09c -- lithium 6 at 900K (Li-6)
+Nuclide   3007.09c -- lithium 7 at 900K (Li-7)
+Nuclide   4009.09c -- beryllium 9 at 900K (Be-9)
+Nuclide   9019.09c -- fluorine 19 at 900K (F-19)
+
+Adding thermal scattering data...
+
+Nuclide   gre7.20t -- natural carbon at 1000K (C-nat)
+
+Checking data and printing output...
+OK.
+
+Generating unionize energy grids...
+
+Adding points:
+
+  3006.09c -- Points added in neutron grid: 520
+  3007.09c -- Points added in neutron grid: 86
+  4009.09c -- Points added in neutron grid: 101
+  6000.09c -- Points added in neutron grid: 770
+  6000.09s -- Points added in neutron grid: 1205
+  6000.09s -- Points added in neutron grid: 0
+  8016.09c -- Points added in neutron grid: 1836
+  9019.09c -- Points added in neutron grid: 1054
+ 14028.09c -- Points added in neutron grid: 4139
+ 92235.09c -- Points added in neutron grid: 25168
+ 92238.09c -- Points added in neutron grid: 54196
+
+Generating unionized energy grid:
+
+ - Unionization performed without grid thinning
+   between 1.00E-11 and 20.0 MeV.
+
+ - Final neutron grid size: 88841 points.
+
+ - 4.54 Mb of memory allocated for grid data
+
+OK.
+
+Processing cross sections and ENDF reaction laws...
+
+Nuclide   3006.09c -- lithium 6 at 900K (Li-6)
+Nuclide   3007.09c -- lithium 7 at 900K (Li-7)
+Nuclide   4009.09c -- beryllium 9 at 900K (Be-9)
+Nuclide   6000.09c -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   6000.09s -- natural carbon at 900K (C-nat)
+Nuclide   8016.09c -- oxygen 16 at 900K (O-16)
+Nuclide   9019.09c -- fluorine 19 at 900K (F-19)
+Nuclide  14028.09c -- silicon 28 at 900K (Si-28)
+Nuclide  92235.09c -- uranium 235 at 900K (U-235)
+Nuclide  92238.09c -- uranium 238 at 900K (U-238)
+
+SUMMARY -- 11 nuclides included in calculation:
+
+ - 11 transport nuclides
+ - Neutron energy cut-offs at 1.00E-11 and 20.0 MeV
+ - 312 transport reactions
+ - 95 special reactions
+ - 50.86 Mb of memory allocated for data
+
+Normalizing compositions and processing mixtures...
+OK.
+
+Allocating memory for macroscopic cross section data...
+OK.
+
+Allocating memory for particle structures...
+OK.
+
+Calculating maximum densities...
+OK.
+
+Performing density cut-off...
+OK.
+
+Sorting material-wise reaction lists:
+
+   0% complete
+  20% complete
+  60% complete
+  80% complete
+ 100% complete
+
+Calculating macroscopic cross sections:
+
+   0% complete
+  20% complete
+  40% complete
+  60% complete
+  80% complete
+ 100% complete
+
+Calculating DT neutron majorant cross section:
+
+   0% complete
+ 100% complete
+
+Clearing results and statistics...
+OK.
+
+Sampling initial source...
+OK.
+
+Inactive cycle   1 / 200: k-eff = 1.00000
+Inactive cycle   2 / 200: k-eff = 1.41860
+Inactive cycle   3 / 200: k-eff = 1.40900
+Inactive cycle   4 / 200: k-eff = 1.42092
+Inactive cycle   5 / 200: k-eff = 1.42656
+Inactive cycle   6 / 200: k-eff = 1.42358
+Inactive cycle   7 / 200: k-eff = 1.41935
+Inactive cycle   8 / 200: k-eff = 1.42284
+Inactive cycle   9 / 200: k-eff = 1.41853
+Inactive cycle  10 / 200: k-eff = 1.42358
+Inactive cycle  11 / 200: k-eff = 1.41397
+Inactive cycle  12 / 200: k-eff = 1.41609
+Inactive cycle  13 / 200: k-eff = 1.41766
+Inactive cycle  14 / 200: k-eff = 1.41712
+Inactive cycle  15 / 200: k-eff = 1.41161
+Inactive cycle  16 / 200: k-eff = 1.41335
+Inactive cycle  17 / 200: k-eff = 1.41735
+Inactive cycle  18 / 200: k-eff = 1.41342
+Inactive cycle  19 / 200: k-eff = 1.41290
+Inactive cycle  20 / 200: k-eff = 1.42068
+Inactive cycle  21 / 200: k-eff = 1.42554
+Inactive cycle  22 / 200: k-eff = 1.42011
+Inactive cycle  23 / 200: k-eff = 1.41682
+Inactive cycle  24 / 200: k-eff = 1.41540
+Inactive cycle  25 / 200: k-eff = 1.40969
+Inactive cycle  26 / 200: k-eff = 1.41622
+Inactive cycle  27 / 200: k-eff = 1.42082
+Inactive cycle  28 / 200: k-eff = 1.41192
+Inactive cycle  29 / 200: k-eff = 1.41986
+Inactive cycle  30 / 200: k-eff = 1.40682
+Inactive cycle  31 / 200: k-eff = 1.41271
+Inactive cycle  32 / 200: k-eff = 1.42024
+Inactive cycle  33 / 200: k-eff = 1.41305
+Inactive cycle  34 / 200: k-eff = 1.41824
+Inactive cycle  35 / 200: k-eff = 1.41949
+Inactive cycle  36 / 200: k-eff = 1.41435
+Inactive cycle  37 / 200: k-eff = 1.41278
+Inactive cycle  38 / 200: k-eff = 1.42171
+Inactive cycle  39 / 200: k-eff = 1.42040
+Inactive cycle  40 / 200: k-eff = 1.41482
+Inactive cycle  41 / 200: k-eff = 1.42693
+Inactive cycle  42 / 200: k-eff = 1.41598
+Inactive cycle  43 / 200: k-eff = 1.42353
+Inactive cycle  44 / 200: k-eff = 1.41088
+Inactive cycle  45 / 200: k-eff = 1.41543
+Inactive cycle  46 / 200: k-eff = 1.42681
+Inactive cycle  47 / 200: k-eff = 1.41641
+Inactive cycle  48 / 200: k-eff = 1.41650
+Inactive cycle  49 / 200: k-eff = 1.41371
+Inactive cycle  50 / 200: k-eff = 1.41458
+Inactive cycle  51 / 200: k-eff = 1.41689
+Inactive cycle  52 / 200: k-eff = 1.42618
+Inactive cycle  53 / 200: k-eff = 1.41934
+Inactive cycle  54 / 200: k-eff = 1.41651
+Inactive cycle  55 / 200: k-eff = 1.41089
+Inactive cycle  56 / 200: k-eff = 1.42541
+Inactive cycle  57 / 200: k-eff = 1.41998
+Inactive cycle  58 / 200: k-eff = 1.41870
+Inactive cycle  59 / 200: k-eff = 1.41488
+Inactive cycle  60 / 200: k-eff = 1.41638
+Inactive cycle  61 / 200: k-eff = 1.42266
+Inactive cycle  62 / 200: k-eff = 1.42111
+Inactive cycle  63 / 200: k-eff = 1.42176
+Inactive cycle  64 / 200: k-eff = 1.42504
+Inactive cycle  65 / 200: k-eff = 1.41701
+Inactive cycle  66 / 200: k-eff = 1.41368
+Inactive cycle  67 / 200: k-eff = 1.41609
+Inactive cycle  68 / 200: k-eff = 1.42092
+Inactive cycle  69 / 200: k-eff = 1.41881
+Inactive cycle  70 / 200: k-eff = 1.41561
+Inactive cycle  71 / 200: k-eff = 1.42432
+Inactive cycle  72 / 200: k-eff = 1.42200
+Inactive cycle  73 / 200: k-eff = 1.42585
+Inactive cycle  74 / 200: k-eff = 1.42160
+Inactive cycle  75 / 200: k-eff = 1.41870
+Inactive cycle  76 / 200: k-eff = 1.42443
+Inactive cycle  77 / 200: k-eff = 1.42113
+Inactive cycle  78 / 200: k-eff = 1.42272
+Inactive cycle  79 / 200: k-eff = 1.41354
+Inactive cycle  80 / 200: k-eff = 1.41873
+Inactive cycle  81 / 200: k-eff = 1.41929
+Inactive cycle  82 / 200: k-eff = 1.41449
+Inactive cycle  83 / 200: k-eff = 1.41167
+Inactive cycle  84 / 200: k-eff = 1.42051
+Inactive cycle  85 / 200: k-eff = 1.41903
+Inactive cycle  86 / 200: k-eff = 1.41784
+Inactive cycle  87 / 200: k-eff = 1.41613
+Inactive cycle  88 / 200: k-eff = 1.41957
+Inactive cycle  89 / 200: k-eff = 1.41395
+Inactive cycle  90 / 200: k-eff = 1.42266
+Inactive cycle  91 / 200: k-eff = 1.41746
+Inactive cycle  92 / 200: k-eff = 1.41957
+Inactive cycle  93 / 200: k-eff = 1.41622
+Inactive cycle  94 / 200: k-eff = 1.43054
+Inactive cycle  95 / 200: k-eff = 1.42017
+Inactive cycle  96 / 200: k-eff = 1.40877
+Inactive cycle  97 / 200: k-eff = 1.41481
+Inactive cycle  98 / 200: k-eff = 1.40847
+Inactive cycle  99 / 200: k-eff = 1.41502
+Inactive cycle 100 / 200: k-eff = 1.41787
+Inactive cycle 101 / 200: k-eff = 1.42720
+Inactive cycle 102 / 200: k-eff = 1.42069
+Inactive cycle 103 / 200: k-eff = 1.41827
+Inactive cycle 104 / 200: k-eff = 1.42019
+Inactive cycle 105 / 200: k-eff = 1.41475
+Inactive cycle 106 / 200: k-eff = 1.41616
+Inactive cycle 107 / 200: k-eff = 1.41608
+Inactive cycle 108 / 200: k-eff = 1.41435
+Inactive cycle 109 / 200: k-eff = 1.41951
+Inactive cycle 110 / 200: k-eff = 1.41240
+Inactive cycle 111 / 200: k-eff = 1.41299
+Inactive cycle 112 / 200: k-eff = 1.41804
+Inactive cycle 113 / 200: k-eff = 1.41899
+Inactive cycle 114 / 200: k-eff = 1.41665
+Inactive cycle 115 / 200: k-eff = 1.42241
+Inactive cycle 116 / 200: k-eff = 1.42017
+Inactive cycle 117 / 200: k-eff = 1.41866
+Inactive cycle 118 / 200: k-eff = 1.41660
+Inactive cycle 119 / 200: k-eff = 1.41601
+Inactive cycle 120 / 200: k-eff = 1.42058
+Inactive cycle 121 / 200: k-eff = 1.41405
+Inactive cycle 122 / 200: k-eff = 1.41129
+Inactive cycle 123 / 200: k-eff = 1.41583
+Inactive cycle 124 / 200: k-eff = 1.42056
+Inactive cycle 125 / 200: k-eff = 1.42387
+Inactive cycle 126 / 200: k-eff = 1.42347
+Inactive cycle 127 / 200: k-eff = 1.42101
+Inactive cycle 128 / 200: k-eff = 1.41450
+Inactive cycle 129 / 200: k-eff = 1.41422
+Inactive cycle 130 / 200: k-eff = 1.41153
+Inactive cycle 131 / 200: k-eff = 1.40856
+Inactive cycle 132 / 200: k-eff = 1.41418
+Inactive cycle 133 / 200: k-eff = 1.41005
+Inactive cycle 134 / 200: k-eff = 1.41240
+Inactive cycle 135 / 200: k-eff = 1.41717
+Inactive cycle 136 / 200: k-eff = 1.41634
+Inactive cycle 137 / 200: k-eff = 1.41499
+Inactive cycle 138 / 200: k-eff = 1.42296
+Inactive cycle 139 / 200: k-eff = 1.41639
+Inactive cycle 140 / 200: k-eff = 1.41643
+Inactive cycle 141 / 200: k-eff = 1.42068
+Inactive cycle 142 / 200: k-eff = 1.41113
+Inactive cycle 143 / 200: k-eff = 1.42828
+Inactive cycle 144 / 200: k-eff = 1.42111
+Inactive cycle 145 / 200: k-eff = 1.41495
+Inactive cycle 146 / 200: k-eff = 1.42159
+Inactive cycle 147 / 200: k-eff = 1.41371
+Inactive cycle 148 / 200: k-eff = 1.41801
+Inactive cycle 149 / 200: k-eff = 1.42526
+Inactive cycle 150 / 200: k-eff = 1.42228
+Inactive cycle 151 / 200: k-eff = 1.42185
+Inactive cycle 152 / 200: k-eff = 1.41257
+Inactive cycle 153 / 200: k-eff = 1.41665
+Inactive cycle 154 / 200: k-eff = 1.41940
+Inactive cycle 155 / 200: k-eff = 1.41789
+Inactive cycle 156 / 200: k-eff = 1.41691
+Inactive cycle 157 / 200: k-eff = 1.42448
+Inactive cycle 158 / 200: k-eff = 1.41887
+Inactive cycle 159 / 200: k-eff = 1.41495
+Inactive cycle 160 / 200: k-eff = 1.42600
+Inactive cycle 161 / 200: k-eff = 1.41920
+Inactive cycle 162 / 200: k-eff = 1.42193
+Inactive cycle 163 / 200: k-eff = 1.42170
+Inactive cycle 164 / 200: k-eff = 1.42272
+Inactive cycle 165 / 200: k-eff = 1.41458
+Inactive cycle 166 / 200: k-eff = 1.41778
+Inactive cycle 167 / 200: k-eff = 1.41772
+Inactive cycle 168 / 200: k-eff = 1.41449
+Inactive cycle 169 / 200: k-eff = 1.42062
+Inactive cycle 170 / 200: k-eff = 1.42064
+Inactive cycle 171 / 200: k-eff = 1.42532
+Inactive cycle 172 / 200: k-eff = 1.42294
+Inactive cycle 173 / 200: k-eff = 1.41715
+Inactive cycle 174 / 200: k-eff = 1.40968
+Inactive cycle 175 / 200: k-eff = 1.41047
+Inactive cycle 176 / 200: k-eff = 1.41289
+Inactive cycle 177 / 200: k-eff = 1.42093
+Inactive cycle 178 / 200: k-eff = 1.42054
+Inactive cycle 179 / 200: k-eff = 1.41586
+Inactive cycle 180 / 200: k-eff = 1.42154
+Inactive cycle 181 / 200: k-eff = 1.41955
+Inactive cycle 182 / 200: k-eff = 1.42054
+Inactive cycle 183 / 200: k-eff = 1.42061
+Inactive cycle 184 / 200: k-eff = 1.42124
+Inactive cycle 185 / 200: k-eff = 1.41804
+Inactive cycle 186 / 200: k-eff = 1.41367
+Inactive cycle 187 / 200: k-eff = 1.41700
+Inactive cycle 188 / 200: k-eff = 1.41076
+Inactive cycle 189 / 200: k-eff = 1.42020
+Inactive cycle 190 / 200: k-eff = 1.41993
+Inactive cycle 191 / 200: k-eff = 1.42261
+Inactive cycle 192 / 200: k-eff = 1.41529
+Inactive cycle 193 / 200: k-eff = 1.41783
+Inactive cycle 194 / 200: k-eff = 1.41562
+Inactive cycle 195 / 200: k-eff = 1.42141
+Inactive cycle 196 / 200: k-eff = 1.41836
+Inactive cycle 197 / 200: k-eff = 1.41058
+Inactive cycle 198 / 200: k-eff = 1.42120
+Inactive cycle 199 / 200: k-eff = 1.42138
+Inactive cycle 200 / 200: k-eff = 1.41711
+
+----- Begin active cycles -----
+
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    1 / 300  Source neutrons : 100037
+
+Running time :                  0:08:54
+Estimated running time :        0:26:59
+Estimated running time left :   0:18:05
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41764 +/- 0.00000  [1.41764  1.41764]
+k-eff (implicit)  = 1.41506 +/- 0.00000  [1.41506  1.41506]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    2 / 300  Source neutrons : 99417
+
+Running time :                  0:08:57
+Estimated running time :        0:26:58
+Estimated running time left :   0:18:00
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41350 +/- 0.00413  [1.40540  1.42160]
+k-eff (implicit)  = 1.41822 +/- 0.00316  [1.41202  1.42441]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    3 / 300  Source neutrons : 100801
+
+Running time :                  0:09:01
+Estimated running time :        0:27:02
+Estimated running time left :   0:18:00
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41589 +/- 0.00337  [1.40928  1.42250]
+k-eff (implicit)  = 1.41795 +/- 0.00184  [1.41433  1.42156]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    4 / 300  Source neutrons : 99731
+
+Running time :                  0:09:04
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:56
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41613 +/- 0.00240  [1.41143  1.42083]
+k-eff (implicit)  = 1.41858 +/- 0.00145  [1.41574  1.42143]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    5 / 300  Source neutrons : 100282
+
+Running time :                  0:09:08
+Estimated running time :        0:27:02
+Estimated running time left :   0:17:53
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41707 +/- 0.00208  [1.41299  1.42115]
+k-eff (implicit)  = 1.41811 +/- 0.00122  [1.41572  1.42050]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    6 / 300  Source neutrons : 100173
+
+Running time :                  0:09:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:17:50
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41810 +/- 0.00199  [1.41420  1.42201]
+k-eff (implicit)  = 1.41847 +/- 0.00106  [1.41640  1.42054]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    7 / 300  Source neutrons : 99538
+
+Running time :                  0:09:15
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:45
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41791 +/- 0.00169  [1.41458  1.42123]
+k-eff (implicit)  = 1.41817 +/- 0.00094  [1.41632  1.42002]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    8 / 300  Source neutrons : 100395
+
+Running time :                  0:09:19
+Estimated running time :        0:27:02
+Estimated running time left :   0:17:42
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41846 +/- 0.00157  [1.41538  1.42153]
+k-eff (implicit)  = 1.41847 +/- 0.00087  [1.41676  1.42019]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle    9 / 300  Source neutrons : 100079
+
+Running time :                  0:09:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:17:39
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41901 +/- 0.00149  [1.41609  1.42193]
+k-eff (implicit)  = 1.41847 +/- 0.00077  [1.41696  1.41998]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   10 / 300  Source neutrons : 99695
+
+Running time :                  0:09:26
+Estimated running time :        0:27:02
+Estimated running time left :   0:17:35
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41902 +/- 0.00133  [1.41641  1.42163]
+k-eff (implicit)  = 1.41872 +/- 0.00073  [1.41728  1.42016]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   11 / 300  Source neutrons : 99862
+
+Running time :                  0:09:30
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:31
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41885 +/- 0.00122  [1.41646  1.42123]
+k-eff (implicit)  = 1.41842 +/- 0.00073  [1.41699  1.41985]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   12 / 300  Source neutrons : 100276
+
+Running time :                  0:09:34
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:27
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41903 +/- 0.00113  [1.41682  1.42124]
+k-eff (implicit)  = 1.41808 +/- 0.00075  [1.41661  1.41955]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   13 / 300  Source neutrons : 99090
+
+Running time :                  0:09:37
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:23
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41819 +/- 0.00133  [1.41558  1.42080]
+k-eff (implicit)  = 1.41803 +/- 0.00069  [1.41668  1.41939]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   14 / 300  Source neutrons : 100795
+
+Running time :                  0:09:41
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:20
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41827 +/- 0.00124  [1.41585  1.42070]
+k-eff (implicit)  = 1.41817 +/- 0.00065  [1.41689  1.41945]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   15 / 300  Source neutrons : 99413
+
+Running time :                  0:09:44
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:16
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41779 +/- 0.00125  [1.41534  1.42023]
+k-eff (implicit)  = 1.41812 +/- 0.00061  [1.41692  1.41931]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   16 / 300  Source neutrons : 100608
+
+Running time :                  0:09:48
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:13
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41790 +/- 0.00117  [1.41559  1.42020]
+k-eff (implicit)  = 1.41824 +/- 0.00058  [1.41710  1.41939]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   17 / 300  Source neutrons : 99915
+
+Running time :                  0:09:52
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:09
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41792 +/- 0.00110  [1.41576  1.42009]
+k-eff (implicit)  = 1.41830 +/- 0.00055  [1.41722  1.41939]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   18 / 300  Source neutrons : 100418
+
+Running time :                  0:09:55
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:06
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41828 +/- 0.00110  [1.41612  1.42043]
+k-eff (implicit)  = 1.41820 +/- 0.00053  [1.41716  1.41924]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   19 / 300  Source neutrons : 99860
+
+Running time :                  0:09:59
+Estimated running time :        0:27:01
+Estimated running time left :   0:17:02
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41849 +/- 0.00106  [1.41641  1.42057]
+k-eff (implicit)  = 1.41823 +/- 0.00050  [1.41724  1.41921]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   20 / 300  Source neutrons : 99790
+
+Running time :                  0:10:03
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:58
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41853 +/- 0.00101  [1.41655  1.42050]
+k-eff (implicit)  = 1.41830 +/- 0.00048  [1.41735  1.41925]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   21 / 300  Source neutrons : 100312
+
+Running time :                  0:10:06
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:55
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41878 +/- 0.00099  [1.41684  1.42071]
+k-eff (implicit)  = 1.41825 +/- 0.00046  [1.41734  1.41916]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   22 / 300  Source neutrons : 99606
+
+Running time :                  0:10:10
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:51
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41875 +/- 0.00094  [1.41690  1.42059]
+k-eff (implicit)  = 1.41830 +/- 0.00044  [1.41743  1.41917]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   23 / 300  Source neutrons : 99964
+
+Running time :                  0:10:14
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:47
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41870 +/- 0.00090  [1.41693  1.42047]
+k-eff (implicit)  = 1.41825 +/- 0.00043  [1.41741  1.41909]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   24 / 300  Source neutrons : 100048
+
+Running time :                  0:10:17
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:44
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41868 +/- 0.00086  [1.41698  1.42037]
+k-eff (implicit)  = 1.41816 +/- 0.00042  [1.41734  1.41898]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   25 / 300  Source neutrons : 100465
+
+Running time :                  0:10:21
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:40
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41893 +/- 0.00087  [1.41723  1.42062]
+k-eff (implicit)  = 1.41806 +/- 0.00042  [1.41724  1.41887]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   26 / 300  Source neutrons : 99174
+
+Running time :                  0:10:25
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:36
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41870 +/- 0.00086  [1.41701  1.42039]
+k-eff (implicit)  = 1.41812 +/- 0.00040  [1.41733  1.41891]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   27 / 300  Source neutrons : 100318
+
+Running time :                  0:10:28
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:33
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41866 +/- 0.00083  [1.41704  1.42029]
+k-eff (implicit)  = 1.41828 +/- 0.00042  [1.41746  1.41910]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   28 / 300  Source neutrons : 100216
+
+Running time :                  0:10:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:29
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41873 +/- 0.00080  [1.41716  1.42031]
+k-eff (implicit)  = 1.41816 +/- 0.00042  [1.41733  1.41899]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   29 / 300  Source neutrons : 99446
+
+Running time :                  0:10:35
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:26
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41853 +/- 0.00080  [1.41696  1.42010]
+k-eff (implicit)  = 1.41814 +/- 0.00041  [1.41734  1.41894]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   30 / 300  Source neutrons : 100849
+
+Running time :                  0:10:39
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:22
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41874 +/- 0.00080  [1.41717  1.42031]
+k-eff (implicit)  = 1.41808 +/- 0.00040  [1.41730  1.41886]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   31 / 300  Source neutrons : 99380
+
+Running time :                  0:10:43
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:18
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41865 +/- 0.00078  [1.41712  1.42018]
+k-eff (implicit)  = 1.41805 +/- 0.00039  [1.41729  1.41880]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   32 / 300  Source neutrons : 100006
+
+Running time :                  0:10:46
+Estimated running time :        0:27:01
+Estimated running time left :   0:16:15
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41857 +/- 0.00076  [1.41708  1.42006]
+k-eff (implicit)  = 1.41807 +/- 0.00037  [1.41734  1.41881]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   33 / 300  Source neutrons : 100123
+
+Running time :                  0:10:50
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:11
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41854 +/- 0.00074  [1.41710  1.41999]
+k-eff (implicit)  = 1.41817 +/- 0.00038  [1.41743  1.41892]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   34 / 300  Source neutrons : 100179
+
+Running time :                  0:10:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:08
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41860 +/- 0.00072  [1.41719  1.42000]
+k-eff (implicit)  = 1.41816 +/- 0.00037  [1.41744  1.41888]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   35 / 300  Source neutrons : 99772
+
+Running time :                  0:10:57
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:04
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41855 +/- 0.00070  [1.41719  1.41992]
+k-eff (implicit)  = 1.41815 +/- 0.00036  [1.41745  1.41885]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   36 / 300  Source neutrons : 99958
+
+Running time :                  0:11:01
+Estimated running time :        0:27:02
+Estimated running time left :   0:16:00
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41850 +/- 0.00068  [1.41716  1.41983]
+k-eff (implicit)  = 1.41817 +/- 0.00035  [1.41749  1.41885]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   37 / 300  Source neutrons : 100024
+
+Running time :                  0:11:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:57
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41845 +/- 0.00066  [1.41715  1.41975]
+k-eff (implicit)  = 1.41818 +/- 0.00034  [1.41752  1.41884]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   38 / 300  Source neutrons : 100094
+
+Running time :                  0:11:08
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:53
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41844 +/- 0.00065  [1.41718  1.41971]
+k-eff (implicit)  = 1.41807 +/- 0.00034  [1.41740  1.41875]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   39 / 300  Source neutrons : 100056
+
+Running time :                  0:11:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:49
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41846 +/- 0.00063  [1.41722  1.41969]
+k-eff (implicit)  = 1.41797 +/- 0.00035  [1.41729  1.41866]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   40 / 300  Source neutrons : 99712
+
+Running time :                  0:11:15
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:46
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41837 +/- 0.00062  [1.41715  1.41958]
+k-eff (implicit)  = 1.41802 +/- 0.00035  [1.41735  1.41870]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   41 / 300  Source neutrons : 100170
+
+Running time :                  0:11:19
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:42
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41834 +/- 0.00060  [1.41715  1.41953]
+k-eff (implicit)  = 1.41811 +/- 0.00035  [1.41743  1.41879]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   42 / 300  Source neutrons : 100870
+
+Running time :                  0:11:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:38
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41861 +/- 0.00065  [1.41734  1.41988]
+k-eff (implicit)  = 1.41809 +/- 0.00034  [1.41743  1.41876]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   43 / 300  Source neutrons : 98799
+
+Running time :                  0:11:26
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:35
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41846 +/- 0.00065  [1.41719  1.41974]
+k-eff (implicit)  = 1.41819 +/- 0.00035  [1.41751  1.41887]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   44 / 300  Source neutrons : 100482
+
+Running time :                  0:11:30
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:31
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41848 +/- 0.00063  [1.41724  1.41973]
+k-eff (implicit)  = 1.41822 +/- 0.00034  [1.41756  1.41889]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   45 / 300  Source neutrons : 100382
+
+Running time :                  0:11:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:28
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41862 +/- 0.00064  [1.41737  1.41986]
+k-eff (implicit)  = 1.41827 +/- 0.00034  [1.41761  1.41892]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   46 / 300  Source neutrons : 99897
+
+Running time :                  0:11:37
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:24
+
+Estimated relative CPU usage :  1994.5%
+
+k-eff (analog)    = 1.41872 +/- 0.00063  [1.41749  1.41995]
+k-eff (implicit)  = 1.41828 +/- 0.00033  [1.41764  1.41893]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   47 / 300  Source neutrons : 99608
+
+Running time :                  0:11:41
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:20
+
+Estimated relative CPU usage :  1979.8%
+
+k-eff (analog)    = 1.41870 +/- 0.00062  [1.41749  1.41990]
+k-eff (implicit)  = 1.41826 +/- 0.00032  [1.41763  1.41889]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   48 / 300  Source neutrons : 99889
+
+Running time :                  0:11:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:17
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41864 +/- 0.00061  [1.41745  1.41983]
+k-eff (implicit)  = 1.41827 +/- 0.00032  [1.41766  1.41889]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   49 / 300  Source neutrons : 100282
+
+Running time :                  0:11:48
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:13
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41867 +/- 0.00059  [1.41750  1.41983]
+k-eff (implicit)  = 1.41827 +/- 0.00031  [1.41766  1.41887]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   50 / 300  Source neutrons : 99623
+
+Running time :                  0:11:52
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:09
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41859 +/- 0.00059  [1.41744  1.41974]
+k-eff (implicit)  = 1.41826 +/- 0.00030  [1.41767  1.41885]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   51 / 300  Source neutrons : 100705
+
+Running time :                  0:11:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:06
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41871 +/- 0.00059  [1.41756  1.41986]
+k-eff (implicit)  = 1.41832 +/- 0.00030  [1.41773  1.41891]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   52 / 300  Source neutrons : 99542
+
+Running time :                  0:11:59
+Estimated running time :        0:27:02
+Estimated running time left :   0:15:02
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41870 +/- 0.00058  [1.41757  1.41983]
+k-eff (implicit)  = 1.41828 +/- 0.00030  [1.41769  1.41886]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   53 / 300  Source neutrons : 99379
+
+Running time :                  0:12:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:58
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41852 +/- 0.00059  [1.41736  1.41968]
+k-eff (implicit)  = 1.41827 +/- 0.00029  [1.41769  1.41884]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   54 / 300  Source neutrons : 101079
+
+Running time :                  0:12:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:55
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41863 +/- 0.00059  [1.41747  1.41979]
+k-eff (implicit)  = 1.41830 +/- 0.00029  [1.41773  1.41887]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   55 / 300  Source neutrons : 99385
+
+Running time :                  0:12:10
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:51
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41858 +/- 0.00058  [1.41744  1.41972]
+k-eff (implicit)  = 1.41822 +/- 0.00030  [1.41763  1.41880]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   56 / 300  Source neutrons : 99294
+
+Running time :                  0:12:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:47
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41835 +/- 0.00062  [1.41714  1.41956]
+k-eff (implicit)  = 1.41823 +/- 0.00029  [1.41766  1.41881]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   57 / 300  Source neutrons : 100898
+
+Running time :                  0:12:17
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:44
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41835 +/- 0.00061  [1.41716  1.41954]
+k-eff (implicit)  = 1.41824 +/- 0.00029  [1.41768  1.41881]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   58 / 300  Source neutrons : 99639
+
+Running time :                  0:12:21
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:40
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41826 +/- 0.00060  [1.41709  1.41944]
+k-eff (implicit)  = 1.41827 +/- 0.00028  [1.41771  1.41882]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   59 / 300  Source neutrons : 100777
+
+Running time :                  0:12:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:37
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41837 +/- 0.00060  [1.41719  1.41954]
+k-eff (implicit)  = 1.41830 +/- 0.00028  [1.41775  1.41885]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   60 / 300  Source neutrons : 100085
+
+Running time :                  0:12:28
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:33
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41848 +/- 0.00060  [1.41730  1.41966]
+k-eff (implicit)  = 1.41828 +/- 0.00028  [1.41774  1.41882]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   61 / 300  Source neutrons : 99734
+
+Running time :                  0:12:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:29
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41854 +/- 0.00059  [1.41737  1.41970]
+k-eff (implicit)  = 1.41826 +/- 0.00027  [1.41773  1.41880]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   62 / 300  Source neutrons : 99093
+
+Running time :                  0:12:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:26
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41838 +/- 0.00061  [1.41719  1.41957]
+k-eff (implicit)  = 1.41824 +/- 0.00027  [1.41772  1.41877]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   63 / 300  Source neutrons : 100542
+
+Running time :                  0:12:39
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:22
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41835 +/- 0.00060  [1.41718  1.41952]
+k-eff (implicit)  = 1.41826 +/- 0.00027  [1.41774  1.41878]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   64 / 300  Source neutrons : 100544
+
+Running time :                  0:12:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:18
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41844 +/- 0.00059  [1.41727  1.41960]
+k-eff (implicit)  = 1.41826 +/- 0.00026  [1.41775  1.41878]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   65 / 300  Source neutrons : 99383
+
+Running time :                  0:12:46
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:15
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41839 +/- 0.00059  [1.41724  1.41954]
+k-eff (implicit)  = 1.41825 +/- 0.00026  [1.41775  1.41876]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   66 / 300  Source neutrons : 100376
+
+Running time :                  0:12:50
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:11
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41843 +/- 0.00058  [1.41729  1.41956]
+k-eff (implicit)  = 1.41825 +/- 0.00025  [1.41775  1.41875]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   67 / 300  Source neutrons : 99788
+
+Running time :                  0:12:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:07
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41841 +/- 0.00057  [1.41730  1.41953]
+k-eff (implicit)  = 1.41830 +/- 0.00025  [1.41780  1.41879]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   68 / 300  Source neutrons : 100852
+
+Running time :                  0:12:57
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:04
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41858 +/- 0.00059  [1.41743  1.41973]
+k-eff (implicit)  = 1.41828 +/- 0.00025  [1.41778  1.41877]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   69 / 300  Source neutrons : 98929
+
+Running time :                  0:13:01
+Estimated running time :        0:27:02
+Estimated running time left :   0:14:00
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41852 +/- 0.00058  [1.41738  1.41966]
+k-eff (implicit)  = 1.41830 +/- 0.00025  [1.41781  1.41878]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   70 / 300  Source neutrons : 100124
+
+Running time :                  0:13:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:57
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41849 +/- 0.00057  [1.41736  1.41961]
+k-eff (implicit)  = 1.41828 +/- 0.00025  [1.41780  1.41877]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   71 / 300  Source neutrons : 99900
+
+Running time :                  0:13:08
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:53
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41843 +/- 0.00057  [1.41732  1.41955]
+k-eff (implicit)  = 1.41827 +/- 0.00024  [1.41780  1.41875]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   72 / 300  Source neutrons : 99886
+
+Running time :                  0:13:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:49
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41836 +/- 0.00056  [1.41725  1.41947]
+k-eff (implicit)  = 1.41828 +/- 0.00024  [1.41781  1.41875]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   73 / 300  Source neutrons : 100109
+
+Running time :                  0:13:16
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:46
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41831 +/- 0.00056  [1.41721  1.41941]
+k-eff (implicit)  = 1.41831 +/- 0.00024  [1.41784  1.41877]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   74 / 300  Source neutrons : 100286
+
+Running time :                  0:13:19
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:42
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41832 +/- 0.00055  [1.41724  1.41940]
+k-eff (implicit)  = 1.41831 +/- 0.00023  [1.41785  1.41877]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   75 / 300  Source neutrons : 99779
+
+Running time :                  0:13:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:38
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41828 +/- 0.00055  [1.41721  1.41935]
+k-eff (implicit)  = 1.41832 +/- 0.00023  [1.41787  1.41877]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   76 / 300  Source neutrons : 99615
+
+Running time :                  0:13:26
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:35
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41817 +/- 0.00055  [1.41710  1.41925]
+k-eff (implicit)  = 1.41825 +/- 0.00024  [1.41778  1.41872]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   77 / 300  Source neutrons : 100333
+
+Running time :                  0:13:30
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:31
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41813 +/- 0.00054  [1.41706  1.41919]
+k-eff (implicit)  = 1.41824 +/- 0.00024  [1.41778  1.41870]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   78 / 300  Source neutrons : 99788
+
+Running time :                  0:13:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:27
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41805 +/- 0.00054  [1.41699  1.41911]
+k-eff (implicit)  = 1.41828 +/- 0.00023  [1.41782  1.41874]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   79 / 300  Source neutrons : 100906
+
+Running time :                  0:13:37
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:24
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41813 +/- 0.00054  [1.41707  1.41919]
+k-eff (implicit)  = 1.41829 +/- 0.00023  [1.41784  1.41875]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   80 / 300  Source neutrons : 99911
+
+Running time :                  0:13:41
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:20
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41820 +/- 0.00054  [1.41714  1.41925]
+k-eff (implicit)  = 1.41825 +/- 0.00023  [1.41779  1.41871]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   81 / 300  Source neutrons : 99230
+
+Running time :                  0:13:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:16
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41813 +/- 0.00054  [1.41707  1.41918]
+k-eff (implicit)  = 1.41822 +/- 0.00023  [1.41777  1.41868]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   82 / 300  Source neutrons : 99961
+
+Running time :                  0:13:48
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:13
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41805 +/- 0.00054  [1.41700  1.41910]
+k-eff (implicit)  = 1.41826 +/- 0.00023  [1.41780  1.41871]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   83 / 300  Source neutrons : 100808
+
+Running time :                  0:13:52
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:09
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41811 +/- 0.00053  [1.41707  1.41916]
+k-eff (implicit)  = 1.41825 +/- 0.00023  [1.41780  1.41870]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   84 / 300  Source neutrons : 99418
+
+Running time :                  0:13:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:06
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41807 +/- 0.00053  [1.41704  1.41911]
+k-eff (implicit)  = 1.41825 +/- 0.00023  [1.41780  1.41869]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   85 / 300  Source neutrons : 99973
+
+Running time :                  0:13:59
+Estimated running time :        0:27:02
+Estimated running time left :   0:13:02
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41803 +/- 0.00052  [1.41701  1.41906]
+k-eff (implicit)  = 1.41825 +/- 0.00022  [1.41781  1.41869]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   86 / 300  Source neutrons : 99934
+
+Running time :                  0:14:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:58
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41798 +/- 0.00052  [1.41696  1.41900]
+k-eff (implicit)  = 1.41822 +/- 0.00022  [1.41779  1.41866]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   87 / 300  Source neutrons : 100253
+
+Running time :                  0:14:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:55
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41797 +/- 0.00051  [1.41697  1.41898]
+k-eff (implicit)  = 1.41823 +/- 0.00022  [1.41779  1.41866]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   88 / 300  Source neutrons : 99876
+
+Running time :                  0:14:10
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:51
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41795 +/- 0.00051  [1.41695  1.41894]
+k-eff (implicit)  = 1.41826 +/- 0.00022  [1.41783  1.41869]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   89 / 300  Source neutrons : 100440
+
+Running time :                  0:14:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:47
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41799 +/- 0.00050  [1.41700  1.41898]
+k-eff (implicit)  = 1.41828 +/- 0.00022  [1.41785  1.41871]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   90 / 300  Source neutrons : 99868
+
+Running time :                  0:14:17
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:44
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41801 +/- 0.00050  [1.41703  1.41899]
+k-eff (implicit)  = 1.41829 +/- 0.00022  [1.41786  1.41872]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   91 / 300  Source neutrons : 99751
+
+Running time :                  0:14:21
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:40
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41799 +/- 0.00049  [1.41702  1.41896]
+k-eff (implicit)  = 1.41832 +/- 0.00022  [1.41789  1.41874]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   92 / 300  Source neutrons : 100096
+
+Running time :                  0:14:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:36
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41799 +/- 0.00049  [1.41703  1.41894]
+k-eff (implicit)  = 1.41834 +/- 0.00022  [1.41792  1.41876]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   93 / 300  Source neutrons : 100445
+
+Running time :                  0:14:28
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:33
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41805 +/- 0.00049  [1.41709  1.41901]
+k-eff (implicit)  = 1.41836 +/- 0.00021  [1.41794  1.41878]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   94 / 300  Source neutrons : 100033
+
+Running time :                  0:14:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:29
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41812 +/- 0.00049  [1.41716  1.41907]
+k-eff (implicit)  = 1.41833 +/- 0.00021  [1.41791  1.41875]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   95 / 300  Source neutrons : 99798
+
+Running time :                  0:14:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:26
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41815 +/- 0.00048  [1.41721  1.41910]
+k-eff (implicit)  = 1.41835 +/- 0.00021  [1.41793  1.41876]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   96 / 300  Source neutrons : 100154
+
+Running time :                  0:14:39
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:22
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41821 +/- 0.00048  [1.41727  1.41916]
+k-eff (implicit)  = 1.41832 +/- 0.00021  [1.41791  1.41874]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   97 / 300  Source neutrons : 99330
+
+Running time :                  0:14:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:18
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41817 +/- 0.00048  [1.41723  1.41911]
+k-eff (implicit)  = 1.41829 +/- 0.00021  [1.41788  1.41871]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   98 / 300  Source neutrons : 100156
+
+Running time :                  0:14:47
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:15
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41815 +/- 0.00047  [1.41722  1.41908]
+k-eff (implicit)  = 1.41830 +/- 0.00021  [1.41789  1.41871]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle   99 / 300  Source neutrons : 100038
+
+Running time :                  0:14:50
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:11
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41814 +/- 0.00047  [1.41722  1.41906]
+k-eff (implicit)  = 1.41827 +/- 0.00021  [1.41786  1.41868]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  100 / 300  Source neutrons : 99962
+
+Running time :                  0:14:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:07
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41812 +/- 0.00047  [1.41721  1.41904]
+k-eff (implicit)  = 1.41824 +/- 0.00021  [1.41783  1.41865]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  101 / 300  Source neutrons : 99664
+
+Running time :                  0:14:57
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:04
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41806 +/- 0.00046  [1.41715  1.41897]
+k-eff (implicit)  = 1.41823 +/- 0.00021  [1.41782  1.41864]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  102 / 300  Source neutrons : 100572
+
+Running time :                  0:15:01
+Estimated running time :        0:27:02
+Estimated running time left :   0:12:00
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41808 +/- 0.00046  [1.41717  1.41898]
+k-eff (implicit)  = 1.41823 +/- 0.00021  [1.41783  1.41864]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  103 / 300  Source neutrons : 100101
+
+Running time :                  0:15:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:56
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41811 +/- 0.00046  [1.41721  1.41900]
+k-eff (implicit)  = 1.41829 +/- 0.00021  [1.41788  1.41870]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  104 / 300  Source neutrons : 100281
+
+Running time :                  0:15:08
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:53
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41817 +/- 0.00046  [1.41728  1.41907]
+k-eff (implicit)  = 1.41829 +/- 0.00021  [1.41788  1.41870]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  105 / 300  Source neutrons : 99673
+
+Running time :                  0:15:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:49
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41820 +/- 0.00045  [1.41731  1.41909]
+k-eff (implicit)  = 1.41828 +/- 0.00021  [1.41787  1.41868]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  106 / 300  Source neutrons : 99509
+
+Running time :                  0:15:16
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:45
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41815 +/- 0.00045  [1.41727  1.41904]
+k-eff (implicit)  = 1.41831 +/- 0.00021  [1.41791  1.41872]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  107 / 300  Source neutrons : 100485
+
+Running time :                  0:15:19
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:42
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41817 +/- 0.00045  [1.41729  1.41905]
+k-eff (implicit)  = 1.41828 +/- 0.00021  [1.41787  1.41869]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  108 / 300  Source neutrons : 99408
+
+Running time :                  0:15:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:38
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41812 +/- 0.00045  [1.41724  1.41899]
+k-eff (implicit)  = 1.41831 +/- 0.00021  [1.41790  1.41872]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  109 / 300  Source neutrons : 100134
+
+Running time :                  0:15:27
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:35
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41808 +/- 0.00045  [1.41720  1.41895]
+k-eff (implicit)  = 1.41833 +/- 0.00021  [1.41792  1.41873]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  110 / 300  Source neutrons : 99804
+
+Running time :                  0:15:30
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:31
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41801 +/- 0.00045  [1.41714  1.41889]
+k-eff (implicit)  = 1.41833 +/- 0.00021  [1.41793  1.41873]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  111 / 300  Source neutrons : 100171
+
+Running time :                  0:15:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:27
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41797 +/- 0.00044  [1.41710  1.41884]
+k-eff (implicit)  = 1.41829 +/- 0.00021  [1.41789  1.41870]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  112 / 300  Source neutrons : 100179
+
+Running time :                  0:15:38
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:24
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41795 +/- 0.00044  [1.41709  1.41882]
+k-eff (implicit)  = 1.41833 +/- 0.00021  [1.41792  1.41873]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  113 / 300  Source neutrons : 100284
+
+Running time :                  0:15:41
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:20
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41797 +/- 0.00044  [1.41712  1.41883]
+k-eff (implicit)  = 1.41832 +/- 0.00021  [1.41791  1.41872]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  114 / 300  Source neutrons : 99535
+
+Running time :                  0:15:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:16
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41793 +/- 0.00043  [1.41708  1.41878]
+k-eff (implicit)  = 1.41831 +/- 0.00021  [1.41791  1.41871]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  115 / 300  Source neutrons : 100375
+
+Running time :                  0:15:48
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:13
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41794 +/- 0.00043  [1.41710  1.41878]
+k-eff (implicit)  = 1.41831 +/- 0.00020  [1.41792  1.41871]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  116 / 300  Source neutrons : 99861
+
+Running time :                  0:15:52
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:09
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41793 +/- 0.00043  [1.41709  1.41877]
+k-eff (implicit)  = 1.41829 +/- 0.00020  [1.41789  1.41868]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  117 / 300  Source neutrons : 99865
+
+Running time :                  0:15:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:05
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41790 +/- 0.00042  [1.41707  1.41874]
+k-eff (implicit)  = 1.41827 +/- 0.00020  [1.41787  1.41867]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  118 / 300  Source neutrons : 99835
+
+Running time :                  0:15:59
+Estimated running time :        0:27:02
+Estimated running time left :   0:11:02
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41786 +/- 0.00042  [1.41703  1.41869]
+k-eff (implicit)  = 1.41825 +/- 0.00020  [1.41786  1.41865]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  119 / 300  Source neutrons : 100278
+
+Running time :                  0:16:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:58
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41785 +/- 0.00042  [1.41702  1.41867]
+k-eff (implicit)  = 1.41825 +/- 0.00020  [1.41786  1.41864]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  120 / 300  Source neutrons : 100040
+
+Running time :                  0:16:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:55
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41784 +/- 0.00042  [1.41702  1.41866]
+k-eff (implicit)  = 1.41825 +/- 0.00020  [1.41787  1.41864]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  121 / 300  Source neutrons : 100116
+
+Running time :                  0:16:10
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:51
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41785 +/- 0.00041  [1.41704  1.41866]
+k-eff (implicit)  = 1.41829 +/- 0.00020  [1.41790  1.41868]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  122 / 300  Source neutrons : 100225
+
+Running time :                  0:16:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:47
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41788 +/- 0.00041  [1.41708  1.41868]
+k-eff (implicit)  = 1.41829 +/- 0.00020  [1.41790  1.41868]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  123 / 300  Source neutrons : 100210
+
+Running time :                  0:16:18
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:44
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41794 +/- 0.00041  [1.41713  1.41874]
+k-eff (implicit)  = 1.41829 +/- 0.00020  [1.41790  1.41867]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  124 / 300  Source neutrons : 99481
+
+Running time :                  0:16:21
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:40
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41793 +/- 0.00041  [1.41713  1.41873]
+k-eff (implicit)  = 1.41827 +/- 0.00020  [1.41789  1.41866]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  125 / 300  Source neutrons : 100188
+
+Running time :                  0:16:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:36
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41795 +/- 0.00040  [1.41716  1.41874]
+k-eff (implicit)  = 1.41830 +/- 0.00020  [1.41792  1.41869]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  126 / 300  Source neutrons : 99798
+
+Running time :                  0:16:28
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:33
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41794 +/- 0.00040  [1.41716  1.41873]
+k-eff (implicit)  = 1.41829 +/- 0.00020  [1.41790  1.41867]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  127 / 300  Source neutrons : 99726
+
+Running time :                  0:16:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:29
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41791 +/- 0.00040  [1.41712  1.41869]
+k-eff (implicit)  = 1.41828 +/- 0.00019  [1.41790  1.41866]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  128 / 300  Source neutrons : 100209
+
+Running time :                  0:16:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:25
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41790 +/- 0.00040  [1.41712  1.41867]
+k-eff (implicit)  = 1.41826 +/- 0.00019  [1.41788  1.41864]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  129 / 300  Source neutrons : 100235
+
+Running time :                  0:16:39
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:22
+
+Estimated relative CPU usage :  1974.0%
+
+k-eff (analog)    = 1.41791 +/- 0.00039  [1.41714  1.41868]
+k-eff (implicit)  = 1.41826 +/- 0.00019  [1.41788  1.41863]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  130 / 300  Source neutrons : 99495
+
+Running time :                  0:16:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:18
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41787 +/- 0.00039  [1.41710  1.41864]
+k-eff (implicit)  = 1.41823 +/- 0.00019  [1.41786  1.41861]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  131 / 300  Source neutrons : 100303
+
+Running time :                  0:16:47
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:15
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41786 +/- 0.00039  [1.41709  1.41862]
+k-eff (implicit)  = 1.41824 +/- 0.00019  [1.41787  1.41861]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  132 / 300  Source neutrons : 99987
+
+Running time :                  0:16:50
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:11
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41785 +/- 0.00039  [1.41709  1.41861]
+k-eff (implicit)  = 1.41823 +/- 0.00019  [1.41785  1.41860]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  133 / 300  Source neutrons : 100076
+
+Running time :                  0:16:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:07
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41785 +/- 0.00038  [1.41709  1.41860]
+k-eff (implicit)  = 1.41822 +/- 0.00019  [1.41785  1.41859]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  134 / 300  Source neutrons : 99847
+
+Running time :                  0:16:58
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:04
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41783 +/- 0.00038  [1.41708  1.41858]
+k-eff (implicit)  = 1.41819 +/- 0.00019  [1.41782  1.41856]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  135 / 300  Source neutrons : 100313
+
+Running time :                  0:17:01
+Estimated running time :        0:27:02
+Estimated running time left :   0:10:00
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41785 +/- 0.00038  [1.41710  1.41859]
+k-eff (implicit)  = 1.41819 +/- 0.00019  [1.41783  1.41856]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  136 / 300  Source neutrons : 100019
+
+Running time :                  0:17:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:56
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41786 +/- 0.00038  [1.41712  1.41860]
+k-eff (implicit)  = 1.41818 +/- 0.00019  [1.41782  1.41855]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  137 / 300  Source neutrons : 99627
+
+Running time :                  0:17:09
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:53
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41784 +/- 0.00038  [1.41711  1.41858]
+k-eff (implicit)  = 1.41818 +/- 0.00019  [1.41781  1.41854]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  138 / 300  Source neutrons : 99928
+
+Running time :                  0:17:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:49
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41781 +/- 0.00037  [1.41708  1.41854]
+k-eff (implicit)  = 1.41817 +/- 0.00018  [1.41781  1.41853]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  139 / 300  Source neutrons : 99919
+
+Running time :                  0:17:16
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:45
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41778 +/- 0.00037  [1.41704  1.41851]
+k-eff (implicit)  = 1.41819 +/- 0.00018  [1.41783  1.41855]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  140 / 300  Source neutrons : 100248
+
+Running time :                  0:17:19
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:42
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41776 +/- 0.00037  [1.41704  1.41849]
+k-eff (implicit)  = 1.41820 +/- 0.00018  [1.41785  1.41856]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  141 / 300  Source neutrons : 99849
+
+Running time :                  0:17:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:38
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41774 +/- 0.00037  [1.41702  1.41846]
+k-eff (implicit)  = 1.41822 +/- 0.00018  [1.41786  1.41857]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  142 / 300  Source neutrons : 100645
+
+Running time :                  0:17:27
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:35
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41778 +/- 0.00037  [1.41706  1.41850]
+k-eff (implicit)  = 1.41822 +/- 0.00018  [1.41786  1.41857]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  143 / 300  Source neutrons : 99769
+
+Running time :                  0:17:30
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:31
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41779 +/- 0.00037  [1.41707  1.41851]
+k-eff (implicit)  = 1.41819 +/- 0.00018  [1.41784  1.41855]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  144 / 300  Source neutrons : 99589
+
+Running time :                  0:17:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:27
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41777 +/- 0.00036  [1.41705  1.41848]
+k-eff (implicit)  = 1.41819 +/- 0.00018  [1.41784  1.41854]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  145 / 300  Source neutrons : 100055
+
+Running time :                  0:17:38
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:24
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41775 +/- 0.00036  [1.41704  1.41846]
+k-eff (implicit)  = 1.41815 +/- 0.00018  [1.41779  1.41851]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  146 / 300  Source neutrons : 100127
+
+Running time :                  0:17:41
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:20
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41774 +/- 0.00036  [1.41703  1.41844]
+k-eff (implicit)  = 1.41815 +/- 0.00018  [1.41780  1.41851]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  147 / 300  Source neutrons : 100526
+
+Running time :                  0:17:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:16
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41778 +/- 0.00036  [1.41708  1.41849]
+k-eff (implicit)  = 1.41816 +/- 0.00018  [1.41780  1.41851]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  148 / 300  Source neutrons : 99611
+
+Running time :                  0:17:49
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:13
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41779 +/- 0.00036  [1.41709  1.41849]
+k-eff (implicit)  = 1.41816 +/- 0.00018  [1.41781  1.41851]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  149 / 300  Source neutrons : 100031
+
+Running time :                  0:17:52
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:09
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41780 +/- 0.00036  [1.41710  1.41849]
+k-eff (implicit)  = 1.41816 +/- 0.00018  [1.41780  1.41851]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  150 / 300  Source neutrons : 100491
+
+Running time :                  0:17:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:05
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41785 +/- 0.00036  [1.41715  1.41855]
+k-eff (implicit)  = 1.41816 +/- 0.00018  [1.41781  1.41851]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  151 / 300  Source neutrons : 99383
+
+Running time :                  0:17:59
+Estimated running time :        0:27:02
+Estimated running time left :   0:09:02
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41785 +/- 0.00035  [1.41715  1.41854]
+k-eff (implicit)  = 1.41816 +/- 0.00018  [1.41782  1.41851]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  152 / 300  Source neutrons : 99930
+
+Running time :                  0:18:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:58
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41783 +/- 0.00035  [1.41714  1.41853]
+k-eff (implicit)  = 1.41814 +/- 0.00018  [1.41780  1.41849]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  153 / 300  Source neutrons : 99771
+
+Running time :                  0:18:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:54
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41780 +/- 0.00035  [1.41711  1.41849]
+k-eff (implicit)  = 1.41815 +/- 0.00018  [1.41781  1.41850]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  154 / 300  Source neutrons : 100472
+
+Running time :                  0:18:10
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:51
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41781 +/- 0.00035  [1.41713  1.41850]
+k-eff (implicit)  = 1.41814 +/- 0.00018  [1.41779  1.41848]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  155 / 300  Source neutrons : 99759
+
+Running time :                  0:18:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:47
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41780 +/- 0.00035  [1.41712  1.41848]
+k-eff (implicit)  = 1.41814 +/- 0.00017  [1.41779  1.41848]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  156 / 300  Source neutrons : 100495
+
+Running time :                  0:18:18
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:44
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41784 +/- 0.00035  [1.41716  1.41852]
+k-eff (implicit)  = 1.41815 +/- 0.00017  [1.41781  1.41849]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  157 / 300  Source neutrons : 100054
+
+Running time :                  0:18:21
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:40
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41788 +/- 0.00035  [1.41720  1.41856]
+k-eff (implicit)  = 1.41813 +/- 0.00017  [1.41779  1.41847]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  158 / 300  Source neutrons : 99182
+
+Running time :                  0:18:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:36
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41784 +/- 0.00035  [1.41716  1.41852]
+k-eff (implicit)  = 1.41813 +/- 0.00017  [1.41779  1.41847]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  159 / 300  Source neutrons : 100380
+
+Running time :                  0:18:29
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:33
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41784 +/- 0.00034  [1.41717  1.41852]
+k-eff (implicit)  = 1.41811 +/- 0.00017  [1.41777  1.41845]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  160 / 300  Source neutrons : 99991
+
+Running time :                  0:18:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:29
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41784 +/- 0.00034  [1.41717  1.41851]
+k-eff (implicit)  = 1.41810 +/- 0.00017  [1.41777  1.41844]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  161 / 300  Source neutrons : 100315
+
+Running time :                  0:18:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:25
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41787 +/- 0.00034  [1.41720  1.41853]
+k-eff (implicit)  = 1.41810 +/- 0.00017  [1.41777  1.41844]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  162 / 300  Source neutrons : 100104
+
+Running time :                  0:18:40
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:22
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41790 +/- 0.00034  [1.41723  1.41857]
+k-eff (implicit)  = 1.41808 +/- 0.00017  [1.41775  1.41842]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  163 / 300  Source neutrons : 99883
+
+Running time :                  0:18:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:18
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41792 +/- 0.00034  [1.41726  1.41859]
+k-eff (implicit)  = 1.41808 +/- 0.00017  [1.41775  1.41841]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  164 / 300  Source neutrons : 99652
+
+Running time :                  0:18:47
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:14
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41792 +/- 0.00034  [1.41726  1.41858]
+k-eff (implicit)  = 1.41807 +/- 0.00017  [1.41774  1.41841]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  165 / 300  Source neutrons : 99707
+
+Running time :                  0:18:50
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:11
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41789 +/- 0.00034  [1.41723  1.41855]
+k-eff (implicit)  = 1.41808 +/- 0.00017  [1.41776  1.41841]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  166 / 300  Source neutrons : 100394
+
+Running time :                  0:18:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:07
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41789 +/- 0.00033  [1.41723  1.41855]
+k-eff (implicit)  = 1.41809 +/- 0.00017  [1.41776  1.41842]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  167 / 300  Source neutrons : 99867
+
+Running time :                  0:18:58
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:04
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41788 +/- 0.00033  [1.41723  1.41853]
+k-eff (implicit)  = 1.41809 +/- 0.00017  [1.41777  1.41842]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  168 / 300  Source neutrons : 100098
+
+Running time :                  0:19:01
+Estimated running time :        0:27:02
+Estimated running time left :   0:08:00
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41788 +/- 0.00033  [1.41723  1.41853]
+k-eff (implicit)  = 1.41809 +/- 0.00016  [1.41777  1.41841]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  169 / 300  Source neutrons : 100498
+
+Running time :                  0:19:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:56
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41792 +/- 0.00033  [1.41727  1.41857]
+k-eff (implicit)  = 1.41808 +/- 0.00016  [1.41776  1.41840]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  170 / 300  Source neutrons : 99362
+
+Running time :                  0:19:09
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:53
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41791 +/- 0.00033  [1.41726  1.41856]
+k-eff (implicit)  = 1.41807 +/- 0.00016  [1.41775  1.41839]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  171 / 300  Source neutrons : 100362
+
+Running time :                  0:19:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:49
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41793 +/- 0.00033  [1.41728  1.41857]
+k-eff (implicit)  = 1.41807 +/- 0.00016  [1.41775  1.41839]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  172 / 300  Source neutrons : 99955
+
+Running time :                  0:19:16
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:45
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41794 +/- 0.00033  [1.41730  1.41858]
+k-eff (implicit)  = 1.41808 +/- 0.00016  [1.41776  1.41839]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  173 / 300  Source neutrons : 100378
+
+Running time :                  0:19:20
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:42
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41798 +/- 0.00033  [1.41734  1.41863]
+k-eff (implicit)  = 1.41806 +/- 0.00016  [1.41774  1.41838]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  174 / 300  Source neutrons : 99826
+
+Running time :                  0:19:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:38
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41801 +/- 0.00033  [1.41737  1.41866]
+k-eff (implicit)  = 1.41804 +/- 0.00016  [1.41772  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  175 / 300  Source neutrons : 99424
+
+Running time :                  0:19:27
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:34
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41800 +/- 0.00033  [1.41736  1.41864]
+k-eff (implicit)  = 1.41804 +/- 0.00016  [1.41773  1.41836]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  176 / 300  Source neutrons : 100167
+
+Running time :                  0:19:30
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:31
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41799 +/- 0.00032  [1.41736  1.41863]
+k-eff (implicit)  = 1.41803 +/- 0.00016  [1.41772  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  177 / 300  Source neutrons : 100299
+
+Running time :                  0:19:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:27
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41801 +/- 0.00032  [1.41738  1.41865]
+k-eff (implicit)  = 1.41803 +/- 0.00016  [1.41772  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  178 / 300  Source neutrons : 99529
+
+Running time :                  0:19:38
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:23
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41799 +/- 0.00032  [1.41736  1.41863]
+k-eff (implicit)  = 1.41802 +/- 0.00016  [1.41771  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  179 / 300  Source neutrons : 100211
+
+Running time :                  0:19:41
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:20
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41799 +/- 0.00032  [1.41737  1.41862]
+k-eff (implicit)  = 1.41800 +/- 0.00016  [1.41769  1.41832]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  180 / 300  Source neutrons : 99900
+
+Running time :                  0:19:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:16
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41799 +/- 0.00032  [1.41736  1.41861]
+k-eff (implicit)  = 1.41802 +/- 0.00016  [1.41770  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  181 / 300  Source neutrons : 99940
+
+Running time :                  0:19:49
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:13
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41797 +/- 0.00032  [1.41735  1.41859]
+k-eff (implicit)  = 1.41802 +/- 0.00016  [1.41771  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  182 / 300  Source neutrons : 100226
+
+Running time :                  0:19:52
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:09
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41798 +/- 0.00031  [1.41736  1.41859]
+k-eff (implicit)  = 1.41802 +/- 0.00016  [1.41771  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  183 / 300  Source neutrons : 99935
+
+Running time :                  0:19:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:05
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41798 +/- 0.00031  [1.41736  1.41859]
+k-eff (implicit)  = 1.41803 +/- 0.00016  [1.41772  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  184 / 300  Source neutrons : 100100
+
+Running time :                  0:20:00
+Estimated running time :        0:27:02
+Estimated running time left :   0:07:02
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41798 +/- 0.00031  [1.41737  1.41859]
+k-eff (implicit)  = 1.41804 +/- 0.00016  [1.41773  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  185 / 300  Source neutrons : 100135
+
+Running time :                  0:20:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:58
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41800 +/- 0.00031  [1.41739  1.41861]
+k-eff (implicit)  = 1.41804 +/- 0.00016  [1.41773  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  186 / 300  Source neutrons : 100218
+
+Running time :                  0:20:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:54
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41803 +/- 0.00031  [1.41743  1.41864]
+k-eff (implicit)  = 1.41804 +/- 0.00016  [1.41774  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  187 / 300  Source neutrons : 99376
+
+Running time :                  0:20:10
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:51
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41802 +/- 0.00031  [1.41741  1.41863]
+k-eff (implicit)  = 1.41805 +/- 0.00016  [1.41775  1.41836]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  188 / 300  Source neutrons : 100191
+
+Running time :                  0:20:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:47
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41802 +/- 0.00031  [1.41742  1.41862]
+k-eff (implicit)  = 1.41806 +/- 0.00015  [1.41776  1.41837]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  189 / 300  Source neutrons : 99778
+
+Running time :                  0:20:18
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:43
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41800 +/- 0.00031  [1.41740  1.41860]
+k-eff (implicit)  = 1.41808 +/- 0.00015  [1.41777  1.41838]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  190 / 300  Source neutrons : 100252
+
+Running time :                  0:20:21
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:40
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41801 +/- 0.00030  [1.41741  1.41860]
+k-eff (implicit)  = 1.41806 +/- 0.00015  [1.41776  1.41836]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  191 / 300  Source neutrons : 99651
+
+Running time :                  0:20:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:36
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41798 +/- 0.00030  [1.41739  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41775  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  192 / 300  Source neutrons : 100131
+
+Running time :                  0:20:29
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:33
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41797 +/- 0.00030  [1.41738  1.41856]
+k-eff (implicit)  = 1.41803 +/- 0.00015  [1.41773  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  193 / 300  Source neutrons : 100021
+
+Running time :                  0:20:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:29
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41796 +/- 0.00030  [1.41737  1.41855]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41775  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  194 / 300  Source neutrons : 100559
+
+Running time :                  0:20:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:25
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41799 +/- 0.00030  [1.41740  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41774  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  195 / 300  Source neutrons : 99421
+
+Running time :                  0:20:40
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:22
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41797 +/- 0.00030  [1.41739  1.41856]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41775  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  196 / 300  Source neutrons : 100437
+
+Running time :                  0:20:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:18
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41799 +/- 0.00030  [1.41741  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41775  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  197 / 300  Source neutrons : 99913
+
+Running time :                  0:20:47
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:14
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41800 +/- 0.00030  [1.41742  1.41859]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41775  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  198 / 300  Source neutrons : 99784
+
+Running time :                  0:20:51
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:11
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41800 +/- 0.00030  [1.41742  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41776  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  199 / 300  Source neutrons : 100092
+
+Running time :                  0:20:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:07
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41800 +/- 0.00029  [1.41743  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41775  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  200 / 300  Source neutrons : 99869
+
+Running time :                  0:20:58
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:03
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41800 +/- 0.00029  [1.41742  1.41857]
+k-eff (implicit)  = 1.41804 +/- 0.00015  [1.41774  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  201 / 300  Source neutrons : 99534
+
+Running time :                  0:21:01
+Estimated running time :        0:27:02
+Estimated running time left :   0:06:00
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41796 +/- 0.00029  [1.41738  1.41854]
+k-eff (implicit)  = 1.41803 +/- 0.00015  [1.41774  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  202 / 300  Source neutrons : 100047
+
+Running time :                  0:21:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:56
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41792 +/- 0.00030  [1.41734  1.41850]
+k-eff (implicit)  = 1.41805 +/- 0.00015  [1.41776  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  203 / 300  Source neutrons : 100573
+
+Running time :                  0:21:09
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:53
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41793 +/- 0.00029  [1.41735  1.41850]
+k-eff (implicit)  = 1.41806 +/- 0.00015  [1.41777  1.41836]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  204 / 300  Source neutrons : 100326
+
+Running time :                  0:21:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:49
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41795 +/- 0.00029  [1.41738  1.41853]
+k-eff (implicit)  = 1.41806 +/- 0.00015  [1.41777  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  205 / 300  Source neutrons : 99581
+
+Running time :                  0:21:16
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:45
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41795 +/- 0.00029  [1.41738  1.41852]
+k-eff (implicit)  = 1.41806 +/- 0.00015  [1.41777  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  206 / 300  Source neutrons : 100427
+
+Running time :                  0:21:20
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:42
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41798 +/- 0.00029  [1.41741  1.41855]
+k-eff (implicit)  = 1.41806 +/- 0.00015  [1.41777  1.41835]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  207 / 300  Source neutrons : 99724
+
+Running time :                  0:21:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:38
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41799 +/- 0.00029  [1.41742  1.41856]
+k-eff (implicit)  = 1.41804 +/- 0.00015  [1.41775  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  208 / 300  Source neutrons : 99228
+
+Running time :                  0:21:27
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:34
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41794 +/- 0.00029  [1.41737  1.41852]
+k-eff (implicit)  = 1.41803 +/- 0.00015  [1.41774  1.41832]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  209 / 300  Source neutrons : 100837
+
+Running time :                  0:21:31
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:31
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41795 +/- 0.00029  [1.41738  1.41853]
+k-eff (implicit)  = 1.41803 +/- 0.00015  [1.41774  1.41832]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  210 / 300  Source neutrons : 99904
+
+Running time :                  0:21:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:27
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41796 +/- 0.00029  [1.41739  1.41853]
+k-eff (implicit)  = 1.41804 +/- 0.00015  [1.41775  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  211 / 300  Source neutrons : 100592
+
+Running time :                  0:21:38
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:23
+
+Estimated relative CPU usage :  1974.4%
+
+k-eff (analog)    = 1.41801 +/- 0.00029  [1.41743  1.41858]
+k-eff (implicit)  = 1.41804 +/- 0.00015  [1.41775  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  212 / 300  Source neutrons : 99056
+
+Running time :                  0:21:41
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:20
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41799 +/- 0.00029  [1.41742  1.41856]
+k-eff (implicit)  = 1.41804 +/- 0.00015  [1.41775  1.41832]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  213 / 300  Source neutrons : 99923
+
+Running time :                  0:21:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:16
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41796 +/- 0.00029  [1.41739  1.41853]
+k-eff (implicit)  = 1.41803 +/- 0.00015  [1.41775  1.41832]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  214 / 300  Source neutrons : 100083
+
+Running time :                  0:21:49
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:12
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41795 +/- 0.00029  [1.41738  1.41851]
+k-eff (implicit)  = 1.41804 +/- 0.00014  [1.41775  1.41832]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  215 / 300  Source neutrons : 100600
+
+Running time :                  0:21:52
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:09
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41797 +/- 0.00029  [1.41740  1.41854]
+k-eff (implicit)  = 1.41803 +/- 0.00014  [1.41774  1.41831]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  216 / 300  Source neutrons : 99481
+
+Running time :                  0:21:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:05
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41795 +/- 0.00029  [1.41739  1.41852]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  217 / 300  Source neutrons : 100162
+
+Running time :                  0:22:00
+Estimated running time :        0:27:02
+Estimated running time left :   0:05:02
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41795 +/- 0.00029  [1.41739  1.41852]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  218 / 300  Source neutrons : 99519
+
+Running time :                  0:22:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:58
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41792 +/- 0.00029  [1.41735  1.41848]
+k-eff (implicit)  = 1.41803 +/- 0.00014  [1.41775  1.41831]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  219 / 300  Source neutrons : 100343
+
+Running time :                  0:22:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:54
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41791 +/- 0.00029  [1.41735  1.41847]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  220 / 300  Source neutrons : 100410
+
+Running time :                  0:22:11
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:51
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41792 +/- 0.00029  [1.41736  1.41848]
+k-eff (implicit)  = 1.41803 +/- 0.00014  [1.41775  1.41831]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  221 / 300  Source neutrons : 99991
+
+Running time :                  0:22:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:47
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41794 +/- 0.00029  [1.41738  1.41850]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  222 / 300  Source neutrons : 99246
+
+Running time :                  0:22:18
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:43
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41790 +/- 0.00029  [1.41734  1.41847]
+k-eff (implicit)  = 1.41804 +/- 0.00014  [1.41776  1.41831]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  223 / 300  Source neutrons : 100609
+
+Running time :                  0:22:22
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:40
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41791 +/- 0.00028  [1.41735  1.41847]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  224 / 300  Source neutrons : 99782
+
+Running time :                  0:22:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:36
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41790 +/- 0.00028  [1.41735  1.41846]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  225 / 300  Source neutrons : 100512
+
+Running time :                  0:22:29
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:32
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41793 +/- 0.00028  [1.41737  1.41848]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  226 / 300  Source neutrons : 99571
+
+Running time :                  0:22:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:29
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41792 +/- 0.00028  [1.41737  1.41847]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41775  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  227 / 300  Source neutrons : 100213
+
+Running time :                  0:22:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:25
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41793 +/- 0.00028  [1.41738  1.41848]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  228 / 300  Source neutrons : 99322
+
+Running time :                  0:22:40
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:22
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41790 +/- 0.00028  [1.41735  1.41845]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41775  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  229 / 300  Source neutrons : 99983
+
+Running time :                  0:22:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:18
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41787 +/- 0.00028  [1.41731  1.41842]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41774  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  230 / 300  Source neutrons : 100663
+
+Running time :                  0:22:47
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:14
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41787 +/- 0.00028  [1.41732  1.41842]
+k-eff (implicit)  = 1.41801 +/- 0.00014  [1.41774  1.41828]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  231 / 300  Source neutrons : 100225
+
+Running time :                  0:22:51
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:11
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41790 +/- 0.00028  [1.41734  1.41845]
+k-eff (implicit)  = 1.41802 +/- 0.00014  [1.41775  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  232 / 300  Source neutrons : 100001
+
+Running time :                  0:22:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:07
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41792 +/- 0.00028  [1.41737  1.41847]
+k-eff (implicit)  = 1.41801 +/- 0.00014  [1.41774  1.41828]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  233 / 300  Source neutrons : 99891
+
+Running time :                  0:22:58
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:03
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41793 +/- 0.00028  [1.41738  1.41848]
+k-eff (implicit)  = 1.41801 +/- 0.00014  [1.41774  1.41828]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  234 / 300  Source neutrons : 99739
+
+Running time :                  0:23:02
+Estimated running time :        0:27:02
+Estimated running time left :   0:04:00
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41793 +/- 0.00028  [1.41738  1.41848]
+k-eff (implicit)  = 1.41800 +/- 0.00014  [1.41773  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  235 / 300  Source neutrons : 100264
+
+Running time :                  0:23:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:56
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41794 +/- 0.00028  [1.41740  1.41849]
+k-eff (implicit)  = 1.41800 +/- 0.00014  [1.41773  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  236 / 300  Source neutrons : 99738
+
+Running time :                  0:23:09
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:52
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41794 +/- 0.00028  [1.41740  1.41848]
+k-eff (implicit)  = 1.41801 +/- 0.00014  [1.41774  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  237 / 300  Source neutrons : 99943
+
+Running time :                  0:23:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:49
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41794 +/- 0.00028  [1.41740  1.41848]
+k-eff (implicit)  = 1.41800 +/- 0.00014  [1.41774  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  238 / 300  Source neutrons : 100243
+
+Running time :                  0:23:16
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:45
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41795 +/- 0.00027  [1.41741  1.41848]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41774  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  239 / 300  Source neutrons : 100072
+
+Running time :                  0:23:20
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:42
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41796 +/- 0.00027  [1.41743  1.41850]
+k-eff (implicit)  = 1.41801 +/- 0.00013  [1.41774  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  240 / 300  Source neutrons : 99656
+
+Running time :                  0:23:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:38
+
+Estimated relative CPU usage :  2001.4%
+
+k-eff (analog)    = 1.41795 +/- 0.00027  [1.41742  1.41849]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41774  1.41826]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  241 / 300  Source neutrons : 100214
+
+Running time :                  0:23:27
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:34
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41796 +/- 0.00027  [1.41743  1.41849]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41774  1.41826]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  242 / 300  Source neutrons : 99976
+
+Running time :                  0:23:31
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:31
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41796 +/- 0.00027  [1.41744  1.41849]
+k-eff (implicit)  = 1.41799 +/- 0.00013  [1.41773  1.41825]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  243 / 300  Source neutrons : 99314
+
+Running time :                  0:23:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:27
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41793 +/- 0.00027  [1.41740  1.41846]
+k-eff (implicit)  = 1.41798 +/- 0.00013  [1.41772  1.41824]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  244 / 300  Source neutrons : 100934
+
+Running time :                  0:23:38
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:23
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41795 +/- 0.00027  [1.41742  1.41848]
+k-eff (implicit)  = 1.41798 +/- 0.00013  [1.41772  1.41824]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  245 / 300  Source neutrons : 99654
+
+Running time :                  0:23:42
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:20
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41795 +/- 0.00027  [1.41742  1.41848]
+k-eff (implicit)  = 1.41799 +/- 0.00013  [1.41773  1.41824]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  246 / 300  Source neutrons : 99978
+
+Running time :                  0:23:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:16
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41794 +/- 0.00027  [1.41742  1.41847]
+k-eff (implicit)  = 1.41798 +/- 0.00013  [1.41772  1.41823]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  247 / 300  Source neutrons : 99937
+
+Running time :                  0:23:49
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:12
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41794 +/- 0.00027  [1.41741  1.41846]
+k-eff (implicit)  = 1.41798 +/- 0.00013  [1.41772  1.41823]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  248 / 300  Source neutrons : 100557
+
+Running time :                  0:23:52
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:09
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41796 +/- 0.00027  [1.41744  1.41849]
+k-eff (implicit)  = 1.41797 +/- 0.00013  [1.41771  1.41822]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  249 / 300  Source neutrons : 99162
+
+Running time :                  0:23:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:05
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41794 +/- 0.00027  [1.41742  1.41847]
+k-eff (implicit)  = 1.41799 +/- 0.00013  [1.41773  1.41825]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  250 / 300  Source neutrons : 100913
+
+Running time :                  0:24:00
+Estimated running time :        0:27:02
+Estimated running time left :   0:03:01
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41797 +/- 0.00027  [1.41744  1.41850]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41774  1.41826]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  251 / 300  Source neutrons : 99977
+
+Running time :                  0:24:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:58
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41800 +/- 0.00027  [1.41747  1.41852]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41775  1.41826]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  252 / 300  Source neutrons : 99902
+
+Running time :                  0:24:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:54
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41802 +/- 0.00027  [1.41749  1.41854]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41775  1.41826]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  253 / 300  Source neutrons : 99899
+
+Running time :                  0:24:11
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:51
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41803 +/- 0.00027  [1.41751  1.41856]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41774  1.41825]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  254 / 300  Source neutrons : 99560
+
+Running time :                  0:24:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:47
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41803 +/- 0.00027  [1.41750  1.41855]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41774  1.41825]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  255 / 300  Source neutrons : 100099
+
+Running time :                  0:24:18
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:43
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41802 +/- 0.00027  [1.41750  1.41854]
+k-eff (implicit)  = 1.41800 +/- 0.00013  [1.41774  1.41825]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  256 / 300  Source neutrons : 100169
+
+Running time :                  0:24:22
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:40
+
+Estimated relative CPU usage :  2000.0%
+
+k-eff (analog)    = 1.41803 +/- 0.00026  [1.41751  1.41855]
+k-eff (implicit)  = 1.41801 +/- 0.00013  [1.41776  1.41826]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  257 / 300  Source neutrons : 100115
+
+Running time :                  0:24:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:36
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41804 +/- 0.00026  [1.41752  1.41856]
+k-eff (implicit)  = 1.41802 +/- 0.00013  [1.41777  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  258 / 300  Source neutrons : 100089
+
+Running time :                  0:24:29
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:32
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41806 +/- 0.00026  [1.41754  1.41858]
+k-eff (implicit)  = 1.41802 +/- 0.00013  [1.41777  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  259 / 300  Source neutrons : 99833
+
+Running time :                  0:24:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:29
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41807 +/- 0.00026  [1.41755  1.41858]
+k-eff (implicit)  = 1.41803 +/- 0.00013  [1.41778  1.41828]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  260 / 300  Source neutrons : 99857
+
+Running time :                  0:24:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:25
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41807 +/- 0.00026  [1.41755  1.41858]
+k-eff (implicit)  = 1.41802 +/- 0.00013  [1.41777  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  261 / 300  Source neutrons : 99226
+
+Running time :                  0:24:40
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:21
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41802 +/- 0.00026  [1.41751  1.41854]
+k-eff (implicit)  = 1.41804 +/- 0.00013  [1.41778  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  262 / 300  Source neutrons : 100997
+
+Running time :                  0:24:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:18
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41804 +/- 0.00026  [1.41752  1.41855]
+k-eff (implicit)  = 1.41804 +/- 0.00013  [1.41779  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  263 / 300  Source neutrons : 99656
+
+Running time :                  0:24:47
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:14
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41803 +/- 0.00026  [1.41751  1.41854]
+k-eff (implicit)  = 1.41804 +/- 0.00013  [1.41779  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  264 / 300  Source neutrons : 100133
+
+Running time :                  0:24:51
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:11
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41803 +/- 0.00026  [1.41752  1.41854]
+k-eff (implicit)  = 1.41805 +/- 0.00013  [1.41780  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  265 / 300  Source neutrons : 100517
+
+Running time :                  0:24:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:07
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41806 +/- 0.00026  [1.41754  1.41857]
+k-eff (implicit)  = 1.41805 +/- 0.00013  [1.41780  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  266 / 300  Source neutrons : 99557
+
+Running time :                  0:24:58
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:03
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41806 +/- 0.00026  [1.41755  1.41857]
+k-eff (implicit)  = 1.41806 +/- 0.00013  [1.41781  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  267 / 300  Source neutrons : 100384
+
+Running time :                  0:25:02
+Estimated running time :        0:27:02
+Estimated running time left :   0:02:00
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41809 +/- 0.00026  [1.41757  1.41860]
+k-eff (implicit)  = 1.41806 +/- 0.00013  [1.41782  1.41831]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  268 / 300  Source neutrons : 99777
+
+Running time :                  0:25:05
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:56
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41810 +/- 0.00026  [1.41759  1.41861]
+k-eff (implicit)  = 1.41806 +/- 0.00013  [1.41782  1.41831]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  269 / 300  Source neutrons : 99822
+
+Running time :                  0:25:09
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:52
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41810 +/- 0.00026  [1.41759  1.41861]
+k-eff (implicit)  = 1.41805 +/- 0.00013  [1.41781  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  270 / 300  Source neutrons : 99624
+
+Running time :                  0:25:12
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:49
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41808 +/- 0.00026  [1.41758  1.41859]
+k-eff (implicit)  = 1.41805 +/- 0.00013  [1.41781  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  271 / 300  Source neutrons : 100067
+
+Running time :                  0:25:16
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:45
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41807 +/- 0.00026  [1.41756  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00012  [1.41781  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  272 / 300  Source neutrons : 100222
+
+Running time :                  0:25:20
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:41
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41807 +/- 0.00026  [1.41756  1.41857]
+k-eff (implicit)  = 1.41804 +/- 0.00012  [1.41780  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  273 / 300  Source neutrons : 99943
+
+Running time :                  0:25:23
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:38
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41807 +/- 0.00026  [1.41756  1.41857]
+k-eff (implicit)  = 1.41804 +/- 0.00012  [1.41780  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  274 / 300  Source neutrons : 100687
+
+Running time :                  0:25:27
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:34
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41810 +/- 0.00026  [1.41759  1.41860]
+k-eff (implicit)  = 1.41803 +/- 0.00012  [1.41779  1.41828]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  275 / 300  Source neutrons : 98981
+
+Running time :                  0:25:31
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:30
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41807 +/- 0.00026  [1.41757  1.41858]
+k-eff (implicit)  = 1.41803 +/- 0.00012  [1.41779  1.41828]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  276 / 300  Source neutrons : 100280
+
+Running time :                  0:25:34
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:27
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41807 +/- 0.00026  [1.41756  1.41857]
+k-eff (implicit)  = 1.41803 +/- 0.00012  [1.41778  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  277 / 300  Source neutrons : 99938
+
+Running time :                  0:25:38
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:23
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41806 +/- 0.00026  [1.41755  1.41856]
+k-eff (implicit)  = 1.41801 +/- 0.00012  [1.41777  1.41825]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  278 / 300  Source neutrons : 100017
+
+Running time :                  0:25:42
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:20
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41805 +/- 0.00026  [1.41755  1.41855]
+k-eff (implicit)  = 1.41801 +/- 0.00012  [1.41777  1.41825]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  279 / 300  Source neutrons : 100383
+
+Running time :                  0:25:45
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:16
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41806 +/- 0.00025  [1.41756  1.41856]
+k-eff (implicit)  = 1.41802 +/- 0.00012  [1.41778  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  280 / 300  Source neutrons : 100108
+
+Running time :                  0:25:49
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:12
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41807 +/- 0.00025  [1.41757  1.41857]
+k-eff (implicit)  = 1.41803 +/- 0.00012  [1.41778  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  281 / 300  Source neutrons : 100013
+
+Running time :                  0:25:53
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:09
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41809 +/- 0.00025  [1.41759  1.41858]
+k-eff (implicit)  = 1.41803 +/- 0.00012  [1.41779  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  282 / 300  Source neutrons : 99934
+
+Running time :                  0:25:56
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:05
+
+Estimated relative CPU usage :  2000.8%
+
+k-eff (analog)    = 1.41810 +/- 0.00025  [1.41760  1.41860]
+k-eff (implicit)  = 1.41803 +/- 0.00012  [1.41778  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  283 / 300  Source neutrons : 99731
+
+Running time :                  0:26:00
+Estimated running time :        0:27:02
+Estimated running time left :   0:01:01
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41810 +/- 0.00025  [1.41760  1.41859]
+k-eff (implicit)  = 1.41803 +/- 0.00012  [1.41779  1.41827]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  284 / 300  Source neutrons : 99694
+
+Running time :                  0:26:03
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:58
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41808 +/- 0.00025  [1.41759  1.41857]
+k-eff (implicit)  = 1.41802 +/- 0.00012  [1.41778  1.41826]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  285 / 300  Source neutrons : 100309
+
+Running time :                  0:26:07
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:54
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41808 +/- 0.00025  [1.41759  1.41857]
+k-eff (implicit)  = 1.41804 +/- 0.00012  [1.41780  1.41828]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  286 / 300  Source neutrons : 100295
+
+Running time :                  0:26:11
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:50
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41809 +/- 0.00025  [1.41760  1.41858]
+k-eff (implicit)  = 1.41804 +/- 0.00012  [1.41780  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  287 / 300  Source neutrons : 99821
+
+Running time :                  0:26:14
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:47
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41810 +/- 0.00025  [1.41761  1.41859]
+k-eff (implicit)  = 1.41805 +/- 0.00012  [1.41781  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  288 / 300  Source neutrons : 99724
+
+Running time :                  0:26:18
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:43
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41809 +/- 0.00025  [1.41760  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00012  [1.41781  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  289 / 300  Source neutrons : 99933
+
+Running time :                  0:26:22
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:40
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41808 +/- 0.00025  [1.41759  1.41856]
+k-eff (implicit)  = 1.41805 +/- 0.00012  [1.41781  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  290 / 300  Source neutrons : 100630
+
+Running time :                  0:26:25
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:36
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41809 +/- 0.00025  [1.41761  1.41858]
+k-eff (implicit)  = 1.41805 +/- 0.00012  [1.41781  1.41829]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  291 / 300  Source neutrons : 99782
+
+Running time :                  0:26:29
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:32
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41810 +/- 0.00025  [1.41762  1.41859]
+k-eff (implicit)  = 1.41806 +/- 0.00012  [1.41782  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  292 / 300  Source neutrons : 99798
+
+Running time :                  0:26:32
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:29
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41810 +/- 0.00025  [1.41762  1.41858]
+k-eff (implicit)  = 1.41806 +/- 0.00012  [1.41783  1.41830]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  293 / 300  Source neutrons : 100113
+
+Running time :                  0:26:36
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:25
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41810 +/- 0.00025  [1.41762  1.41859]
+k-eff (implicit)  = 1.41809 +/- 0.00012  [1.41785  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  294 / 300  Source neutrons : 100223
+
+Running time :                  0:26:40
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:21
+
+Estimated relative CPU usage :  1974.0%
+
+k-eff (analog)    = 1.41812 +/- 0.00025  [1.41764  1.41860]
+k-eff (implicit)  = 1.41808 +/- 0.00012  [1.41784  1.41832]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  295 / 300  Source neutrons : 99772
+
+Running time :                  0:26:43
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:18
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41812 +/- 0.00024  [1.41764  1.41860]
+k-eff (implicit)  = 1.41809 +/- 0.00012  [1.41785  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  296 / 300  Source neutrons : 99572
+
+Running time :                  0:26:47
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:14
+
+Estimated relative CPU usage :  2000.6%
+
+k-eff (analog)    = 1.41810 +/- 0.00024  [1.41762  1.41858]
+k-eff (implicit)  = 1.41809 +/- 0.00012  [1.41784  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  297 / 300  Source neutrons : 100580
+
+Running time :                  0:26:51
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:10
+
+Estimated relative CPU usage :  2000.5%
+
+k-eff (analog)    = 1.41811 +/- 0.00024  [1.41763  1.41859]
+k-eff (implicit)  = 1.41809 +/- 0.00012  [1.41785  1.41833]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  298 / 300  Source neutrons : 99843
+
+Running time :                  0:26:54
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:07
+
+Estimated relative CPU usage :  2001.1%
+
+k-eff (analog)    = 1.41812 +/- 0.00024  [1.41764  1.41859]
+k-eff (implicit)  = 1.41810 +/- 0.00012  [1.41785  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  299 / 300  Source neutrons : 99912
+
+Running time :                  0:26:58
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:03
+
+Estimated relative CPU usage :  2000.3%
+
+k-eff (analog)    = 1.41811 +/- 0.00024  [1.41764  1.41859]
+k-eff (implicit)  = 1.41810 +/- 0.00012  [1.41786  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+------------------------------------------------------------
+
+Serpent 2.1.21 -- Static criticality source simulation
+
+Title: "FHR unit cell model"
+
+Active cycle  300 / 300  Source neutrons : 99946
+
+Running time :                  0:27:02
+Estimated running time :        0:27:02
+Estimated running time left :   0:00:00
+
+Estimated relative CPU usage :  1999.7%
+
+k-eff (analog)    = 1.41811 +/- 0.00024  [1.41764  1.41858]
+k-eff (implicit)  = 1.41810 +/- 0.00012  [1.41786  1.41834]
+
+Options : (O4) (MPI=1) (OMP=20) 
+------------------------------------------------------------
+
+Transport cycle completed in 26.9 minutes.
+

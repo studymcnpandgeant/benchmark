@@ -1,0 +1,21 @@
+#!/bin/sh
+#SBATCH --job-name=freshmcnp
+#SBATCH --output=freshmcnp.log
+#SBATCH --error=freshmcnp.serr
+#SBATCH --partition=savio
+#SBATCH --time=60:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+# QoS:
+#SBATCH --qos=nuclear_savio_normal
+# Account:
+#SBATCH -A co_nuclear
+##SBATCH --account=ac_nuclear
+
+# Mail type:
+#SBATCH --mail-type=all
+#
+# Mail user:
+#SBATCH --mail-user=imwangxin@gmail.com
+
+mcnp5_151.mpi i=mcnp_inp o=mcnp_op.o #  runtpe=mk.r mc=mk_fill.mc srctp=source #>> fueldens.log

@@ -1,0 +1,775 @@
+          Thread Name & Version = MCNP5, 1.60
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  +---------------------------------------------------------------------+
+  | Copyright 2010. Los Alamos National Security, LLC.  All rights      |
+  | reserved.                                                           |
+  |   This material was produced under U.S. Government contract         |
+  | DE-AC52-06NA25396 for Los Alamos National Laboratory, which is      |
+  | operated by Los Alamos National Security, LLC, for the U.S.         |
+  | Department of Los Energy. The Government is granted for itself and  |
+  | others acting on its behalf a paid-up, nonexclusive, irrevocable    |
+  | worldwide license in this material to reproduce, prepare derivative |
+  | works, and perform publicly and display publicly. Beginning five    |
+  | (5) years after 2010, subject to additional five-year worldwide     |
+  | renewals, the Government is granted for itself and others acting on |
+  | its behalf a paid-up, nonexclusive, irrevocable worldwide license   |
+  | in this material to reproduce, prepare derivative works, distribute |
+  | copies to the public, perform publicly and display publicly, and to |
+  | permit others to do so. NEITHER THE UNITED STATES NOR THE UNITED    |
+  | STATES DEPARTMENT OF ENERGY, NOR LOS ALAMOS NATIONAL SECURITY, LLC, |
+  | NOR ANY OF THEIR EMPLOYEES, MAKES ANY WARRANTY, EXPRESS OR IMPLIED, |
+  | OR ASSUMES ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY,  |
+  | COMPLETENESS, OR USEFULNESS OF ANY INFORMATION, APPARATUS, PRODUCT, |
+  | OR PROCESS DISCLOSED, OR REPRESENTS THAT ITS USE WOULD NOT INFRINGE |
+  | PRIVATELY OWNED RIGHTS.                                             |
+  +---------------------------------------------------------------------+
+  
+1mcnp     version 5     ld=07302014                     04/24/17 15:22:21 
+ *************************************************************************                 probid =  04/24/17 15:22:21 
+ i=M6F13aa                                                                       
+
+         1-       FHR Benchmark in MCNP - Stage 1 Case 3 3D                                       
+         2-       c -----------------------------------------------------------------------------x
+         3-       c --- Cells                                                                     
+         4-       c -----------------------------------------------------------------------------x
+         5-       2998 1 -1.872 -2999  imp:n=1 tmp=7.75E-8                                        
+         6-       2999 0 2999   imp:n=0 tmp=7.75E-8                                               
+         7-                                                                                       
+         8-       c -----------------------------------------------------------------------------x
+         9-       c --- Surfaces                                                                  
+        10-       c -----------------------------------------------------------------------------x
+        11-       *2999 box -9.2575 -9.2575 -9.2575 18.515 0 0 0 18.515 0 0 0 18.515              
+        12-                                                                                       
+        13-       c -----------------------------------------------------------------------------x
+        14-       c --- Data                                                                      
+        15-       c -----------------------------------------------------------------------------x
+        16-       totnu no                                                                        
+        17-       mode n                                                                          
+        18-       kcode 64000 1.31 20 1620                                                        
+        19-       ksrc  0 0 0                                                                     
+        20-       F4:n  2998                                                                      
+        21-       E4    1.00E-10                                                                  
+        22-             5.00E-10                                                                  
+        23-             7.50E-10                                                                  
+        24-             1.00E-09                                                                  
+        25-             1.20E-09                                                                  
+        26-             1.50E-09                                                                  
+        27-             2.00E-09                                                                  
+        28-             2.50E-09                                                                  
+        29-             3.00E-09                                                                  
+        30-             4.00E-09                                                                  
+        31-             5.00E-09                                                                  
+        32-             7.50E-09                                                                  
+        33-             1.00E-08                                                                  
+        34-             2.53E-08                                                                  
+        35-             3.00E-08                                                                  
+        36-             4.00E-08                                                                  
+        37-             5.00E-08                                                                  
+        38-             6.00E-08                                                                  
+        39-             7.00E-08                                                                  
+        40-             8.00E-08                                                                  
+        41-             9.00E-08                                                                  
+        42-             1.00E-07                                                                  
+        43-             1.25E-07                                                                  
+        44-             1.50E-07                                                                  
+        45-             1.75E-07                                                                  
+        46-             2.00E-07                                                                  
+        47-             2.25E-07                                                                  
+        48-             2.50E-07                                                                  
+        49-             2.75E-07                                                                  
+        50-             3.00E-07                                                                  
+        51-             3.25E-07                                                                  
+        52-             3.50E-07                                                                  
+        53-             3.75E-07                                                                  
+        54-             4.00E-07                                                                  
+        55-             4.50E-07                                                                  
+        56-             5.00E-07                                                                  
+        57-             5.50E-07                                                                  
+        58-             6.00E-07                                                                  
+        59-             6.25E-07                                                                  
+        60-             6.50E-07                                                                  
+        61-             7.00E-07                                                                  
+        62-             7.50E-07                                                                  
+        63-             8.00E-07                                                                  
+        64-             8.50E-07                                                                  
+        65-             9.00E-07                                                                  
+        66-             9.25E-07                                                                  
+        67-             9.50E-07                                                                  
+        68-             9.75E-07                                                                  
+        69-             1.00E-06                                                                  
+        70-             1.01E-06                                                                  
+        71-             1.02E-06                                                                  
+        72-             1.03E-06                                                                  
+        73-             1.04E-06                                                                  
+        74-             1.05E-06                                                                  
+        75-             1.06E-06                                                                  
+        76-             1.07E-06                                                                  
+        77-             1.08E-06                                                                  
+        78-             1.09E-06                                                                  
+        79-             1.10E-06                                                                  
+        80-             1.11E-06                                                                  
+        81-             1.12E-06                                                                  
+        82-             1.13E-06                                                                  
+        83-             1.14E-06                                                                  
+        84-             1.15E-06                                                                  
+        85-             1.18E-06                                                                  
+        86-             1.20E-06                                                                  
+        87-             1.23E-06                                                                  
+        88-             1.25E-06                                                                  
+        89-             1.30E-06                                                                  
+        90-             1.35E-06                                                                  
+        91-             1.40E-06                                                                  
+        92-             1.45E-06                                                                  
+        93-             1.50E-06                                                                  
+        94-             1.59E-06                                                                  
+        95-             1.68E-06                                                                  
+        96-             1.77E-06                                                                  
+        97-             1.86E-06                                                                  
+        98-             1.94E-06                                                                  
+        99-             2.00E-06                                                                  
+       100-             2.12E-06                                                                  
+       101-             2.21E-06                                                                  
+       102-             2.30E-06                                                                  
+       103-             2.38E-06                                                                  
+       104-             2.47E-06                                                                  
+       105-             2.57E-06                                                                  
+       106-             2.67E-06                                                                  
+       107-             2.77E-06                                                                  
+       108-             2.87E-06                                                                  
+       109-             2.97E-06                                                                  
+       110-             3.00E-06                                                                  
+       111-             3.05E-06                                                                  
+       112-             3.15E-06                                                                  
+       113-             3.50E-06                                                                  
+       114-             3.73E-06                                                                  
+       115-             4.00E-06                                                                  
+       116-             4.75E-06                                                                  
+       117-             5.00E-06                                                                  
+       118-             5.40E-06                                                                  
+       119-             6.00E-06                                                                  
+       120-             6.25E-06                                                                  
+       121-             6.50E-06                                                                  
+       122-             6.75E-06                                                                  
+       123-             7.00E-06                                                                  
+       124-             7.15E-06                                                                  
+       125-             8.10E-06                                                                  
+       126-             9.10E-06                                                                  
+       127-             1.00E-05                                                                  
+       128-             1.15E-05                                                                  
+       129-             1.19E-05                                                                  
+       130-             1.29E-05                                                                  
+       131-             1.38E-05                                                                  
+       132-             1.44E-05                                                                  
+       133-             1.51E-05                                                                  
+       134-             1.60E-05                                                                  
+       135-             1.70E-05                                                                  
+       136-             1.85E-05                                                                  
+       137-             1.90E-05                                                                  
+       138-             2.00E-05                                                                  
+       139-             2.10E-05                                                                  
+       140-             2.25E-05                                                                  
+       141-             2.50E-05                                                                  
+       142-             2.75E-05                                                                  
+       143-             3.00E-05                                                                  
+       144-             3.13E-05                                                                  
+       145-             3.18E-05                                                                  
+       146-             3.33E-05                                                                  
+       147-             3.38E-05                                                                  
+       148-             3.46E-05                                                                  
+       149-             3.55E-05                                                                  
+       150-             3.70E-05                                                                  
+       151-             3.80E-05                                                                  
+       152-             3.91E-05                                                                  
+       153-             3.96E-05                                                                  
+       154-             4.10E-05                                                                  
+       155-             4.24E-05                                                                  
+       156-             4.40E-05                                                                  
+       157-             4.52E-05                                                                  
+       158-             4.70E-05                                                                  
+       159-             4.83E-05                                                                  
+       160-             4.92E-05                                                                  
+       161-             5.06E-05                                                                  
+       162-             5.20E-05                                                                  
+       163-             5.34E-05                                                                  
+       164-             5.90E-05                                                                  
+       165-             6.10E-05                                                                  
+       166-             6.50E-05                                                                  
+       167-             6.75E-05                                                                  
+       168-             7.20E-05                                                                  
+       169-             7.60E-05                                                                  
+       170-             8.00E-05                                                                  
+       171-             8.20E-05                                                                  
+       172-             9.00E-05                                                                  
+       173-             1.00E-04                                                                  
+       174-             1.08E-04                                                                  
+       175-             1.15E-04                                                                  
+       176-             1.19E-04                                                                  
+       177-             1.22E-04                                                                  
+       178-             1.86E-04                                                                  
+       179-             1.93E-04                                                                  
+       180-             2.08E-04                                                                  
+       181-             2.10E-04                                                                  
+       182-             2.40E-04                                                                  
+       183-             2.85E-04                                                                  
+       184-             3.05E-04                                                                  
+       185-             5.50E-04                                                                  
+       186-             6.70E-04                                                                  
+       187-             6.83E-04                                                                  
+       188-             9.50E-04                                                                  
+       189-             1.15E-03                                                                  
+       190-             1.50E-03                                                                  
+       191-             1.55E-03                                                                  
+       192-             1.80E-03                                                                  
+       193-             2.20E-03                                                                  
+       194-             2.29E-03                                                                  
+       195-             2.58E-03                                                                  
+       196-             3.00E-03                                                                  
+       197-             3.74E-03                                                                  
+       198-             3.90E-03                                                                  
+       199-             6.00E-03                                                                  
+       200-             8.03E-03                                                                  
+       201-             9.50E-03                                                                  
+       202-             1.30E-02                                                                  
+       203-             1.70E-02                                                                  
+       204-             2.50E-02                                                                  
+       205-             3.00E-02                                                                  
+       206-             4.50E-02                                                                  
+       207-             5.00E-02                                                                  
+       208-             5.20E-02                                                                  
+       209-             6.00E-02                                                                  
+       210-             7.30E-02                                                                  
+       211-             7.50E-02                                                                  
+       212-             8.20E-02                                                                  
+       213-             8.50E-02                                                                  
+       214-             1.00E-01                                                                  
+       215-             1.28E-01                                                                  
+       216-             1.50E-01                                                                  
+       217-             2.00E-01                                                                  
+       218-             2.70E-01                                                                  
+       219-             3.30E-01                                                                  
+       220-             4.00E-01                                                                  
+       221-             4.20E-01                                                                  
+       222-             4.40E-01                                                                  
+       223-             4.70E-01                                                                  
+       224-             5.00E-01                                                                  
+       225-             5.50E-01                                                                  
+       226-             5.73E-01                                                                  
+       227-             6.00E-01                                                                  
+       228-             6.70E-01                                                                  
+       229-             6.79E-01                                                                  
+       230-             7.50E-01                                                                  
+       231-             8.20E-01                                                                  
+       232-             8.61E-01                                                                  
+       233-             8.75E-01                                                                  
+       234-             9.00E-01                                                                  
+       235-             9.20E-01                                                                  
+       236-             1.01E+00                                                                  
+       237-             1.10E+00                                                                  
+       238-             1.20E+00                                                                  
+       239-             1.25E+00                                                                  
+       240-             1.32E+00                                                                  
+       241-             1.36E+00                                                                  
+       242-             1.40E+00                                                                  
+       243-             1.50E+00                                                                  
+       244-             1.85E+00                                                                  
+       245-             2.35E+00                                                                  
+       246-             2.48E+00                                                                  
+       247-             3.00E+00                                                                  
+       248-             4.30E+00                                                                  
+       249-             4.80E+00                                                                  
+       250-             6.43E+00                                                                  
+       251-             8.19E+00                                                                  
+       252-             1.00E+01                                                                  
+       253-             1.28E+01                                                                  
+       254-             1.38E+01                                                                  
+       255-             1.46E+01                                                                  
+       256-             1.57E+01                                                                  
+       257-             1.73E+01                                                                  
+       258-             2.00E+01                                                                  
+       259-       c ------------------------------------                                          
+       260-       c    Materials                                                                  
+       261-       c ------------------------------------                                          
+       262-       m1 8016.72c 2.09484E-03                                                         
+       263-         92235.72c 1.81203E-04                                                         
+  fatal error.  there is no f card corresponding to this card.
+       264-         92238.72c   8.66215E-04                                                       
+  fatal error.  there is no f card corresponding to this card.
+       265-         6000.72c    5.71867E-01                                                       
+  fatal error.  there is no f card corresponding to this card.
+       266-         14000.72c   2.26554E-03                                                       
+  fatal error.  there is no f card corresponding to this card.
+       267-         5010.72c    6.11065E-08                                                       
+  fatal error.  there is no f card corresponding to this card.
+       268-         5011.72c      2.47512E-07                                                     
+  fatal error.  there is no f card corresponding to this card.
+       269-         3006.72c      6.03893E-06                                                     
+  fatal error.  there is no f card corresponding to this card.
+       270-         3007.72c      1.20773E-01                                                     
+  fatal error.  there is no f card corresponding to this card.
+       271-         4009.72c      6.03893E-02                                                     
+  fatal error.  there is no f card corresponding to this card.
+       272-         9019.72c      2.41557E-01                                                     
+  fatal error.  there is no f card corresponding to this card.
+       273-       mt1   grph.16t                                                                  
+       274-       c                                                                               
+       275-       c                                                                               
+1     initial source from ksrc card.                                                                    print table 90
+
+ original number of points                             1
+    points not in any cell                       0
+    points in cells of zero importance           0
+    points in void cells                         0
+    points in ambiguous cells                    0
+ total points rejected                                 0
+ points remaining                                      1
+ points after expansion or contraction             64000
+ nominal source size                               64000
+
+ initial guess for k(eff.)                      1.310000
+
+ cycles to skip before tallying                       20
+
+ number of keff cycles that can be stored           6500
+
+ 
+  comment.  prompt fission nubar data are being used.
+
+1tally   300672                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally   300772                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally   400972                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally   501072                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally   501172                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally   600072                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally   901972                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally  1400072                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally  9223572                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally  9223872                                                                                         print table 30
+           tally type 2    particle flux averaged over a surface.                         
+           tally for 
+
+1tally        4                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     2998                                                                                                                        
+
+ energy bins
+      0.00000E+00  to  1.00000E-10 mev   
+      1.00000E-10  to  5.00000E-10 mev   
+      5.00000E-10  to  7.50000E-10 mev   
+      7.50000E-10  to  1.00000E-09 mev   
+      1.00000E-09  to  1.20000E-09 mev   
+      1.20000E-09  to  1.50000E-09 mev   
+      1.50000E-09  to  2.00000E-09 mev   
+      2.00000E-09  to  2.50000E-09 mev   
+      2.50000E-09  to  3.00000E-09 mev   
+      3.00000E-09  to  4.00000E-09 mev   
+      4.00000E-09  to  5.00000E-09 mev   
+      5.00000E-09  to  7.50000E-09 mev   
+      7.50000E-09  to  1.00000E-08 mev   
+      1.00000E-08  to  2.53000E-08 mev   
+      2.53000E-08  to  3.00000E-08 mev   
+      3.00000E-08  to  4.00000E-08 mev   
+      4.00000E-08  to  5.00000E-08 mev   
+      5.00000E-08  to  6.00000E-08 mev   
+      6.00000E-08  to  7.00000E-08 mev   
+      7.00000E-08  to  8.00000E-08 mev   
+      8.00000E-08  to  9.00000E-08 mev   
+      9.00000E-08  to  1.00000E-07 mev   
+      1.00000E-07  to  1.25000E-07 mev   
+      1.25000E-07  to  1.50000E-07 mev   
+      1.50000E-07  to  1.75000E-07 mev   
+      1.75000E-07  to  2.00000E-07 mev   
+      2.00000E-07  to  2.25000E-07 mev   
+      2.25000E-07  to  2.50000E-07 mev   
+      2.50000E-07  to  2.75000E-07 mev   
+      2.75000E-07  to  3.00000E-07 mev   
+      3.00000E-07  to  3.25000E-07 mev   
+      3.25000E-07  to  3.50000E-07 mev   
+      3.50000E-07  to  3.75000E-07 mev   
+      3.75000E-07  to  4.00000E-07 mev   
+      4.00000E-07  to  4.50000E-07 mev   
+      4.50000E-07  to  5.00000E-07 mev   
+      5.00000E-07  to  5.50000E-07 mev   
+      5.50000E-07  to  6.00000E-07 mev   
+      6.00000E-07  to  6.25000E-07 mev   
+      6.25000E-07  to  6.50000E-07 mev   
+      6.50000E-07  to  7.00000E-07 mev   
+      7.00000E-07  to  7.50000E-07 mev   
+      7.50000E-07  to  8.00000E-07 mev   
+      8.00000E-07  to  8.50000E-07 mev   
+      8.50000E-07  to  9.00000E-07 mev   
+      9.00000E-07  to  9.25000E-07 mev   
+      9.25000E-07  to  9.50000E-07 mev   
+      9.50000E-07  to  9.75000E-07 mev   
+      9.75000E-07  to  1.00000E-06 mev   
+      1.00000E-06  to  1.01000E-06 mev   
+      1.01000E-06  to  1.02000E-06 mev   
+      1.02000E-06  to  1.03000E-06 mev   
+      1.03000E-06  to  1.04000E-06 mev   
+      1.04000E-06  to  1.05000E-06 mev   
+      1.05000E-06  to  1.06000E-06 mev   
+      1.06000E-06  to  1.07000E-06 mev   
+      1.07000E-06  to  1.08000E-06 mev   
+      1.08000E-06  to  1.09000E-06 mev   
+      1.09000E-06  to  1.10000E-06 mev   
+      1.10000E-06  to  1.11000E-06 mev   
+      1.11000E-06  to  1.12000E-06 mev   
+      1.12000E-06  to  1.13000E-06 mev   
+      1.13000E-06  to  1.14000E-06 mev   
+      1.14000E-06  to  1.15000E-06 mev   
+      1.15000E-06  to  1.18000E-06 mev   
+      1.18000E-06  to  1.20000E-06 mev   
+      1.20000E-06  to  1.23000E-06 mev   
+      1.23000E-06  to  1.25000E-06 mev   
+      1.25000E-06  to  1.30000E-06 mev   
+      1.30000E-06  to  1.35000E-06 mev   
+      1.35000E-06  to  1.40000E-06 mev   
+      1.40000E-06  to  1.45000E-06 mev   
+      1.45000E-06  to  1.50000E-06 mev   
+      1.50000E-06  to  1.59000E-06 mev   
+      1.59000E-06  to  1.68000E-06 mev   
+      1.68000E-06  to  1.77000E-06 mev   
+      1.77000E-06  to  1.86000E-06 mev   
+      1.86000E-06  to  1.94000E-06 mev   
+      1.94000E-06  to  2.00000E-06 mev   
+      2.00000E-06  to  2.12000E-06 mev   
+      2.12000E-06  to  2.21000E-06 mev   
+      2.21000E-06  to  2.30000E-06 mev   
+      2.30000E-06  to  2.38000E-06 mev   
+      2.38000E-06  to  2.47000E-06 mev   
+      2.47000E-06  to  2.57000E-06 mev   
+      2.57000E-06  to  2.67000E-06 mev   
+      2.67000E-06  to  2.77000E-06 mev   
+      2.77000E-06  to  2.87000E-06 mev   
+      2.87000E-06  to  2.97000E-06 mev   
+      2.97000E-06  to  3.00000E-06 mev   
+      3.00000E-06  to  3.05000E-06 mev   
+      3.05000E-06  to  3.15000E-06 mev   
+      3.15000E-06  to  3.50000E-06 mev   
+      3.50000E-06  to  3.73000E-06 mev   
+      3.73000E-06  to  4.00000E-06 mev   
+      4.00000E-06  to  4.75000E-06 mev   
+      4.75000E-06  to  5.00000E-06 mev   
+      5.00000E-06  to  5.40000E-06 mev   
+      5.40000E-06  to  6.00000E-06 mev   
+      6.00000E-06  to  6.25000E-06 mev   
+      6.25000E-06  to  6.50000E-06 mev   
+      6.50000E-06  to  6.75000E-06 mev   
+      6.75000E-06  to  7.00000E-06 mev   
+      7.00000E-06  to  7.15000E-06 mev   
+      7.15000E-06  to  8.10000E-06 mev   
+      8.10000E-06  to  9.10000E-06 mev   
+      9.10000E-06  to  1.00000E-05 mev   
+      1.00000E-05  to  1.15000E-05 mev   
+      1.15000E-05  to  1.19000E-05 mev   
+      1.19000E-05  to  1.29000E-05 mev   
+      1.29000E-05  to  1.38000E-05 mev   
+      1.38000E-05  to  1.44000E-05 mev   
+      1.44000E-05  to  1.51000E-05 mev   
+      1.51000E-05  to  1.60000E-05 mev   
+      1.60000E-05  to  1.70000E-05 mev   
+      1.70000E-05  to  1.85000E-05 mev   
+      1.85000E-05  to  1.90000E-05 mev   
+      1.90000E-05  to  2.00000E-05 mev   
+      2.00000E-05  to  2.10000E-05 mev   
+      2.10000E-05  to  2.25000E-05 mev   
+      2.25000E-05  to  2.50000E-05 mev   
+      2.50000E-05  to  2.75000E-05 mev   
+      2.75000E-05  to  3.00000E-05 mev   
+      3.00000E-05  to  3.13000E-05 mev   
+      3.13000E-05  to  3.18000E-05 mev   
+      3.18000E-05  to  3.33000E-05 mev   
+      3.33000E-05  to  3.38000E-05 mev   
+      3.38000E-05  to  3.46000E-05 mev   
+      3.46000E-05  to  3.55000E-05 mev   
+      3.55000E-05  to  3.70000E-05 mev   
+      3.70000E-05  to  3.80000E-05 mev   
+      3.80000E-05  to  3.91000E-05 mev   
+      3.91000E-05  to  3.96000E-05 mev   
+      3.96000E-05  to  4.10000E-05 mev   
+      4.10000E-05  to  4.24000E-05 mev   
+      4.24000E-05  to  4.40000E-05 mev   
+      4.40000E-05  to  4.52000E-05 mev   
+      4.52000E-05  to  4.70000E-05 mev   
+      4.70000E-05  to  4.83000E-05 mev   
+      4.83000E-05  to  4.92000E-05 mev   
+      4.92000E-05  to  5.06000E-05 mev   
+      5.06000E-05  to  5.20000E-05 mev   
+      5.20000E-05  to  5.34000E-05 mev   
+      5.34000E-05  to  5.90000E-05 mev   
+      5.90000E-05  to  6.10000E-05 mev   
+      6.10000E-05  to  6.50000E-05 mev   
+      6.50000E-05  to  6.75000E-05 mev   
+      6.75000E-05  to  7.20000E-05 mev   
+      7.20000E-05  to  7.60000E-05 mev   
+      7.60000E-05  to  8.00000E-05 mev   
+      8.00000E-05  to  8.20000E-05 mev   
+      8.20000E-05  to  9.00000E-05 mev   
+      9.00000E-05  to  1.00000E-04 mev   
+      1.00000E-04  to  1.08000E-04 mev   
+      1.08000E-04  to  1.15000E-04 mev   
+      1.15000E-04  to  1.19000E-04 mev   
+      1.19000E-04  to  1.22000E-04 mev   
+      1.22000E-04  to  1.86000E-04 mev   
+      1.86000E-04  to  1.93000E-04 mev   
+      1.93000E-04  to  2.08000E-04 mev   
+      2.08000E-04  to  2.10000E-04 mev   
+      2.10000E-04  to  2.40000E-04 mev   
+      2.40000E-04  to  2.85000E-04 mev   
+      2.85000E-04  to  3.05000E-04 mev   
+      3.05000E-04  to  5.50000E-04 mev   
+      5.50000E-04  to  6.70000E-04 mev   
+      6.70000E-04  to  6.83000E-04 mev   
+      6.83000E-04  to  9.50000E-04 mev   
+      9.50000E-04  to  1.15000E-03 mev   
+      1.15000E-03  to  1.50000E-03 mev   
+      1.50000E-03  to  1.55000E-03 mev   
+      1.55000E-03  to  1.80000E-03 mev   
+      1.80000E-03  to  2.20000E-03 mev   
+      2.20000E-03  to  2.29000E-03 mev   
+      2.29000E-03  to  2.58000E-03 mev   
+      2.58000E-03  to  3.00000E-03 mev   
+      3.00000E-03  to  3.74000E-03 mev   
+      3.74000E-03  to  3.90000E-03 mev   
+      3.90000E-03  to  6.00000E-03 mev   
+      6.00000E-03  to  8.03000E-03 mev   
+      8.03000E-03  to  9.50000E-03 mev   
+      9.50000E-03  to  1.30000E-02 mev   
+      1.30000E-02  to  1.70000E-02 mev   
+      1.70000E-02  to  2.50000E-02 mev   
+      2.50000E-02  to  3.00000E-02 mev   
+      3.00000E-02  to  4.50000E-02 mev   
+      4.50000E-02  to  5.00000E-02 mev   
+      5.00000E-02  to  5.20000E-02 mev   
+      5.20000E-02  to  6.00000E-02 mev   
+      6.00000E-02  to  7.30000E-02 mev   
+      7.30000E-02  to  7.50000E-02 mev   
+      7.50000E-02  to  8.20000E-02 mev   
+      8.20000E-02  to  8.50000E-02 mev   
+      8.50000E-02  to  1.00000E-01 mev   
+      1.00000E-01  to  1.28000E-01 mev   
+      1.28000E-01  to  1.50000E-01 mev   
+      1.50000E-01  to  2.00000E-01 mev   
+      2.00000E-01  to  2.70000E-01 mev   
+      2.70000E-01  to  3.30000E-01 mev   
+      3.30000E-01  to  4.00000E-01 mev   
+      4.00000E-01  to  4.20000E-01 mev   
+      4.20000E-01  to  4.40000E-01 mev   
+      4.40000E-01  to  4.70000E-01 mev   
+      4.70000E-01  to  5.00000E-01 mev   
+      5.00000E-01  to  5.50000E-01 mev   
+      5.50000E-01  to  5.73000E-01 mev   
+      5.73000E-01  to  6.00000E-01 mev   
+      6.00000E-01  to  6.70000E-01 mev   
+      6.70000E-01  to  6.79000E-01 mev   
+      6.79000E-01  to  7.50000E-01 mev   
+      7.50000E-01  to  8.20000E-01 mev   
+      8.20000E-01  to  8.61000E-01 mev   
+      8.61000E-01  to  8.75000E-01 mev   
+      8.75000E-01  to  9.00000E-01 mev   
+      9.00000E-01  to  9.20000E-01 mev   
+      9.20000E-01  to  1.01000E+00 mev   
+      1.01000E+00  to  1.10000E+00 mev   
+      1.10000E+00  to  1.20000E+00 mev   
+      1.20000E+00  to  1.25000E+00 mev   
+      1.25000E+00  to  1.32000E+00 mev   
+      1.32000E+00  to  1.36000E+00 mev   
+      1.36000E+00  to  1.40000E+00 mev   
+      1.40000E+00  to  1.50000E+00 mev   
+      1.50000E+00  to  1.85000E+00 mev   
+      1.85000E+00  to  2.35000E+00 mev   
+      2.35000E+00  to  2.48000E+00 mev   
+      2.48000E+00  to  3.00000E+00 mev   
+      3.00000E+00  to  4.30000E+00 mev   
+      4.30000E+00  to  4.80000E+00 mev   
+      4.80000E+00  to  6.43000E+00 mev   
+      6.43000E+00  to  8.19000E+00 mev   
+      8.19000E+00  to  1.00000E+01 mev   
+      1.00000E+01  to  1.28000E+01 mev   
+      1.28000E+01  to  1.38000E+01 mev   
+      1.38000E+01  to  1.46000E+01 mev   
+      1.46000E+01  to  1.57000E+01 mev   
+      1.57000E+01  to  1.73000E+01 mev   
+      1.73000E+01  to  2.00000E+01 mev   
+      total bin
+1material composition                                                                                   print table 40
+
+ the sum of the fractions of material        1 was 2.094840E-03
+
+ material
+  number     component nuclide, atom fraction
+
+        1            8016, 1.00000E+00
+ associated thermal s(a,b) data sets:    grph.16t                                                                        
+
+
+
+
+
+ material
+  number     component nuclide, mass fraction
+
+        1            8016, 1.00000E+00
+ 
+  warning.    1 materials had unnormalized fractions. print table 40.
+1cell volumes and masses                                                                                print table 50
+
+              cell     atom          gram         input       calculated                            reason volume
+                      density       density       volume        volume         mass       pieces    not calculated
+
+        1     2998  7.04803E-02   1.87200E+00   0.00000E+00   6.34704E+03   1.18817E+04      0                      
+        2     2999  0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      infinite        
+1surface areas                                                                                          print table 50
+
+           surface    input      calculated    reason area
+                      area          area       not calculated
+
+        2     2999.1  0.00000E+00   3.42805E+02                   
+        3     2999.2  0.00000E+00   3.42805E+02                   
+        4     2999.3  0.00000E+00   3.42805E+02                   
+        5     2999.4  0.00000E+00   3.42805E+02                   
+        6     2999.5  0.00000E+00   3.42805E+02                   
+        7     2999.6  0.00000E+00   3.42805E+02                   
+1cells                                                                                                  print table 60
+
+                               atom        gram                                            neutron                                     
+              cell     mat    density     density     volume       mass            pieces importance                                   
+
+        1     2998        1s 7.04803E-02 1.87200E+00 6.34704E+03 1.18817E+04           0  1.0000E+00                                   
+        2     2999        0  0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00           0  0.0000E+00                                   
+
+ total                                               6.34704E+03 1.18817E+04
+1surfaces                                                                                               print table 70
+
+           surface        trans  type   surface coefficients
+
+        1     2999   refl.        box
+        2     2999.1 refl.        px    9.2575000E+00
+        3     2999.2 refl.        p    -1.0000000E+00   0.0000000E+00   0.0000000E+00   9.2575000E+00
+        4     2999.3 refl.        py    9.2575000E+00
+        5     2999.4 refl.        p     0.0000000E+00  -1.0000000E+00   0.0000000E+00   9.2575000E+00
+        6     2999.5 refl.        pz    9.2575000E+00
+        7     2999.6 refl.        p     0.0000000E+00   0.0000000E+00  -1.0000000E+00   9.2575000E+00
+1  cell temperatures in mev for the free-gas thermal neutron treatment.                                 print table 72
+
+   all non-zero importance cells with materials have a temperature for thermal neutrons of 7.7500E-08 mev.
+
+ ***************************************************
+ * Random Number Generator  =                    1 *
+ * Random Number Seed       =       19073486328125 *
+ * Random Number Multiplier =       19073486328125 *
+ * Random Number Adder      =                    0 *
+ * Random Number Bits Used  =                   48 *
+ * Random Number Stride     =               152917 *
+ ***************************************************
+
+
+          1 warning message so far.
+
+        10 fatal errors so far.
+1physical constants                                                                                     print table 98
+
+
+   name                    value     description
+
+   huge      1.0000000000000E+36     infinity
+    pie      3.1415926535898E+00     pi
+  euler      5.7721566490153E-01     euler constant
+ avogad      6.0220434469282E+23     avogadro number (molecules/mole)
+  aneut      1.0086649670000E+00     neutron mass (amu)
+  avgdn      5.9703109000000E-01     avogadro number/neutron mass (1.e-24*molecules/mole/amu)
+  slite      2.9979250000000E+02     speed of light (cm/shake)
+ planck      4.1357320000000E-13     planck constant (mev shake)
+  fscon      1.3703930000000E+02     inverse fine structure constant h*c/(2*pi*e**2)
+ gpt(1)      9.3958000000000E+02     neutron mass (mev)
+ gpt(3)      5.1100800000000E-01     electron mass (mev)
+
+
+ fission q-values:     nuclide    q(mev)   nuclide    q(mev)
+                         90232    171.91     91233    175.57
+                         92233    180.84     92234    179.45
+                         92235    180.88     92236    179.50
+                         92237    180.40     92238    181.31
+                         92239    180.40     92240    180.40
+                         93237    183.67     94238    186.65
+                         94239    189.44     94240    186.36
+                         94241    188.99     94242    185.98
+                         94243    187.48     95241    190.83
+                         95242    190.54     95243    190.25
+                         96242    190.49     96244    190.49
+                         other    180.00
+
+
+ the following compilation options were used:
+
+     unix
+     plot
+     mcplot
+     xlib
+     linux
+     omp
+     default datapath: /global/scratch/co_nuclear/MCNP/MCNP_DATA/                                      
+                       /usr/projects/data/nuclear/mc/type1                                             
+1cross-section tables                                                                                   print table 100
+
+     table    length
+
+                        tables from file xdata/endf70a                                                   
+
+   8016.72c  171018   8-O - 16 at 900K   from endf/b-vii.0 njoy99.248                             mat 825      08/25/07
+
+                        tables from file xdata/endf70sab                                                 
+
+   grph.16t  195334  graphite at 1000K from ENDF/B-VII                                       6000  6012  6013  10/22/07
+ 
+  warning.  m        1 card lacks  6000 for   grph.16t on mt        1 card.
+ 
+  warning.  m        1 card lacks  6012 for   grph.16t on mt        1 card.
+ 
+  warning.  m        1 card lacks  6013 for   grph.16t on mt        1 card.
+
+  total      366352
+1assignment of s(a,b) data to nuclides.                                                                 print table 102
+
+       mat        nuclide         s(a,b)
+
+         4 warning messages so far.
+
+        10 fatal errors so far.
+
+
+ run terminated because of fatal errors.
+
+ computer time =    0.02 minutes
+
+ mcnp     version 5     07302014                     04/24/17 15:22:22                     probid =  04/24/17 15:22:21 

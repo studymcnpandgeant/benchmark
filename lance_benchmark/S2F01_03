@@ -1,0 +1,83 @@
+plot 1 700 700 0 %% yz cross plane at x=0
+plot 2 700 700 0 %% xz cross plane at y=0
+plot 3 700 700 0 %% xy cross plane at z=10
+
+set pop 64000 1600 20
+set acelib "/global/home/groups/ac_nuclear/serpent/xsdata/endfb7/sss_endfb7u.xsdata"
+
+%set acelib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.xsdata"
+%set declib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.dec"
+%set nfylib "/data1/packages/serpent/xsdata/endfb7/sss_endfb7.nfy"
+
+set bc 2
+
+therm grph gre7.20t
+
+
+particle 1001
+fuel	0.025
+buffer	0.034
+PyC	0.038
+SiC	0.0415
+PyC	0.0455
+matrix
+
+pbed 3 2 "FCC_particle_1.inp"
+
+surf 100 inf
+cell 100 2 matrix -100
+cell 200 5 salt -100
+
+lat 4 6 0 0 0.2828 3
+
+particle 1002
+fill 4	2.5
+shell	3
+salt
+
+pbed 6 5 "FCC_pebble_1.inp"
+
+lat 7 6 0 0 9.2575 6
+
+surf 999 cuboid -4.62875 4.62875 -4.62875 4.62875 -4.62875 4.62875
+
+cell 1 0 fill 7 -999
+cell 2 0 outside 999
+
+
+
+mat fuel	-10.5
+8016.09c	-1.18692E-01
+92235.09c	-1.50870E-01
+92238.09c	-7.30438E-01
+	
+mat buffer	-1.05 moder grph 6000
+6000.09c	-1
+	
+mat PyC	-1.9 moder grph 6000
+6000.09c	-1
+	
+mat SiC	-3.18 moder grph 6000
+6000.09c	-2.99556E-01
+14000.09c	-7.00444E-01
+	
+mat matrix	-1.73 moder grph 6000
+6000.09c	-9.99999E-01
+5010.09c	-9.16842E-08
+5011.09c	-4.08321E-07
+	
+mat shell	-1.73 moder grph 6000
+6000.09c	-9.99999E-01
+5010.09c	-9.16842E-08
+5011.09c	-4.08321E-07
+	
+mat salt	-1.974
+3006.09c	-6.07357E-06
+3007.09c	-1.41676E-01
+4009.09c	-9.09975E-02
+9019.09c	-7.67320E-01
+
+% --- energy grid
+ene 1 4 scale238
+% --- neutron spectrum
+det 1 de 1 dt -2
