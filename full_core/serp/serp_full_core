@@ -23,7 +23,7 @@ include "coreMaterials"
 %%---Neutron source and BC
 
 %%---set pop neutron-per-cycle cycles skip-cycles
-set pop 200000 500 200
+set pop 100000 500 200
 set bc 1
 set ures 1
 set gcu 3 6 9 12 15 18 21 24
