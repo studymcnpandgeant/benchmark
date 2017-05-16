@@ -1,0 +1,26 @@
+% --- Material volumes:
+
+% Produced Mon May 15 17:29:44 2017 by MC volume calculation routine by
+% sampling 1424166054 random points in the geometry.
+
+set mvol
+
+Flibe900        0 8.71612E+06 % (0.000)
+SS316900        0 5.14768E+06 % (0.000)
+CentralGraphite900      0 3.95803E+06 % (0.000)
+Shell900        0 1.27956E+06 % (0.000)
+fuel1           0 9.72552E+03 % (0.002)
+Buffer900       0 1.84153E+05 % (0.001)
+iPyC900         0 1.02400E+05 % (0.001)
+SiC900          0 1.26060E+05 % (0.001)
+oPyC900         0 1.52163E+05 % (0.001)
+Matrix900       0 9.61249E+05 % (0.000)
+fuel2           0 9.73195E+03 % (0.002)
+fuel3           0 9.70462E+03 % (0.002)
+fuel4           0 9.72995E+03 % (0.002)
+fuel5           0 9.75602E+03 % (0.002)
+fuel6           0 9.68727E+03 % (0.002)
+fuel7           0 9.73923E+03 % (0.002)
+fuel8           0 9.75970E+03 % (0.002)
+Graphite900      0 2.55251E+07 % (0.000)
+Graphite900CoolantMix900      0 5.93851E+06 % (0.000)
